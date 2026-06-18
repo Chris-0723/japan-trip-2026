@@ -175,7 +175,7 @@ window.TRIP_DATA = {
       "title": "Day 1｜靜岡完整一天",
       "area": "靜岡",
       "accommodation": "Hotel Garden Square Shizuoka／ホテルガーデンスクエア静岡",
-      "theme": "靜岡市區散步、清水港午餐與採買、働晚回市區甜點與購物",
+      "theme": "靜岡市區散步、清水午餐與採買、傍晚回市區甜點與購物",
       "timeline": [
         {
           "start_time": "08:30",
@@ -202,30 +202,6 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "10:20",
-          "end_time": "11:00",
-          "title": "駿府城公園散步",
-          "location": "駿府城公園",
-          "transport": "步行",
-          "description": "回到市區主軸安排短暫散步。",
-          "related_restaurant_ids": [],
-          "related_place_ids": [
-            "sunpu-castle-park"
-          ]
-        },
-        {
-          "start_time": "11:15",
-          "end_time": "12:00",
-          "title": "日本平景觀",
-          "location": "日本平",
-          "transport": "計程車／巴士",
-          "description": "保留富士山與駿河灣景觀時間。",
-          "related_restaurant_ids": [],
-          "related_place_ids": [
-            "nihondaira"
-          ]
-        },
-        {
           "start_time": "12:30",
           "end_time": "13:30",
           "title": "午餐",
@@ -242,27 +218,13 @@ window.TRIP_DATA = {
         {
           "start_time": "13:30",
           "end_time": "15:00",
-          "title": "清水港散步與採買",
-          "location": "清水港、魚市場、エスパルスドリームプラザ",
+          "title": "エスパルスドリームプラザ採買",
+          "location": "エスパルスドリームプラザ",
           "transport": "步行",
-          "description": "安排清水港散步、魚市場周邊與 Dream Plaza 找胖胖豬和伴手禮。",
+          "description": "安排 Dream Plaza 找胖胖豬和伴手禮。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "shimizu-port",
-            "shimizu-fish-market",
             "s_pulse_dream_plaza"
-          ]
-        },
-        {
-          "start_time": "15:15",
-          "end_time": "16:00",
-          "title": "三保松原",
-          "location": "三保松原",
-          "transport": "計程車／巴士",
-          "description": "若時間順利，保留海岸與松原景觀。",
-          "related_restaurant_ids": [],
-          "related_place_ids": [
-            "miho-no-matsubara"
           ]
         },
         {
@@ -363,7 +325,7 @@ window.TRIP_DATA = {
       "title": "Day 2｜晨光富士與修善寺古鎮慢遊",
       "area": "靜岡、三島、伊豆、修善寺",
       "accommodation": "湯回廊 菊屋",
-      "theme": "靜岡 → 三島取車 → 伊豆全景公園 → 修善寺午餐 → 修善寺溫泉街 → 菊屋泡湯",
+      "theme": "靜岡 → 三島取車 → 伊豆全景公園 → 修善寺午餐 → 修善寺慢遊 → 菊屋泡湯",
       "timeline": [
         {
           "start_time": "08:30",
@@ -406,8 +368,8 @@ window.TRIP_DATA = {
         {
           "start_time": "10:00",
           "end_time": "11:30",
-          "title": "伊豆全景公園與碧露台",
-          "location": "伊豆全景公園、碧露台 Ao Terrace",
+          "title": "伊豆全景公園與碧色展望台",
+          "location": "伊豆全景公園、碧色展望台",
           "transport": "步行",
           "description": "安排富士山與駿河灣景觀。",
           "related_restaurant_ids": [],
@@ -419,14 +381,14 @@ window.TRIP_DATA = {
         {
           "start_time": "11:30",
           "end_time": "12:00",
-          "title": "前往修善寺溫泉街",
-          "location": "伊豆全景公園 → 修善寺溫泉街",
+          "title": "前往修善寺",
+          "location": "伊豆全景公園 → 修善寺",
           "transport": "開車",
-          "description": "由景觀點轉入修善寺溫泉區。",
+          "description": "由景觀點轉入修善寺區域。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "izu-panorama-park",
-            "shuzenji-onsen"
+            "shuzenji"
           ]
         },
         {
@@ -461,15 +423,13 @@ window.TRIP_DATA = {
           "start_time": "14:00",
           "end_time": "17:00",
           "title": "修善寺慢遊",
-          "location": "修善寺溫泉街",
+          "location": "修禪寺、竹林小徑",
           "transport": "步行",
-          "description": "沿修禪寺、竹林小徑、桂川與溫泉街散步。",
+          "description": "以修禪寺與竹林小徑散步為主。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "shuzenji-temple",
-            "bamboo-forest-path",
-            "katsura-river",
-            "shuzenji-onsen"
+            "bamboo-forest-path"
           ]
         },
         {
@@ -566,7 +526,7 @@ window.TRIP_DATA = {
       "title": "Day 3｜山葵、天城越え與達磨山夕陽",
       "area": "修善寺、伊豆",
       "accommodation": "湯回廊 菊屋",
-      "theme": "筏場水山葵田 → 道之驛天城越え → 修善寺午餐 → 達磨山／西伊豆 Skyline 夕陽",
+      "theme": "筏場水山葵田 → 道之驛天城越え → 修善寺午餐 → 達磨山夕陽",
       "timeline": [
         {
           "start_time": "09:00",
@@ -584,12 +544,12 @@ window.TRIP_DATA = {
           "start_time": "09:30",
           "end_time": "10:10",
           "title": "前往筏場水山葵田",
-          "location": "修善寺溫泉街 → 筏場水山葵田",
+          "location": "湯回廊 菊屋 → 筏場水山葵田",
           "transport": "開車",
           "description": "前往山葵田區域。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "shuzenji-onsen",
+            "hotel_yukairo_kikuya",
             "ikadaba-wasabi-fields"
           ]
         },
@@ -634,12 +594,13 @@ window.TRIP_DATA = {
           "start_time": "12:10",
           "end_time": "12:40",
           "title": "返回修善寺",
-          "location": "道之驛 天城越え → 修善寺溫泉街",
+          "location": "道之驛 天城越え → 修善寺",
           "transport": "開車",
           "description": "返回修善寺用午餐。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "shuzenji-onsen"
+            "michi-no-eki-amagigoe",
+            "shuzenji"
           ]
         },
         {
@@ -661,63 +622,51 @@ window.TRIP_DATA = {
         {
           "start_time": "14:00",
           "end_time": "15:00",
-          "title": "回菊屋休息與補逛",
-          "location": "湯回廊 菊屋、修善寺溫泉街",
+          "title": "回菊屋休息",
+          "location": "湯回廊 菊屋",
           "transport": "步行",
-          "description": "回飯店休息，或在溫泉街補逛。",
+          "description": "回飯店休息，整理照片或泡湯前小歇。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "hotel_yukairo_kikuya",
-            "shuzenji-onsen"
+            "hotel_yukairo_kikuya"
           ]
         },
         {
           "start_time": "15:00",
           "end_time": "15:30",
           "title": "前往達磨山 Rest House",
-          "location": "修善寺溫泉街 → 達磨山 Rest House",
+          "location": "湯回廊 菊屋 → 達磨山 Rest House",
           "transport": "開車",
           "description": "下午移動至夕陽觀景點。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "shuzenji-onsen",
+            "hotel_yukairo_kikuya",
             "darumayama-rest-house"
           ]
         },
         {
           "start_time": "15:30",
           "end_time": "16:30",
-          "title": "達磨山展望",
+          "title": "達磨山夕陽",
           "location": "達磨山 Rest House",
           "transport": "步行",
-          "description": "觀賞富士山、駿河灣與西伊豆山稜景觀。",
+          "description": "在達磨山等待夕陽與山海景色。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "darumayama-rest-house"
           ]
         },
         {
-          "start_time": "16:30",
-          "end_time": "17:10",
-          "title": "西伊豆 Skyline 夕陽",
-          "location": "西伊豆 Skyline",
-          "transport": "開車＋短距離步行",
-          "description": "視天氣找安全展望點看夕陽。",
-          "related_restaurant_ids": [],
-          "related_place_ids": [
-            "nishi-izu-skyline"
-          ]
-        },
-        {
           "start_time": "17:10",
           "end_time": "17:50",
           "title": "返回修善寺",
-          "location": "西伊豆 Skyline → 修善寺",
+          "location": "達磨山 Rest House → 修善寺",
           "transport": "開車",
           "description": "在天色完全變暗前回到修善寺。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "shuzenji-onsen"
+            "darumayama-rest-house",
+            "shuzenji"
           ]
         },
         {
@@ -756,9 +705,9 @@ window.TRIP_DATA = {
           "notes": "上午與中午以山路移動為主。"
         },
         {
-          "segment": "修善寺 → 達磨山／西伊豆 Skyline → 修善寺",
+          "segment": "修善寺 → 達磨山 Rest House → 修善寺",
           "mode": "開車",
-          "notes": "以夕陽動線為主。"
+          "notes": "以下午夕陽動線為主。"
         }
       ],
       "meals": [
@@ -784,10 +733,10 @@ window.TRIP_DATA = {
         }
       ],
       "backup_plan": [
-        "若天氣差或起霧，達磨山／西伊豆 Skyline 可取消，改成修善寺溫泉街慢遊與早點泡湯。"
+        "若天氣差或起霧，達磨山可取消，改成提早回菊屋泡湯休息。"
       ],
       "notes": [
-        "夕陽安排以達磨山／西伊豆 Skyline 為主，避免夜間長距離山路回修善寺。"
+        "夕陽安排以達磨山為主，避免夜間長距離山路回修善寺。"
       ]
     },
     {
@@ -897,13 +846,12 @@ window.TRIP_DATA = {
           "start_time": "15:00",
           "end_time": "17:00",
           "title": "Check-in 與周邊散步",
-          "location": "馬洛德飯店 箱根、強羅公園",
+          "location": "馬洛德飯店 箱根",
           "transport": "步行",
-          "description": "入住後保留強羅公園或飯店周邊散步時間。",
+          "description": "入住後保留飯店周邊散步與休息時間。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "hotel_marroad_hakone",
-            "gora-park"
+            "hotel_marroad_hakone"
           ]
         },
         {
@@ -989,15 +937,15 @@ window.TRIP_DATA = {
       "title": "Day 5｜箱根經典環線",
       "area": "箱根",
       "accommodation": "馬洛德飯店 箱根／ホテルマロウド箱根",
-      "theme": "強羅 → 箱根神社 → 蘆之湖海賊船 → 桃源台 → 大涌谷 → 早雲山 → 強羅",
+      "theme": "箱根神社 → 蘆之湖海賊船 → 桃源台 → 大涌谷 → 早雲山",
       "timeline": [
         {
           "start_time": "08:15",
           "end_time": null,
-          "title": "強羅出發",
+          "title": "飯店出發",
           "location": "馬洛德飯店 箱根",
           "transport": "巴士",
-          "description": "由強羅出發前往箱根神社方向。",
+          "description": "由住宿出發前往箱根神社方向。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_marroad_hakone"
@@ -1007,12 +955,12 @@ window.TRIP_DATA = {
           "start_time": "08:15",
           "end_time": "09:15",
           "title": "前往箱根神社入口",
-          "location": "強羅 → 小涌園／宮之下 → 箱根神社入口",
+          "location": "馬洛德飯店 箱根 → 小涌園／宮之下 → 箱根神社入口",
           "transport": "巴士",
           "description": "利用巴士轉乘前往神社入口。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "gora",
+            "hotel_marroad_hakone",
             "hakone-shrine"
           ]
         },
@@ -1032,12 +980,12 @@ window.TRIP_DATA = {
           "start_time": "10:45",
           "end_time": "11:25",
           "title": "搭海賊船前往桃源台",
-          "location": "元箱根港 → 桃源台",
+          "location": "箱根神社周邊 → 桃源台",
           "transport": "箱根海賊船",
-          "description": "橫越蘆之湖前往桃源台。",
+          "description": "搭海賊船橫越蘆之湖前往桃源台。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "moto-hakone-port",
+            "hakone-shrine",
             "togendai"
           ]
         },
@@ -1085,15 +1033,14 @@ window.TRIP_DATA = {
         {
           "start_time": "15:00",
           "end_time": "16:00",
-          "title": "返回強羅",
-          "location": "大涌谷 → 早雲山 → 強羅",
-          "transport": "纜車／登山電車",
-          "description": "下午循環線返回強羅。",
+          "title": "前往早雲山",
+          "location": "大涌谷 → 早雲山",
+          "transport": "箱根空中纜車",
+          "description": "由大涌谷搭纜車前往早雲山。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "owakudani",
-            "sounzan",
-            "gora"
+            "sounzan"
           ]
         },
         {
@@ -1101,8 +1048,8 @@ window.TRIP_DATA = {
           "end_time": "17:30",
           "title": "回飯店休息",
           "location": "馬洛德飯店 箱根",
-          "transport": "步行",
-          "description": "回飯店泡湯、休息。",
+          "transport": "巴士／步行",
+          "description": "由早雲山一帶返回飯店泡湯、休息。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_marroad_hakone"
@@ -1112,7 +1059,7 @@ window.TRIP_DATA = {
           "start_time": "17:30",
           "end_time": "19:30",
           "title": "晚餐",
-          "location": "強羅",
+          "location": "馬洛德飯店 箱根周邊",
           "transport": "步行",
           "description": "晚餐第一順位為 うなぎ 元長，備案為 Itoh Dining by Nobu、豆皮壽司 かっ平壽司。",
           "related_restaurant_ids": [
@@ -1129,14 +1076,14 @@ window.TRIP_DATA = {
       ],
       "transportation": [
         {
-          "segment": "強羅 → 箱根神社入口",
+          "segment": "馬洛德飯店 箱根 → 箱根神社入口",
           "mode": "巴士",
-          "notes": "經小涌園／宮之下轉乘。"
+          "notes": "由飯店出發，經小涌園／宮之下轉乘。"
         },
         {
-          "segment": "元箱根港 → 桃源台",
+          "segment": "箱根神社周邊 → 桃源台",
           "mode": "箱根海賊船",
-          "notes": "跨越蘆之湖。"
+          "notes": "搭海賊船跨越蘆之湖。"
         },
         {
           "segment": "桃源台 → 大涌谷",
@@ -1144,9 +1091,9 @@ window.TRIP_DATA = {
           "notes": "視天氣與運行狀況調整。"
         },
         {
-          "segment": "大涌谷 → 早雲山 → 強羅",
-          "mode": "纜車／登山電車",
-          "notes": "回到強羅周邊。"
+          "segment": "大涌谷 → 早雲山 → 馬洛德飯店 箱根",
+          "mode": "纜車／巴士",
+          "notes": "下山後返回飯店。"
         }
       ],
       "meals": [
@@ -1169,16 +1116,16 @@ window.TRIP_DATA = {
             "restaurant-itoh-dining-by-nobu",
             "restaurant-kappei-zushi"
           ],
-          "notes": "強羅周邊晚餐。"
+          "notes": "飯店周邊晚餐。"
         }
       ],
       "backup_plan": [
-        "若天氣差或空中纜車停駛，改以巴士串接蘆之湖、大涌谷或強羅周邊景點。"
+        "若天氣差或空中纜車停駛，改以巴士串接蘆之湖、大涌谷或飯店周邊動線。"
       ],
       "notes": [
         "這天是箱根主遊日。",
         "午餐安排在蘆之湖／桃源台周邊。",
-        "晚餐回強羅周邊處理，不再跨區覓食。"
+        "晚餐回飯店周邊處理，不再跨區覓食。"
       ]
     },
     {
@@ -1187,7 +1134,7 @@ window.TRIP_DATA = {
       "title": "Day 6｜箱根 → 東京",
       "area": "箱根、東京",
       "accommodation": "DEL style 池袋東口 by Daiwa Roynet Hotel",
-      "theme": "早上由箱根下山，下午與晚上集中在池袋購物",
+      "theme": "箱根下山 → 新宿轉乘 → 池袋購物",
       "timeline": [
         {
           "start_time": "08:30",
@@ -1205,25 +1152,38 @@ window.TRIP_DATA = {
           "start_time": "09:30",
           "end_time": "10:45",
           "title": "前往箱根湯本",
-          "location": "強羅 → 箱根湯本",
+          "location": "馬洛德飯店 箱根 → 箱根湯本",
           "transport": "登山電車",
           "description": "早上直接下山，準備進東京。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "gora",
+            "hotel_marroad_hakone",
             "hakone-yumoto"
           ]
         },
         {
           "start_time": "10:45",
           "end_time": "12:30",
-          "title": "前往池袋",
-          "location": "箱根湯本 → 小田原 → 池袋",
-          "transport": "鐵路",
-          "description": "中午前後抵達東京池袋。",
+          "title": "前往新宿",
+          "location": "箱根湯本 → 新宿",
+          "transport": "小田急浪漫特快",
+          "description": "搭乘小田急浪漫特快進東京。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hakone-yumoto",
+            "shinjuku"
+          ]
+        },
+        {
+          "start_time": "12:30",
+          "end_time": "13:00",
+          "title": "前往池袋",
+          "location": "新宿 → 池袋",
+          "transport": "JR 電車",
+          "description": "由新宿轉乘 JR 前往池袋。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "shinjuku",
             "ikebukuro"
           ]
         },
@@ -1254,14 +1214,19 @@ window.TRIP_DATA = {
       ],
       "transportation": [
         {
-          "segment": "強羅 → 箱根湯本",
+          "segment": "馬洛德飯店 箱根 → 箱根湯本",
           "mode": "登山電車",
           "notes": "早上直接下山。"
         },
         {
-          "segment": "箱根湯本 → 小田原 → 池袋",
-          "mode": "鐵路",
-          "notes": "目標是中午前後進東京，下午與晚上集中在池袋。"
+          "segment": "箱根湯本 → 新宿",
+          "mode": "小田急浪漫特快",
+          "notes": "依更新資料改走浪漫特快進東京。"
+        },
+        {
+          "segment": "新宿 → 池袋",
+          "mode": "JR 電車",
+          "notes": "抵達新宿後再轉往池袋。"
         }
       ],
       "meals": [
@@ -1821,26 +1786,6 @@ window.TRIP_DATA = {
       "notes": "靜岡住宿與移動核心節點。"
     },
     {
-      "id": "sunpu-castle-park",
-      "name": "駿府城公園",
-      "area": "靜岡",
-      "category": "景點",
-      "google_maps_url": null,
-      "lat": null,
-      "lng": null,
-      "notes": "10/12 靜岡市區散步重點。"
-    },
-    {
-      "id": "nihondaira",
-      "name": "日本平",
-      "area": "靜岡",
-      "category": "景點",
-      "google_maps_url": null,
-      "lat": null,
-      "lng": null,
-      "notes": "10/12 景觀主軸。"
-    },
-    {
       "id": "shimizu",
       "name": "清水",
       "area": "靜岡",
@@ -1871,36 +1816,6 @@ window.TRIP_DATA = {
       "notes": "10/12 下午候選動線。"
     },
     {
-      "id": "miho-no-matsubara",
-      "name": "三保松原",
-      "area": "靜岡",
-      "category": "景點",
-      "google_maps_url": null,
-      "lat": null,
-      "lng": null,
-      "notes": "10/12 下午景點。"
-    },
-    {
-      "id": "shimizu-port",
-      "name": "清水港",
-      "area": "靜岡",
-      "category": "景點",
-      "google_maps_url": null,
-      "lat": null,
-      "lng": null,
-      "notes": "10/12 港區散步節點。"
-    },
-    {
-      "id": "shimizu-fish-market",
-      "name": "清水魚市場",
-      "area": "靜岡",
-      "category": "景點",
-      "google_maps_url": null,
-      "lat": null,
-      "lng": null,
-      "notes": "10/12 港區散步節點。"
-    },
-    {
       "id": "s_pulse_dream_plaza",
       "name": "エスパルスドリームプラザ",
       "area": "清水",
@@ -1925,30 +1840,20 @@ window.TRIP_DATA = {
       "name": "伊豆全景公園",
       "area": "伊豆",
       "category": "景點",
-      "google_maps_url": null,
+      "google_maps_url": "https://maps.app.goo.gl/onLLbWaNbDbQQGUF7",
       "lat": null,
       "lng": null,
       "notes": "10/13 上午景觀重點。"
     },
     {
       "id": "ao-terrace",
-      "name": "碧露台 Ao Terrace",
+      "name": "碧色展望台",
       "area": "伊豆",
       "category": "景點",
-      "google_maps_url": null,
+      "google_maps_url": "https://maps.app.goo.gl/117B1YDXabLEmWZg7",
       "lat": null,
       "lng": null,
-      "notes": "10/13 上午景觀重點。"
-    },
-    {
-      "id": "shuzenji-onsen",
-      "name": "修善寺溫泉街",
-      "area": "修善寺",
-      "category": "景點",
-      "google_maps_url": null,
-      "lat": null,
-      "lng": null,
-      "notes": "10/13–10/14 修善寺主要步行區域。"
+      "notes": "10/13 上午景觀重點；原名稱為碧露台 Ao Terrace。"
     },
     {
       "id": "hotel_yukairo_kikuya",
@@ -1965,7 +1870,7 @@ window.TRIP_DATA = {
       "name": "修禪寺",
       "area": "修善寺",
       "category": "景點",
-      "google_maps_url": null,
+      "google_maps_url": "https://maps.app.goo.gl/EWrxnKPc9Pe9AaVs6",
       "lat": null,
       "lng": null,
       "notes": "修善寺慢遊景點。"
@@ -1975,17 +1880,7 @@ window.TRIP_DATA = {
       "name": "竹林小徑",
       "area": "修善寺",
       "category": "景點",
-      "google_maps_url": null,
-      "lat": null,
-      "lng": null,
-      "notes": "修善寺慢遊景點。"
-    },
-    {
-      "id": "katsura-river",
-      "name": "桂川沿岸",
-      "area": "修善寺",
-      "category": "景點",
-      "google_maps_url": null,
+      "google_maps_url": "https://maps.app.goo.gl/vog8eWHjpedHDUD76",
       "lat": null,
       "lng": null,
       "notes": "修善寺慢遊景點。"
@@ -1995,7 +1890,7 @@ window.TRIP_DATA = {
       "name": "筏場水山葵田",
       "area": "伊豆",
       "category": "景點",
-      "google_maps_url": null,
+      "google_maps_url": "https://maps.app.goo.gl/3MEkUs68UCYerbPb7",
       "lat": null,
       "lng": null,
       "notes": "10/14 上午景點。"
@@ -2005,7 +1900,7 @@ window.TRIP_DATA = {
       "name": "道之驛 天城越え",
       "area": "伊豆",
       "category": "景點",
-      "google_maps_url": null,
+      "google_maps_url": "https://maps.app.goo.gl/t3AkzmXLbSo7aKP57",
       "lat": null,
       "lng": null,
       "notes": "10/14 中途休息與伴手禮節點。"
@@ -2015,17 +1910,7 @@ window.TRIP_DATA = {
       "name": "達磨山 Rest House",
       "area": "伊豆",
       "category": "景點",
-      "google_maps_url": null,
-      "lat": null,
-      "lng": null,
-      "notes": "10/14 夕陽主軸。"
-    },
-    {
-      "id": "nishi-izu-skyline",
-      "name": "西伊豆 Skyline",
-      "area": "伊豆",
-      "category": "景點",
-      "google_maps_url": null,
+      "google_maps_url": "https://maps.app.goo.gl/rmWdf4PVovucGQMK8",
       "lat": null,
       "lng": null,
       "notes": "10/14 夕陽主軸。"
@@ -2045,90 +1930,70 @@ window.TRIP_DATA = {
       "name": "箱根湯本",
       "area": "箱根",
       "category": "區域",
-      "google_maps_url": null,
+      "google_maps_url": "https://maps.app.goo.gl/mQVjgUWpNRtRh6VL7",
       "lat": null,
       "lng": null,
-      "notes": "10/15 午餐與 10/17 最後採買區域。"
+      "notes": "10/15 午餐與 10/17 下山轉乘重點區域。"
     },
     {
       "id": "gora",
       "name": "強羅",
       "area": "箱根",
       "category": "區域",
-      "google_maps_url": null,
+      "google_maps_url": "https://maps.app.goo.gl/N8cq8RLJiQZ18HF5A",
       "lat": null,
       "lng": null,
-      "notes": "10/15–10/16 住宿與晚餐核心區域。"
-    },
-    {
-      "id": "gora-park",
-      "name": "強羅公園",
-      "area": "箱根",
-      "category": "景點",
-      "google_maps_url": null,
-      "lat": null,
-      "lng": null,
-      "notes": "10/15 下午周邊散步點。"
+      "notes": "10/15 抵達與晚餐核心區域。"
     },
     {
       "id": "hakone-shrine",
       "name": "箱根神社",
       "area": "箱根",
       "category": "景點",
-      "google_maps_url": null,
+      "google_maps_url": "https://maps.app.goo.gl/rHhjLWxRtZ1BLyCe6",
       "lat": null,
       "lng": null,
-      "notes": "10/16 上午主景點。"
-    },
-    {
-      "id": "moto-hakone-port",
-      "name": "元箱根港",
-      "area": "箱根",
-      "category": "交通",
-      "google_maps_url": null,
-      "lat": null,
-      "lng": null,
-      "notes": "10/16 搭海賊船出發點。"
+      "notes": "10/16 上午主景點；纜車轉巴士動線。"
     },
     {
       "id": "togendai",
       "name": "桃源台",
       "area": "箱根",
       "category": "區域",
-      "google_maps_url": null,
+      "google_maps_url": "https://maps.app.goo.gl/kLzMNjtpJGqX5ji97",
       "lat": null,
       "lng": null,
-      "notes": "10/16 午餐與纜車銜接區域。"
+      "notes": "10/16 搭海賊船抵達，午餐與纜車銜接區域。"
     },
     {
       "id": "owakudani",
       "name": "大涌谷",
       "area": "箱根",
       "category": "景點",
-      "google_maps_url": null,
+      "google_maps_url": "https://maps.app.goo.gl/qCMnGgP9BDxtxFZ59",
       "lat": null,
       "lng": null,
-      "notes": "10/16 下午主景點。"
+      "notes": "10/16 下午主景點；搭纜車前往。"
     },
     {
       "id": "sounzan",
       "name": "早雲山",
       "area": "箱根",
       "category": "景點",
-      "google_maps_url": null,
+      "google_maps_url": "https://maps.app.goo.gl/dCVBM62Y1F4moq26A",
       "lat": null,
       "lng": null,
-      "notes": "10/16 返回強羅的銜接節點。"
+      "notes": "10/16 搭纜車返回時的銜接節點。"
     },
     {
       "id": "shinjuku",
       "name": "新宿",
       "area": "東京",
-      "category": "區域",
-      "google_maps_url": null,
+      "category": "景點",
+      "google_maps_url": "https://maps.app.goo.gl/ySvHbTPy4goraKw37",
       "lat": null,
       "lng": null,
-      "notes": "10/17 東京購物主軸候選。"
+      "notes": "10/17 由箱根湯本搭小田急浪漫特快抵達的新宿節點。"
     },
     {
       "id": "ginza",
@@ -2375,7 +2240,7 @@ window.TRIP_DATA = {
       "name": "DEL style 池袋東口 by Daiwa Roynet Hotel",
       "area": "東京",
       "category": "住宿",
-      "google_maps_url": "https://maps.app.goo.gl/qBkqL7LzmiPgWSYH8",
+      "google_maps_url": "https://maps.app.goo.gl/SXhmDAT98MNHtjns8",
       "lat": null,
       "lng": null,
       "notes": "10/17 住宿。"
@@ -2424,11 +2289,11 @@ window.TRIP_DATA = {
       "id": "ikebukuro",
       "name": "池袋",
       "area": "東京",
-      "category": "區域",
-      "google_maps_url": null,
+      "category": "景點",
+      "google_maps_url": "https://maps.app.goo.gl/yNYnBMoXqjdJvAfF9",
       "lat": null,
       "lng": null,
-      "notes": "10/17-10/18 東京購物主軸區域。"
+      "notes": "10/17 JR 電車由新宿轉往池袋，10/17-10/18 東京購物主軸區域。"
     },
     {
       "id": "ikebukuro_station",
