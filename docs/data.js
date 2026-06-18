@@ -20,16 +20,16 @@ window.TRIP_DATA = {
       "weekday": "日",
       "title": "Day 0｜成田抵達 → 靜岡住宿",
       "area": "成田、東京、靜岡",
-      "accommodation": "Hotel Garden Square Shizuoka",
-      "theme": "????????????????????????",
+      "accommodation": "Hotel Garden Square Shizuoka／ホテルガーデンスクエア静岡",
+      "theme": "成田抵達、日本境內長距離移動、靜岡晚餐與簡單採買",
       "timeline": [
         {
           "start_time": "14:00",
           "end_time": null,
-          "title": "??????",
-          "location": "????",
+          "title": "抵達成田機場",
+          "location": "成田機場",
           "transport": null,
-          "description": "????????????",
+          "description": "抵達日本，開始入境流程。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "narita_airport"
@@ -38,10 +38,10 @@ window.TRIP_DATA = {
         {
           "start_time": "14:00",
           "end_time": "15:30",
-          "title": "???????????",
-          "location": "????",
-          "transport": "??",
-          "description": "????????????????????",
+          "title": "入境、領行李、交通整理",
+          "location": "成田機場",
+          "transport": "步行",
+          "description": "完成入境、提領行李，並整理接續移動安排。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "narita_airport"
@@ -50,10 +50,10 @@ window.TRIP_DATA = {
         {
           "start_time": "15:30",
           "end_time": "16:30",
-          "title": "?????????",
-          "location": "???? ? ???????",
-          "transport": "N'EX ????",
-          "description": "????????????????",
+          "title": "前往東京站／品川站",
+          "location": "成田機場 → 東京站／品川站",
+          "transport": "N'EX 成田特快",
+          "description": "由機場進入東京都內，銜接新幹線。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "narita_airport",
@@ -64,10 +64,10 @@ window.TRIP_DATA = {
         {
           "start_time": "16:30",
           "end_time": "18:00",
-          "title": "????",
-          "location": "??????? ? ???",
-          "transport": "??????",
-          "description": "????????????????????",
+          "title": "前往靜岡",
+          "location": "東京站／品川站 → 靜岡站",
+          "transport": "東海道新幹線",
+          "description": "搭乘新幹線前往靜岡，完成當日長距離轉場。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "tokyo-station",
@@ -78,10 +78,10 @@ window.TRIP_DATA = {
         {
           "start_time": "18:00",
           "end_time": "18:30",
-          "title": "?? Check-in",
+          "title": "飯店 Check-in",
           "location": "Hotel Garden Square Shizuoka",
-          "transport": "??????",
-          "description": "??????????????",
+          "transport": "步行／計程車",
+          "description": "抵達靜岡後前往飯店辦理入住。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_garden_square_shizuoka"
@@ -90,10 +90,10 @@ window.TRIP_DATA = {
         {
           "start_time": "19:00",
           "end_time": "20:30",
-          "title": "??",
-          "location": "?? ????? ?????",
-          "transport": "??????",
-          "description": "?????????? ????? ??????",
+          "title": "晚餐",
+          "location": "焼肉 にくわらい 昭和町本店",
+          "transport": "步行／計程車",
+          "description": "晚餐第一順位安排燒肉 にくわらい 昭和町本店。",
           "related_restaurant_ids": [
             "restaurant_nikuwarai_showacho_honten"
           ],
@@ -104,10 +104,10 @@ window.TRIP_DATA = {
         {
           "start_time": "20:30",
           "end_time": "21:15",
-          "title": "?????",
-          "location": "??? CENOVA",
-          "transport": "??",
-          "description": "????? CENOVA ?????????",
+          "title": "晚餐後採買",
+          "location": "新靜岡 CENOVA",
+          "transport": "步行",
+          "description": "前往新靜岡 CENOVA 找扳蛋與簡單採買。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "cenova_shizuoka"
@@ -116,10 +116,10 @@ window.TRIP_DATA = {
         {
           "start_time": "21:30",
           "end_time": null,
-          "title": "??",
+          "title": "消夜",
           "location": "UMIBOUZU Main Store",
-          "transport": "??",
-          "description": "?????????? UMIBOUZU Main Store ?????",
+          "transport": "步行",
+          "description": "若體力還可以，再安排 UMIBOUZU Main Store 作為消夜。",
           "related_restaurant_ids": [
             "restaurant_umibouzu_main_store"
           ],
@@ -130,43 +130,43 @@ window.TRIP_DATA = {
       ],
       "transportation": [
         {
-          "segment": "???? ? ???????",
-          "mode": "N'EX ????",
-          "notes": "??????????"
+          "segment": "成田機場 → 東京站／品川站",
+          "mode": "N'EX 成田特快",
+          "notes": "進東京後銜接新幹線。"
         },
         {
-          "segment": "??????? ? ???",
-          "mode": "??????",
-          "notes": "????? Hotel Garden Square Shizuoka?"
+          "segment": "東京站／品川站 → 靜岡站",
+          "mode": "東海道新幹線",
+          "notes": "抵達後入住 Hotel Garden Square Shizuoka。"
         },
         {
-          "segment": "???????",
-          "mode": "??????",
-          "notes": "10/11-10/12 ????????????????"
+          "segment": "靜岡站周邊移動",
+          "mode": "步行／計程車",
+          "notes": "10/11-10/12 靜岡市區內移動可考慮計程車。"
         }
       ],
       "meals": [
         {
-          "meal_type": "??",
+          "meal_type": "晚餐",
           "primary_restaurant_ids": [
             "restaurant_nikuwarai_showacho_honten"
           ],
           "backup_restaurant_ids": [],
-          "notes": "?????"
+          "notes": "靜岡晚餐。"
         },
         {
-          "meal_type": "??",
+          "meal_type": "消夜",
           "primary_restaurant_ids": [
             "restaurant_umibouzu_main_store"
           ],
           "backup_restaurant_ids": [],
-          "notes": "???????????"
+          "notes": "若仍有體力可安排消夜。"
         }
       ],
       "backup_plan": [],
       "notes": [
-        "??????????????????????",
-        "10/11-10/12 ??????????????"
+        "這天不排景點，以長距離移動、入住與晚餐為主。",
+        "10/11-10/12 靜岡市區內移動可考慮計程車。"
       ]
     },
     {
@@ -174,16 +174,16 @@ window.TRIP_DATA = {
       "weekday": "一",
       "title": "Day 1｜靜岡完整一天",
       "area": "靜岡",
-      "accommodation": "Hotel Garden Square Shizuoka",
-      "theme": "??????????????????????????",
+      "accommodation": "Hotel Garden Square Shizuoka／ホテルガーデンスクエア静岡",
+      "theme": "靜岡市區散步、清水港午餐與採買、働晚回市區甜點與購物",
       "timeline": [
         {
           "start_time": "08:30",
           "end_time": "09:15",
-          "title": "??",
-          "location": "Hotel Garden Square Shizuoka ??",
-          "transport": "??",
-          "description": "???????????",
+          "title": "早餐",
+          "location": "Hotel Garden Square Shizuoka 周邊",
+          "transport": "步行",
+          "description": "在飯店周邊簡單用早餐。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_garden_square_shizuoka"
@@ -192,10 +192,10 @@ window.TRIP_DATA = {
         {
           "start_time": "09:30",
           "end_time": "10:10",
-          "title": "??????",
-          "location": "??????",
-          "transport": "??????",
-          "description": "????????????",
+          "title": "靜岡淺間神社",
+          "location": "靜岡淺間神社",
+          "transport": "步行／計程車",
+          "description": "上午先安排靜岡淺間神社。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "shizuoka_sengen_jinja"
@@ -204,10 +204,10 @@ window.TRIP_DATA = {
         {
           "start_time": "10:20",
           "end_time": "11:00",
-          "title": "???????",
-          "location": "?????",
-          "transport": "??",
-          "description": "?????????????",
+          "title": "駿府城公園散步",
+          "location": "駿府城公園",
+          "transport": "步行",
+          "description": "回到市區主軸安排短暫散步。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "sunpu-castle-park"
@@ -216,10 +216,10 @@ window.TRIP_DATA = {
         {
           "start_time": "11:15",
           "end_time": "12:00",
-          "title": "?????",
-          "location": "???",
-          "transport": "??????",
-          "description": "??????????????",
+          "title": "日本平景觀",
+          "location": "日本平",
+          "transport": "計程車／巴士",
+          "description": "保留富士山與駿河灣景觀時間。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "nihondaira"
@@ -228,10 +228,10 @@ window.TRIP_DATA = {
         {
           "start_time": "12:30",
           "end_time": "13:30",
-          "title": "??",
+          "title": "午餐",
           "location": "Shimizuko Minami",
-          "transport": "??????",
-          "description": "???????? Shimizuko Minami?",
+          "transport": "計程車／巴士",
+          "description": "午餐第一順位安排 Shimizuko Minami。",
           "related_restaurant_ids": [
             "restaurant_shimizuko_minami"
           ],
@@ -242,10 +242,10 @@ window.TRIP_DATA = {
         {
           "start_time": "13:30",
           "end_time": "15:00",
-          "title": "????????",
-          "location": "????????????????????",
-          "transport": "??",
-          "description": "?????????????? Dream Plaza ?????????",
+          "title": "清水港散步與採買",
+          "location": "清水港、魚市場、エスパルスドリームプラザ",
+          "transport": "步行",
+          "description": "安排清水港散步、魚市場周邊與 Dream Plaza 找胖胖豬和伴手禮。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "shimizu-port",
@@ -256,10 +256,10 @@ window.TRIP_DATA = {
         {
           "start_time": "15:15",
           "end_time": "16:00",
-          "title": "????",
-          "location": "????",
-          "transport": "??????",
-          "description": "????????????????",
+          "title": "三保松原",
+          "location": "三保松原",
+          "transport": "計程車／巴士",
+          "description": "若時間順利，保留海岸與松原景觀。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "miho-no-matsubara"
@@ -268,10 +268,10 @@ window.TRIP_DATA = {
         {
           "start_time": "16:30",
           "end_time": "17:00",
-          "title": "????",
+          "title": "下午甜點",
           "location": "Nanaya Shizuoka",
-          "transport": "?????",
-          "description": "?????????????",
+          "transport": "鐵路／步行",
+          "description": "回到靜岡市區安排抹茶甜點。",
           "related_restaurant_ids": [
             "restaurant_nanaya_shizuoka"
           ],
@@ -282,10 +282,10 @@ window.TRIP_DATA = {
         {
           "start_time": "17:15",
           "end_time": "18:00",
-          "title": "?? PARCO",
-          "location": "?? PARCO",
-          "transport": "??",
-          "description": "???? PARCO ? Village Vanguard ?????????",
+          "title": "靜岡 PARCO",
+          "location": "靜岡 PARCO",
+          "transport": "步行",
+          "description": "働晚前往 PARCO 的 Village Vanguard 找胖胖豬相關商品。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "shizuoka_parco"
@@ -294,10 +294,10 @@ window.TRIP_DATA = {
         {
           "start_time": "18:30",
           "end_time": "19:30",
-          "title": "??",
-          "location": "????? ?????",
-          "transport": "??",
-          "description": "???????????? ???????????????????????????????",
+          "title": "晚餐",
+          "location": "餃子研究所 アスティ店",
+          "transport": "步行",
+          "description": "晚餐第一順位為餃子研究所 アスティ店；若午餐沒吃到清水港みなみ，備案才考慮沼津魚がし鮨。",
           "related_restaurant_ids": [
             "restaurant_gyoza_kenkyujo_asty",
             "restaurant_numazu_uogashi_zushi_premium_shizuoka"
@@ -310,51 +310,51 @@ window.TRIP_DATA = {
       ],
       "transportation": [
         {
-          "segment": "????? ? ?????????",
-          "mode": "JR??????????",
-          "notes": "10/11-10/12 ??????????????"
+          "segment": "靜岡站周邊 ↔ 靜岡市區／清水一帶",
+          "mode": "JR、巴士、必要時計程車",
+          "notes": "10/11-10/12 靜岡市區內移動可考慮計程車。"
         }
       ],
       "meals": [
         {
-          "meal_type": "??",
+          "meal_type": "早餐",
           "primary_restaurant_ids": [],
           "backup_restaurant_ids": [],
-          "notes": "??????????"
+          "notes": "於飯店周邊彈性安排。"
         },
         {
-          "meal_type": "??",
+          "meal_type": "午餐",
           "primary_restaurant_ids": [
             "restaurant_shimizuko_minami"
           ],
           "backup_restaurant_ids": [],
-          "notes": "??????????"
+          "notes": "清水港午餐第一順位。"
         },
         {
-          "meal_type": "????",
+          "meal_type": "下午甜點",
           "primary_restaurant_ids": [
             "restaurant_nanaya_shizuoka"
           ],
           "backup_restaurant_ids": [],
-          "notes": "???????????"
+          "notes": "回到靜岡市區安排甜點。"
         },
         {
-          "meal_type": "??",
+          "meal_type": "晚餐",
           "primary_restaurant_ids": [
             "restaurant_gyoza_kenkyujo_asty"
           ],
           "backup_restaurant_ids": [
             "restaurant_numazu_uogashi_zushi_premium_shizuoka"
           ],
-          "notes": "???????? Shimizuko Minami ??????????????"
+          "notes": "只有在午餐沒吃到 Shimizuko Minami 時，才考慮改去沼津魚がし鮨。"
         }
       ],
       "backup_plan": [
-        "?????? Shimizuko Minami?????????????? ??????????"
+        "若午餐沒吃到 Shimizuko Minami，晚餐備案才考慮沼津魚がし鮨 プレミアム静岡本店。"
       ],
       "notes": [
-        "10/11-10/12 ??????????????",
-        "??????????????? Dream Plaza??? PARCO ? CENOVA ???????"
+        "10/11-10/12 靜岡市區內移動可考慮計程車。",
+        "若想找《胖胖豬》相關商品，清水 Dream Plaza、靜岡 PARCO 與 CENOVA 可依路線安排。"
       ]
     },
     {
@@ -362,7 +362,7 @@ window.TRIP_DATA = {
       "weekday": "二",
       "title": "Day 2｜晨光富士與修善寺古鎮慢遊",
       "area": "靜岡、三島、伊豆、修善寺",
-      "accommodation": "??? ??",
+      "accommodation": "湯回廊 菊屋",
       "theme": "靜岡 → 三島取車 → 伊豆全景公園 → 修善寺午餐 → 修善寺溫泉街 → 菊屋泡湯",
       "timeline": [
         {
@@ -381,10 +381,10 @@ window.TRIP_DATA = {
         {
           "start_time": "09:00",
           "end_time": "09:20",
-          "title": "????????????",
-          "location": "??? ? Orix Rent-a-car Mishima",
-          "transport": "???",
-          "description": "???????????????",
+          "title": "三島站搭計程車前往租車店",
+          "location": "三島站 → Orix Rent-a-car Mishima",
+          "transport": "計程車",
+          "description": "從三島站搭乘計程車前往租車店。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "mishima-station",
@@ -394,10 +394,10 @@ window.TRIP_DATA = {
         {
           "start_time": "09:30",
           "end_time": "10:00",
-          "title": "Orix Rent-a-car Mishima ??",
+          "title": "Orix Rent-a-car Mishima 取車",
           "location": "Orix Rent-a-car Mishima",
-          "transport": "??",
-          "description": "?? 09:30 ?????",
+          "transport": "租車",
+          "description": "完成 09:30 取車手續。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "orix_rentacar_mishima"
@@ -433,7 +433,7 @@ window.TRIP_DATA = {
           "start_time": "12:00",
           "end_time": "12:20",
           "title": "寄放行李、停車",
-          "location": "??? ??",
+          "location": "湯回廊 菊屋",
           "transport": "開車",
           "description": "先到住宿點寄放行李並停車。",
           "related_restaurant_ids": [],
@@ -492,7 +492,7 @@ window.TRIP_DATA = {
           "start_time": "20:00",
           "end_time": null,
           "title": "館內散步與泡湯",
-          "location": "??? ??",
+          "location": "湯回廊 菊屋",
           "transport": "步行",
           "description": "安排貸切風呂、冰棒與牛乳時間。",
           "related_restaurant_ids": [],
@@ -504,7 +504,7 @@ window.TRIP_DATA = {
           "start_time": "22:00",
           "end_time": null,
           "title": "夜鳴拉麵",
-          "location": "??? ??",
+          "location": "湯回廊 菊屋",
           "transport": "步行",
           "description": "回到館內享用夜鳴拉麵。",
           "related_restaurant_ids": [],
@@ -515,19 +515,19 @@ window.TRIP_DATA = {
       ],
       "transportation": [
         {
-          "segment": "??? ? ???",
-          "mode": "??????",
-          "notes": "??????????"
+          "segment": "靜岡站 → 三島站",
+          "mode": "東海道新幹線",
+          "notes": "上午先完成三島移動。"
         },
         {
-          "segment": "??? ? Orix Rent-a-car Mishima",
-          "mode": "???",
-          "notes": "??????????????"
+          "segment": "三島站 → Orix Rent-a-car Mishima",
+          "mode": "計程車",
+          "notes": "從三島站搭計程車前往租車店。"
         },
         {
-          "segment": "Orix Rent-a-car Mishima ? ?????? ? ???",
-          "mode": "??",
-          "notes": "?????????????????"
+          "segment": "Orix Rent-a-car Mishima → 伊豆全景公園 → 修善寺",
+          "mode": "開車",
+          "notes": "以伊豆全景公園與修善寺為主要動線。"
         }
       ],
       "meals": [
@@ -556,8 +556,8 @@ window.TRIP_DATA = {
         "若伊豆全景公園天氣不佳，可縮短停留，提早進修善寺。"
       ],
       "notes": [
-        "??????????????????????????",
-        "????? Orix Rent-a-car Mishima ???????"
+        "這天不再加排太多景點，重點是早點進入修善寺溫泉節奏。",
+        "從三島站到 Orix Rent-a-car Mishima 會搭乘計程車。"
       ]
     },
     {
@@ -565,7 +565,7 @@ window.TRIP_DATA = {
       "weekday": "三",
       "title": "Day 3｜山葵、天城越え與達磨山夕陽",
       "area": "修善寺、伊豆",
-      "accommodation": "??? ??",
+      "accommodation": "湯回廊 菊屋",
       "theme": "筏場水山葵田 → 道之驛天城越え → 修善寺午餐 → 達磨山／西伊豆 Skyline 夕陽",
       "timeline": [
         {
@@ -795,16 +795,16 @@ window.TRIP_DATA = {
       "weekday": "四",
       "title": "Day 4｜修善寺 → 三島還車 → 箱根湯本 → 強羅",
       "area": "修善寺、三島、箱根",
-      "accommodation": "????? ??",
+      "accommodation": "馬洛德飯店 箱根／ホテルマロウド箱根",
       "theme": "修善寺退房 → 三島還車 → 箱根湯本午餐與寄行李 → 登山電車 → 強羅入住",
       "timeline": [
         {
           "start_time": "09:00",
           "end_time": "10:00",
           "title": "前往三島",
-          "location": "修善寺 → 三島",
+          "location": "修善寺 → Orix Rent-a-car Mishima",
           "transport": "開車",
-          "description": "??????????? Orix Rent-a-car Mishima ???",
+          "description": "自修善寺退房後開車前往 Orix Rent-a-car Mishima 還車。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_yukairo_kikuya",
@@ -817,7 +817,7 @@ window.TRIP_DATA = {
           "title": "三島還車",
           "location": "Orix Rent-a-car Mishima",
           "transport": "租車歸還",
-          "description": "?? 10:00 ?????",
+          "description": "完成 10:00 還車手續。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "orix_rentacar_mishima"
@@ -827,7 +827,7 @@ window.TRIP_DATA = {
           "start_time": "10:30",
           "end_time": "11:30",
           "title": "前往箱根湯本",
-          "location": "?? ? ??? ? ????",
+          "location": "三島 → 小田原 → 箱根湯本",
           "transport": "鐵路",
           "description": "由三島轉往箱根湯本。",
           "related_restaurant_ids": [],
@@ -843,7 +843,7 @@ window.TRIP_DATA = {
           "title": "寄送或寄放行李",
           "location": "箱根湯本站",
           "transport": "步行",
-          "description": "???????????? ?????????",
+          "description": "先將行李處理到馬洛德飯店 箱根，或改為寄物。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hakone-yumoto",
@@ -897,9 +897,9 @@ window.TRIP_DATA = {
           "start_time": "15:00",
           "end_time": "17:00",
           "title": "Check-in 與周邊散步",
-          "location": "????? ???????",
+          "location": "馬洛德飯店 箱根、強羅公園",
           "transport": "步行",
-          "description": "???????????????????",
+          "description": "入住後保留強羅公園或飯店周邊散步時間。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_marroad_hakone",
@@ -926,7 +926,7 @@ window.TRIP_DATA = {
           "start_time": null,
           "end_time": null,
           "title": "回飯店休息、泡湯",
-          "location": "????? ??",
+          "location": "馬洛德飯店 箱根",
           "transport": "步行",
           "description": "晚餐後回飯店休息。",
           "related_restaurant_ids": [],
@@ -937,19 +937,19 @@ window.TRIP_DATA = {
       ],
       "transportation": [
         {
-          "segment": "??? ? Orix Rent-a-car Mishima",
-          "mode": "??",
-          "notes": "10/15 ?????????"
+          "segment": "修善寺 → Orix Rent-a-car Mishima",
+          "mode": "開車",
+          "notes": "10/15 是還車，不是取車。"
         },
         {
-          "segment": "?? ? ??? ? ????",
-          "mode": "??",
-          "notes": "???????"
+          "segment": "三島 → 小田原 → 箱根湯本",
+          "mode": "鐵路",
+          "notes": "進入箱根區域。"
         },
         {
-          "segment": "???? ? ??",
-          "mode": "??????",
-          "notes": "???????????"
+          "segment": "箱根湯本 → 強羅",
+          "mode": "箱根登山電車",
+          "notes": "下午前往飯店辦理入住。"
         }
       ],
       "meals": [
@@ -979,8 +979,8 @@ window.TRIP_DATA = {
         "若箱根湯本站寄送行李時間不足，可改寄物或直接帶上強羅。"
       ],
       "notes": [
-        "?????????????",
-        "10/15 ? Orix Rent-a-car Mishima ???????????"
+        "這天不要急著衝箱根大景點。",
+        "10/15 的 Orix Rent-a-car Mishima 行程是還車，不是取車。"
       ]
     },
     {
@@ -988,14 +988,14 @@ window.TRIP_DATA = {
       "weekday": "五",
       "title": "Day 5｜箱根經典環線",
       "area": "箱根",
-      "accommodation": "????? ??",
+      "accommodation": "馬洛德飯店 箱根／ホテルマロウド箱根",
       "theme": "強羅 → 箱根神社 → 蘆之湖海賊船 → 桃源台 → 大涌谷 → 早雲山 → 強羅",
       "timeline": [
         {
           "start_time": "08:15",
           "end_time": null,
           "title": "強羅出發",
-          "location": "????? ??",
+          "location": "馬洛德飯店 箱根",
           "transport": "巴士",
           "description": "由強羅出發前往箱根神社方向。",
           "related_restaurant_ids": [],
@@ -1100,7 +1100,7 @@ window.TRIP_DATA = {
           "start_time": "16:00",
           "end_time": "17:30",
           "title": "回飯店休息",
-          "location": "????? ??",
+          "location": "馬洛德飯店 箱根",
           "transport": "步行",
           "description": "回飯店泡湯、休息。",
           "related_restaurant_ids": [],
@@ -1186,16 +1186,16 @@ window.TRIP_DATA = {
       "weekday": "六",
       "title": "Day 6｜箱根 → 東京",
       "area": "箱根、東京",
-      "accommodation": "DEL style ???? by Daiwa Roynet Hotel",
-      "theme": "????????????????????",
+      "accommodation": "DEL style 池袋東口 by Daiwa Roynet Hotel",
+      "theme": "早上由箱根下山，下午與晚上集中在池袋購物",
       "timeline": [
         {
           "start_time": "08:30",
           "end_time": "09:30",
-          "title": "?????",
-          "location": "????? ??",
-          "transport": "??",
-          "description": "????????",
+          "title": "早餐、退房",
+          "location": "馬洛德飯店 箱根",
+          "transport": "步行",
+          "description": "完成早餐與退房。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_marroad_hakone"
@@ -1204,10 +1204,10 @@ window.TRIP_DATA = {
         {
           "start_time": "09:30",
           "end_time": "10:45",
-          "title": "??????",
-          "location": "?? ? ????",
-          "transport": "????",
-          "description": "?????????????",
+          "title": "前往箱根湯本",
+          "location": "強羅 → 箱根湯本",
+          "transport": "登山電車",
+          "description": "早上直接下山，準備進東京。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "gora",
@@ -1217,10 +1217,10 @@ window.TRIP_DATA = {
         {
           "start_time": "10:45",
           "end_time": "12:30",
-          "title": "????",
-          "location": "???? ? ??? ? ??",
-          "transport": "??",
-          "description": "???????????",
+          "title": "前往池袋",
+          "location": "箱根湯本 → 小田原 → 池袋",
+          "transport": "鐵路",
+          "description": "中午前後抵達東京池袋。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hakone-yumoto",
@@ -1230,10 +1230,10 @@ window.TRIP_DATA = {
         {
           "start_time": "13:00",
           "end_time": "14:00",
-          "title": "????? Check-in",
-          "location": "DEL style ???? by Daiwa Roynet Hotel",
-          "transport": "??",
-          "description": "???????????",
+          "title": "寄放行李或 Check-in",
+          "location": "DEL style 池袋東口 by Daiwa Roynet Hotel",
+          "transport": "步行",
+          "description": "先完成入住或寄放行李。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_del_style_ikebukuro"
@@ -1242,10 +1242,10 @@ window.TRIP_DATA = {
         {
           "start_time": "14:00",
           "end_time": null,
-          "title": "????",
-          "location": "??",
-          "transport": "??",
-          "description": "??????????????????????????",
+          "title": "池袋購物",
+          "location": "池袋",
+          "transport": "步行",
+          "description": "下午與晚上以池袋的電器用品店、藥妝店與百貨周邊為主。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "ikebukuro"
@@ -1254,34 +1254,34 @@ window.TRIP_DATA = {
       ],
       "transportation": [
         {
-          "segment": "?? ? ????",
-          "mode": "????",
-          "notes": "???????"
+          "segment": "強羅 → 箱根湯本",
+          "mode": "登山電車",
+          "notes": "早上直接下山。"
         },
         {
-          "segment": "???? ? ??? ? ??",
-          "mode": "??",
-          "notes": "??????????????????????"
+          "segment": "箱根湯本 → 小田原 → 池袋",
+          "mode": "鐵路",
+          "notes": "目標是中午前後進東京，下午與晚上集中在池袋。"
         }
       ],
       "meals": [
         {
-          "meal_type": "??",
+          "meal_type": "午餐",
           "primary_restaurant_ids": [],
           "backup_restaurant_ids": [],
-          "notes": "????????????????????"
+          "notes": "未提供特定餐廳，依池袋購物動線彈性安排。"
         },
         {
-          "meal_type": "??",
+          "meal_type": "晚餐",
           "primary_restaurant_ids": [],
           "backup_restaurant_ids": [],
-          "notes": "????????????????????"
+          "notes": "未提供特定餐廳，依池袋購物動線彈性安排。"
         }
       ],
       "backup_plan": [],
       "notes": [
-        "10/17 ????????????",
-        "????????????????"
+        "10/17 早上沒有雕刻之森美術館。",
+        "下午與晚上購物主軸改為池袋地區。"
       ]
     },
     {
@@ -1289,16 +1289,16 @@ window.TRIP_DATA = {
       "weekday": "日",
       "title": "Day 7｜東京早上採買 → 成田 16:00 起飛",
       "area": "東京、成田",
-      "accommodation": "DEL style ???? by Daiwa Roynet Hotel????",
-      "theme": "?????????????????? Skyliner ????",
+      "accommodation": "DEL style 池袋東口 by Daiwa Roynet Hotel（退房）",
+      "theme": "早餐、退房、池袋最後購物，經日暮里搭 Skyliner 前往成田",
       "timeline": [
         {
           "start_time": "08:00",
           "end_time": "09:00",
-          "title": "????",
-          "location": "DEL style ???? by Daiwa Roynet Hotel",
-          "transport": "??",
-          "description": "???????",
+          "title": "飯店早餐",
+          "location": "DEL style 池袋東口 by Daiwa Roynet Hotel",
+          "transport": "步行",
+          "description": "在飯店用早餐。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_del_style_ikebukuro"
@@ -1307,10 +1307,10 @@ window.TRIP_DATA = {
         {
           "start_time": "09:00",
           "end_time": "09:30",
-          "title": "??",
-          "location": "DEL style ???? by Daiwa Roynet Hotel",
-          "transport": "??",
-          "description": "????????",
+          "title": "退房",
+          "location": "DEL style 池袋東口 by Daiwa Roynet Hotel",
+          "transport": "步行",
+          "description": "吃飽後完成退房。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_del_style_ikebukuro"
@@ -1319,10 +1319,10 @@ window.TRIP_DATA = {
         {
           "start_time": "09:30",
           "end_time": "10:30",
-          "title": "??????",
-          "location": "???mont-bell ?????",
-          "transport": "??",
-          "description": "??????????????",
+          "title": "池袋最後購物",
+          "location": "池袋、mont-bell 東武池袋店",
+          "transport": "步行",
+          "description": "早上以池袋戶外用品採買為主。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "ikebukuro",
@@ -1332,10 +1332,10 @@ window.TRIP_DATA = {
         {
           "start_time": "10:30",
           "end_time": "11:00",
-          "title": "?????",
-          "location": "???",
-          "transport": "??",
-          "description": "???????????",
+          "title": "前往池袋站",
+          "location": "池袋站",
+          "transport": "步行",
+          "description": "整理行李後前往池袋站。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "ikebukuro_station"
@@ -1344,10 +1344,10 @@ window.TRIP_DATA = {
         {
           "start_time": "11:00",
           "end_time": "11:20",
-          "title": "JR ????????",
-          "location": "??? ? ????",
-          "transport": "JR ???",
-          "description": "??????? JR ????? 5 ??????",
+          "title": "JR 山手線前往日暮里",
+          "location": "池袋站 → 日暮里站",
+          "transport": "JR 山手線",
+          "description": "往上野方向搭乘 JR 山手線，約 5 站到日暮里。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "ikebukuro_station",
@@ -1357,10 +1357,10 @@ window.TRIP_DATA = {
         {
           "start_time": "11:20",
           "end_time": "12:00",
-          "title": "Skyliner ??????",
-          "location": "???? ? ????",
+          "title": "Skyliner 前往成田機場",
+          "location": "日暮里站 → 成田機場",
           "transport": "Skyliner",
-          "description": "??????? Skyliner ???????",
+          "description": "在日暮里站轉乘 Skyliner 前往成田機場。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "nippori_station",
@@ -1370,10 +1370,10 @@ window.TRIP_DATA = {
         {
           "start_time": "13:00",
           "end_time": "15:00",
-          "title": "???????????",
-          "location": "????",
-          "transport": "??",
-          "description": "????????????",
+          "title": "報到、托運、安檢、出境",
+          "location": "成田機場",
+          "transport": "步行",
+          "description": "完成登機前所有必要流程。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "narita_airport"
@@ -1382,10 +1382,10 @@ window.TRIP_DATA = {
         {
           "start_time": "16:00",
           "end_time": null,
-          "title": "????",
-          "location": "????",
-          "transport": "??",
-          "description": "?????",
+          "title": "成田起飛",
+          "location": "成田機場",
+          "transport": "航班",
+          "description": "完成返程。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "narita_airport"
@@ -1394,34 +1394,34 @@ window.TRIP_DATA = {
       ],
       "transportation": [
         {
-          "segment": "??? ? ????",
-          "mode": "JR ???",
-          "notes": "???????? 5 ??"
+          "segment": "池袋站 → 日暮里站",
+          "mode": "JR 山手線",
+          "notes": "往上野方向搭乘約 5 站。"
         },
         {
-          "segment": "???? ? ????",
+          "segment": "日暮里站 → 成田機場",
           "mode": "Skyliner",
-          "notes": "?????? Skyliner ???????"
+          "notes": "在日暮里轉乘 Skyliner 前往成田機場。"
         }
       ],
       "meals": [
         {
-          "meal_type": "??",
+          "meal_type": "早餐",
           "primary_restaurant_ids": [],
           "backup_restaurant_ids": [],
-          "notes": "????????????"
+          "notes": "於飯店內或飯店周邊安排。"
         },
         {
-          "meal_type": "??",
+          "meal_type": "午餐",
           "primary_restaurant_ids": [],
           "backup_restaurant_ids": [],
-          "notes": "???????????????????"
+          "notes": "以機場報到時間為優先，不安排排隊餐廳。"
         }
       ],
       "backup_plan": [],
       "notes": [
-        "16:00 ????? 13:00 ?????????",
-        "?????????? JR ??????????? Skyliner?"
+        "16:00 起飛，建議 13:00 左右抵達成田機場。",
+        "購物結束後由池袋站搭 JR 山手線前往日暮里，再轉 Skyliner。"
       ]
     }
   ],
@@ -1429,78 +1429,78 @@ window.TRIP_DATA = {
     {
       "id": "restaurant_nikuwarai_showacho_honten",
       "date": "2026-10-11",
-      "area": "??",
-      "meal_type": "??",
+      "area": "靜岡",
+      "meal_type": "晚餐",
       "priority": 1,
-      "name": "?? ????? ?????",
-      "japanese_name": "?? ????? ?????",
+      "name": "焼肉 にくわらい 昭和町本店",
+      "japanese_name": "焼肉 にくわらい 昭和町本店",
       "google_maps_url": "https://maps.app.goo.gl/z29fNgVnM4XYNWws6",
-      "notes": "10/11 ???????",
+      "notes": "10/11 晚餐第一順位。",
       "lat": null,
       "lng": null
     },
     {
       "id": "restaurant_umibouzu_main_store",
       "date": "2026-10-11",
-      "area": "??",
-      "meal_type": "??",
+      "area": "靜岡",
+      "meal_type": "消夜",
       "priority": 1,
       "name": "UMIBOUZU Main Store",
-      "japanese_name": "???? ??",
+      "japanese_name": "海ぼうず 本店",
       "google_maps_url": "https://maps.app.goo.gl/2pAQmzWMzgMN4Hou8",
-      "notes": "10/11 ???????",
+      "notes": "10/11 消夜第一順位。",
       "lat": null,
       "lng": null
     },
     {
       "id": "restaurant_nanaya_shizuoka",
       "date": "2026-10-12",
-      "area": "??",
-      "meal_type": "????",
+      "area": "靜岡",
+      "meal_type": "下午甜點",
       "priority": 1,
       "name": "Nanaya Shizuoka",
-      "japanese_name": "??? ???",
+      "japanese_name": "ななや 静岡店",
       "google_maps_url": "https://maps.app.goo.gl/r565wg1Z7fDZMJeGA",
-      "notes": "10/12 ?????????",
+      "notes": "10/12 下午甜點第一順位。",
       "lat": null,
       "lng": null
     },
     {
       "id": "restaurant_gyoza_kenkyujo_asty",
       "date": "2026-10-12",
-      "area": "??",
-      "meal_type": "??",
+      "area": "靜岡",
+      "meal_type": "晚餐",
       "priority": 1,
-      "name": "????? ?????",
-      "japanese_name": "????? ?????",
+      "name": "餃子研究所 アスティ店",
+      "japanese_name": "餃子研究所 アスティ店",
       "google_maps_url": "https://maps.app.goo.gl/H3TY5ChE3CRhPWNr5",
-      "notes": "10/12 ???????",
+      "notes": "10/12 晚餐第一順位。",
       "lat": null,
       "lng": null
     },
     {
       "id": "restaurant_shimizuko_minami",
       "date": "2026-10-12",
-      "area": "??",
-      "meal_type": "??",
+      "area": "清水",
+      "meal_type": "午餐",
       "priority": 1,
       "name": "Shimizuko Minami",
-      "japanese_name": "??????",
+      "japanese_name": "清水港みなみ",
       "google_maps_url": "https://maps.app.goo.gl/mZuLNEQMCNA3NLTx5",
-      "notes": "10/12 ???????",
+      "notes": "10/12 午餐第一順位。",
       "lat": null,
       "lng": null
     },
     {
       "id": "restaurant_numazu_uogashi_zushi_premium_shizuoka",
       "date": "2026-10-12",
-      "area": "??",
-      "meal_type": "??",
+      "area": "靜岡",
+      "meal_type": "晚餐",
       "priority": 2,
-      "name": "?????? ?????????",
-      "japanese_name": "?????? ?????????",
+      "name": "沼津魚がし鮨 プレミアム静岡本店",
+      "japanese_name": "沼津魚がし鮨 プレミアム静岡本店",
       "google_maps_url": "https://maps.app.goo.gl/XVg1NBDCApNYzqcGA",
-      "notes": "10/12 ???????????? Shimizuko Minami ????",
+      "notes": "10/12 晚餐備案；僅在午餐沒吃到 Shimizuko Minami 時考慮。",
       "lat": null,
       "lng": null
     },
@@ -1782,13 +1782,13 @@ window.TRIP_DATA = {
     },
     {
       "id": "narita_airport",
-      "name": "????",
-      "area": "??",
-      "category": "??",
+      "name": "成田機場",
+      "area": "成田",
+      "category": "交通",
       "google_maps_url": null,
       "lat": null,
       "lng": null,
-      "notes": "????????"
+      "notes": "入境與返程機場。"
     },
     {
       "id": "tokyo-station",
@@ -1902,13 +1902,13 @@ window.TRIP_DATA = {
     },
     {
       "id": "s_pulse_dream_plaza",
-      "name": "????????????",
-      "area": "??",
-      "category": "??",
+      "name": "エスパルスドリームプラザ",
+      "area": "清水",
+      "category": "購物",
       "google_maps_url": "https://maps.app.goo.gl/Ebd7egUc4Mu83gce6",
       "lat": null,
       "lng": null,
-      "notes": "10/12 ?????????????"
+      "notes": "10/12 找胖胖豬與購買靜岡伴手禮。"
     },
     {
       "id": "mishima-station",
@@ -1952,13 +1952,13 @@ window.TRIP_DATA = {
     },
     {
       "id": "hotel_yukairo_kikuya",
-      "name": "??? ??",
-      "area": "???",
-      "category": "??",
+      "name": "湯回廊 菊屋",
+      "area": "修善寺",
+      "category": "住宿",
       "google_maps_url": "https://maps.app.goo.gl/scKCqpC5T8hkTLbc6",
       "lat": null,
       "lng": null,
-      "notes": "10/13-10/14 ???"
+      "notes": "10/13-10/14 住宿。"
     },
     {
       "id": "shuzenji-temple",
@@ -2162,13 +2162,13 @@ window.TRIP_DATA = {
     },
     {
       "id": "nippori_station",
-      "name": "????",
-      "area": "??",
-      "category": "??",
+      "name": "日暮里站",
+      "area": "東京",
+      "category": "交通",
       "google_maps_url": null,
       "lat": null,
       "lng": null,
-      "notes": "10/18 ?? Skyliner ???????"
+      "notes": "10/18 轉乘 Skyliner 前往成田機場。"
     },
     {
       "id": "restaurant-sugiya",
@@ -2352,163 +2352,163 @@ window.TRIP_DATA = {
     },
     {
       "id": "hotel_garden_square_shizuoka",
-      "name": "Hotel Garden Square Shizuoka",
-      "area": "??",
-      "category": "??",
+      "name": "Hotel Garden Square Shizuoka／ホテルガーデンスクエア静岡",
+      "area": "靜岡",
+      "category": "住宿",
       "google_maps_url": "https://maps.app.goo.gl/PQMPaSQnzaywcGa88",
       "lat": null,
       "lng": null,
-      "notes": "10/11-10/12 ???"
+      "notes": "10/11-10/12 住宿。"
     },
     {
       "id": "hotel_marroad_hakone",
-      "name": "????? ??",
-      "area": "??",
-      "category": "??",
+      "name": "馬洛德飯店 箱根／ホテルマロウド箱根",
+      "area": "箱根",
+      "category": "住宿",
       "google_maps_url": "https://maps.app.goo.gl/se1iuZo7QjSA1s3h8",
       "lat": null,
       "lng": null,
-      "notes": "10/15-10/16 ???"
+      "notes": "10/15-10/16 住宿。"
     },
     {
       "id": "hotel_del_style_ikebukuro",
-      "name": "DEL style ???? by Daiwa Roynet Hotel",
-      "area": "??",
-      "category": "??",
+      "name": "DEL style 池袋東口 by Daiwa Roynet Hotel",
+      "area": "東京",
+      "category": "住宿",
       "google_maps_url": "https://maps.app.goo.gl/qBkqL7LzmiPgWSYH8",
       "lat": null,
       "lng": null,
-      "notes": "10/17 ???"
+      "notes": "10/17 住宿。"
     },
     {
       "id": "cenova_shizuoka",
-      "name": "??? CENOVA",
-      "area": "??",
-      "category": "??",
+      "name": "新靜岡 CENOVA",
+      "area": "靜岡",
+      "category": "購物",
       "google_maps_url": "https://maps.app.goo.gl/1XePnSVsLx9BTXjU8",
       "lat": null,
       "lng": null,
-      "notes": "10/11 ?????????"
+      "notes": "10/11 晚餐後採買與扳蛋。"
     },
     {
       "id": "shizuoka_sengen_jinja",
-      "name": "??????",
-      "area": "??",
-      "category": "??",
+      "name": "靜岡淺間神社",
+      "area": "靜岡",
+      "category": "景點",
       "google_maps_url": "https://maps.app.goo.gl/ymWkrhY2H4zaTx8XA",
       "lat": null,
       "lng": null,
-      "notes": "10/12 ?????"
+      "notes": "10/12 上午行程。"
     },
     {
       "id": "shizuoka_parco",
-      "name": "?? PARCO",
-      "area": "??",
-      "category": "??",
+      "name": "靜岡 PARCO",
+      "area": "靜岡",
+      "category": "購物",
       "google_maps_url": "https://maps.app.goo.gl/HkQuTHU3ifmnWDQC6",
       "lat": null,
       "lng": null,
-      "notes": "10/12 ?????"
+      "notes": "10/12 働晚購物。"
     },
     {
       "id": "orix_rentacar_mishima",
-      "name": "Orix Rent-a-car Mishima",
-      "area": "??",
-      "category": "??",
+      "name": "Orix Rent-a-car Mishima／オリックスレンタカー 三島店",
+      "area": "三島",
+      "category": "交通",
       "google_maps_url": "https://maps.app.goo.gl/hS1R23ZiAXDv3D9y5",
       "lat": null,
       "lng": null,
-      "notes": "10/13 ??? 10/15 ?????"
+      "notes": "10/13 取車與 10/15 還車地點。"
     },
     {
       "id": "ikebukuro",
-      "name": "??",
-      "area": "??",
-      "category": "??",
+      "name": "池袋",
+      "area": "東京",
+      "category": "區域",
       "google_maps_url": null,
       "lat": null,
       "lng": null,
-      "notes": "10/17-10/18 ?????????"
+      "notes": "10/17-10/18 東京購物主軸區域。"
     },
     {
       "id": "ikebukuro_station",
-      "name": "???",
-      "area": "??",
-      "category": "??",
+      "name": "池袋站",
+      "area": "東京",
+      "category": "交通",
       "google_maps_url": null,
       "lat": null,
       "lng": null,
-      "notes": "10/18 ????????????"
+      "notes": "10/18 前往日暮里前的交通節點。"
     },
     {
       "id": "montbell_tobu_ikebukuro",
-      "name": "mont-bell ?????",
-      "area": "??",
-      "category": "??",
+      "name": "mont-bell 東武池袋店",
+      "area": "池袋",
+      "category": "購物",
       "google_maps_url": "https://maps.app.goo.gl/f7Pg6bwAmBRo2bSn8",
       "lat": null,
       "lng": null,
-      "notes": "10/18 ?????????"
+      "notes": "10/18 早上戶外用品購物。"
     },
     {
       "id": "restaurant_nikuwarai_showacho_honten",
-      "name": "?? ????? ?????",
-      "area": "??",
-      "category": "??",
+      "name": "焼肉 にくわらい 昭和町本店",
+      "area": "靜岡",
+      "category": "餐廳",
       "google_maps_url": "https://maps.app.goo.gl/z29fNgVnM4XYNWws6",
       "lat": null,
       "lng": null,
-      "notes": "10/11 ???????"
+      "notes": "10/11 晚餐第一順位。"
     },
     {
       "id": "restaurant_umibouzu_main_store",
-      "name": "UMIBOUZU Main Store",
-      "area": "??",
-      "category": "??",
+      "name": "UMIBOUZU Main Store／海ぼうず 本店",
+      "area": "靜岡",
+      "category": "餐廳",
       "google_maps_url": "https://maps.app.goo.gl/2pAQmzWMzgMN4Hou8",
       "lat": null,
       "lng": null,
-      "notes": "10/11 ???????"
+      "notes": "10/11 消夜第一順位。"
     },
     {
       "id": "restaurant_shimizuko_minami",
-      "name": "Shimizuko Minami",
-      "area": "??",
-      "category": "??",
+      "name": "Shimizuko Minami／清水港みなみ",
+      "area": "清水",
+      "category": "餐廳",
       "google_maps_url": "https://maps.app.goo.gl/mZuLNEQMCNA3NLTx5",
       "lat": null,
       "lng": null,
-      "notes": "10/12 ???????"
+      "notes": "10/12 午餐第一順位。"
     },
     {
       "id": "restaurant_nanaya_shizuoka",
-      "name": "Nanaya Shizuoka",
-      "area": "??",
-      "category": "??",
+      "name": "Nanaya Shizuoka／ななや 静岡店",
+      "area": "靜岡",
+      "category": "餐廳",
       "google_maps_url": "https://maps.app.goo.gl/r565wg1Z7fDZMJeGA",
       "lat": null,
       "lng": null,
-      "notes": "10/12 ?????????"
+      "notes": "10/12 下午甜點第一順位。"
     },
     {
       "id": "restaurant_gyoza_kenkyujo_asty",
-      "name": "????? ?????",
-      "area": "??",
-      "category": "??",
+      "name": "餃子研究所 アスティ店",
+      "area": "靜岡",
+      "category": "餐廳",
       "google_maps_url": "https://maps.app.goo.gl/H3TY5ChE3CRhPWNr5",
       "lat": null,
       "lng": null,
-      "notes": "10/12 ???????"
+      "notes": "10/12 晚餐第一順位。"
     },
     {
       "id": "restaurant_numazu_uogashi_zushi_premium_shizuoka",
-      "name": "?????? ?????????",
-      "area": "??",
-      "category": "??",
+      "name": "沼津魚がし鮨 プレミアム静岡本店",
+      "area": "靜岡",
+      "category": "餐廳",
       "google_maps_url": "https://maps.app.goo.gl/XVg1NBDCApNYzqcGA",
       "lat": null,
       "lng": null,
-      "notes": "10/12 ???????????? Shimizuko Minami ????"
+      "notes": "10/12 晚餐備案；僅在午餐沒吃到 Shimizuko Minami 時考慮。"
     }
   ]
 };
