@@ -1,0 +1,1152 @@
+project:
+  name: "japan-trip-2026"
+  language: "zh-Hant"
+  start_date: "2026-10-11"
+  end_date: "2026-10-18"
+  route_focus:
+    - "靜岡"
+    - "修善寺"
+    - "箱根"
+    - "東京"
+  version: 4
+  status: "draft"
+itinerary:
+  - 
+    date: "2026-10-11"
+    weekday: "日"
+    title: "Day 0｜成田抵達 → 靜岡住宿"
+    area: "成田、東京、靜岡"
+    accommodation: "Hotel Garden Square Shizuoka"
+    theme: "????????????????????????"
+    timeline:
+      - 
+        start_time: "14:00"
+        end_time: null
+        title: "??????"
+        location: "????"
+        transport: null
+        description: "????????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "narita_airport"
+      - 
+        start_time: "14:00"
+        end_time: "15:30"
+        title: "???????????"
+        location: "????"
+        transport: "??"
+        description: "????????????????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "narita_airport"
+      - 
+        start_time: "15:30"
+        end_time: "16:30"
+        title: "?????????"
+        location: "???? ? ???????"
+        transport: "N'EX ????"
+        description: "????????????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "narita_airport"
+          - "tokyo-station"
+          - "shinagawa-station"
+      - 
+        start_time: "16:30"
+        end_time: "18:00"
+        title: "????"
+        location: "??????? ? ???"
+        transport: "??????"
+        description: "????????????????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "tokyo-station"
+          - "shinagawa-station"
+          - "shizuoka-station"
+      - 
+        start_time: "18:00"
+        end_time: "18:30"
+        title: "?? Check-in"
+        location: "Hotel Garden Square Shizuoka"
+        transport: "??????"
+        description: "??????????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_garden_square_shizuoka"
+      - 
+        start_time: "19:00"
+        end_time: "20:30"
+        title: "??"
+        location: "?? ????? ?????"
+        transport: "??????"
+        description: "?????????? ????? ??????"
+        related_restaurant_ids:
+          - "restaurant_nikuwarai_showacho_honten"
+        related_place_ids:
+          - "restaurant_nikuwarai_showacho_honten"
+      - 
+        start_time: "20:30"
+        end_time: "21:15"
+        title: "?????"
+        location: "??? CENOVA"
+        transport: "??"
+        description: "????? CENOVA ?????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "cenova_shizuoka"
+      - 
+        start_time: "21:30"
+        end_time: null
+        title: "??"
+        location: "UMIBOUZU Main Store"
+        transport: "??"
+        description: "?????????? UMIBOUZU Main Store ?????"
+        related_restaurant_ids:
+          - "restaurant_umibouzu_main_store"
+        related_place_ids:
+          - "restaurant_umibouzu_main_store"
+    transportation:
+      - 
+        segment: "???? ? ???????"
+        mode: "N'EX ????"
+        notes: "??????????"
+      - 
+        segment: "??????? ? ???"
+        mode: "??????"
+        notes: "????? Hotel Garden Square Shizuoka?"
+      - 
+        segment: "???????"
+        mode: "??????"
+        notes: "10/11-10/12 ????????????????"
+    meals:
+      - 
+        meal_type: "??"
+        primary_restaurant_ids:
+          - "restaurant_nikuwarai_showacho_honten"
+        backup_restaurant_ids: []
+        notes: "?????"
+      - 
+        meal_type: "??"
+        primary_restaurant_ids:
+          - "restaurant_umibouzu_main_store"
+        backup_restaurant_ids: []
+        notes: "???????????"
+    backup_plan: []
+    notes:
+      - "??????????????????????"
+      - "10/11-10/12 ??????????????"
+  - 
+    date: "2026-10-12"
+    weekday: "一"
+    title: "Day 1｜靜岡完整一天"
+    area: "靜岡"
+    accommodation: "Hotel Garden Square Shizuoka"
+    theme: "??????????????????????????"
+    timeline:
+      - 
+        start_time: "08:30"
+        end_time: "09:15"
+        title: "??"
+        location: "Hotel Garden Square Shizuoka ??"
+        transport: "??"
+        description: "???????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_garden_square_shizuoka"
+      - 
+        start_time: "09:30"
+        end_time: "10:10"
+        title: "??????"
+        location: "??????"
+        transport: "??????"
+        description: "????????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "shizuoka_sengen_jinja"
+      - 
+        start_time: "10:20"
+        end_time: "11:00"
+        title: "???????"
+        location: "?????"
+        transport: "??"
+        description: "?????????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "sunpu-castle-park"
+      - 
+        start_time: "11:15"
+        end_time: "12:00"
+        title: "?????"
+        location: "???"
+        transport: "??????"
+        description: "??????????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "nihondaira"
+      - 
+        start_time: "12:30"
+        end_time: "13:30"
+        title: "??"
+        location: "Shimizuko Minami"
+        transport: "??????"
+        description: "???????? Shimizuko Minami?"
+        related_restaurant_ids:
+          - "restaurant_shimizuko_minami"
+        related_place_ids:
+          - "restaurant_shimizuko_minami"
+      - 
+        start_time: "13:30"
+        end_time: "15:00"
+        title: "????????"
+        location: "????????????????????"
+        transport: "??"
+        description: "?????????????? Dream Plaza ?????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "shimizu-port"
+          - "shimizu-fish-market"
+          - "s_pulse_dream_plaza"
+      - 
+        start_time: "15:15"
+        end_time: "16:00"
+        title: "????"
+        location: "????"
+        transport: "??????"
+        description: "????????????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "miho-no-matsubara"
+      - 
+        start_time: "16:30"
+        end_time: "17:00"
+        title: "????"
+        location: "Nanaya Shizuoka"
+        transport: "?????"
+        description: "?????????????"
+        related_restaurant_ids:
+          - "restaurant_nanaya_shizuoka"
+        related_place_ids:
+          - "restaurant_nanaya_shizuoka"
+      - 
+        start_time: "17:15"
+        end_time: "18:00"
+        title: "?? PARCO"
+        location: "?? PARCO"
+        transport: "??"
+        description: "???? PARCO ? Village Vanguard ?????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "shizuoka_parco"
+      - 
+        start_time: "18:30"
+        end_time: "19:30"
+        title: "??"
+        location: "????? ?????"
+        transport: "??"
+        description: "???????????? ???????????????????????????????"
+        related_restaurant_ids:
+          - "restaurant_gyoza_kenkyujo_asty"
+          - "restaurant_numazu_uogashi_zushi_premium_shizuoka"
+        related_place_ids:
+          - "restaurant_gyoza_kenkyujo_asty"
+          - "restaurant_numazu_uogashi_zushi_premium_shizuoka"
+    transportation:
+      - 
+        segment: "????? ? ?????????"
+        mode: "JR??????????"
+        notes: "10/11-10/12 ??????????????"
+    meals:
+      - 
+        meal_type: "??"
+        primary_restaurant_ids: []
+        backup_restaurant_ids: []
+        notes: "??????????"
+      - 
+        meal_type: "??"
+        primary_restaurant_ids:
+          - "restaurant_shimizuko_minami"
+        backup_restaurant_ids: []
+        notes: "??????????"
+      - 
+        meal_type: "????"
+        primary_restaurant_ids:
+          - "restaurant_nanaya_shizuoka"
+        backup_restaurant_ids: []
+        notes: "???????????"
+      - 
+        meal_type: "??"
+        primary_restaurant_ids:
+          - "restaurant_gyoza_kenkyujo_asty"
+        backup_restaurant_ids:
+          - "restaurant_numazu_uogashi_zushi_premium_shizuoka"
+        notes: "???????? Shimizuko Minami ??????????????"
+    backup_plan:
+      - "?????? Shimizuko Minami?????????????? ??????????"
+    notes:
+      - "10/11-10/12 ??????????????"
+      - "??????????????? Dream Plaza??? PARCO ? CENOVA ???????"
+  - 
+    date: "2026-10-13"
+    weekday: "二"
+    title: "Day 2｜晨光富士與修善寺古鎮慢遊"
+    area: "靜岡、三島、伊豆、修善寺"
+    accommodation: "??? ??"
+    theme: "靜岡 → 三島取車 → 伊豆全景公園 → 修善寺午餐 → 修善寺溫泉街 → 菊屋泡湯"
+    timeline:
+      - 
+        start_time: "08:30"
+        end_time: "08:52"
+        title: "靜岡前往三島"
+        location: "靜岡站 → 三島站"
+        transport: "東海道新幹線"
+        description: "從靜岡前往三島，銜接租車。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "shizuoka-station"
+          - "mishima-station"
+      - 
+        start_time: "09:00"
+        end_time: "09:20"
+        title: "????????????"
+        location: "??? ? Orix Rent-a-car Mishima"
+        transport: "???"
+        description: "???????????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "mishima-station"
+          - "orix_rentacar_mishima"
+      - 
+        start_time: "09:30"
+        end_time: "10:00"
+        title: "Orix Rent-a-car Mishima ??"
+        location: "Orix Rent-a-car Mishima"
+        transport: "??"
+        description: "?? 09:30 ?????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "orix_rentacar_mishima"
+      - 
+        start_time: "10:00"
+        end_time: "11:30"
+        title: "伊豆全景公園與碧露台"
+        location: "伊豆全景公園、碧露台 Ao Terrace"
+        transport: "步行"
+        description: "安排富士山與駿河灣景觀。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "izu-panorama-park"
+          - "ao-terrace"
+      - 
+        start_time: "11:30"
+        end_time: "12:00"
+        title: "前往修善寺溫泉街"
+        location: "伊豆全景公園 → 修善寺溫泉街"
+        transport: "開車"
+        description: "由景觀點轉入修善寺溫泉區。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "izu-panorama-park"
+          - "shuzenji-onsen"
+      - 
+        start_time: "12:00"
+        end_time: "12:20"
+        title: "寄放行李、停車"
+        location: "??? ??"
+        transport: "開車"
+        description: "先到住宿點寄放行李並停車。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_yukairo_kikuya"
+      - 
+        start_time: "12:30"
+        end_time: "14:00"
+        title: "午餐"
+        location: "修善寺"
+        transport: "步行"
+        description: "午餐第一順位為 Sugiya すぎ屋，備案為 Zempuuteinanaban 禅風亭 なゝ番。"
+        related_restaurant_ids:
+          - "restaurant-sugiya"
+          - "restaurant-zenpuutei-nanaban"
+        related_place_ids:
+          - "restaurant-sugiya"
+          - "restaurant-zenpuutei-nanaban"
+      - 
+        start_time: "14:00"
+        end_time: "17:00"
+        title: "修善寺慢遊"
+        location: "修善寺溫泉街"
+        transport: "步行"
+        description: "沿修禪寺、竹林小徑、桂川與溫泉街散步。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "shuzenji-temple"
+          - "bamboo-forest-path"
+          - "katsura-river"
+          - "shuzenji-onsen"
+      - 
+        start_time: "17:30"
+        end_time: "18:30"
+        title: "晚餐"
+        location: "修善寺"
+        transport: "步行"
+        description: "晚餐第一順位為 Amago Chaya あまご茶屋 修善寺温泉店，備案為 Nagomu Sushi。"
+        related_restaurant_ids:
+          - "restaurant-amago-chaya"
+          - "restaurant-nagomu-sushi"
+        related_place_ids:
+          - "restaurant-amago-chaya"
+          - "restaurant-nagomu-sushi"
+      - 
+        start_time: "20:00"
+        end_time: null
+        title: "館內散步與泡湯"
+        location: "??? ??"
+        transport: "步行"
+        description: "安排貸切風呂、冰棒與牛乳時間。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_yukairo_kikuya"
+      - 
+        start_time: "22:00"
+        end_time: null
+        title: "夜鳴拉麵"
+        location: "??? ??"
+        transport: "步行"
+        description: "回到館內享用夜鳴拉麵。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_yukairo_kikuya"
+    transportation:
+      - 
+        segment: "??? ? ???"
+        mode: "??????"
+        notes: "??????????"
+      - 
+        segment: "??? ? Orix Rent-a-car Mishima"
+        mode: "???"
+        notes: "??????????????"
+      - 
+        segment: "Orix Rent-a-car Mishima ? ?????? ? ???"
+        mode: "??"
+        notes: "?????????????????"
+    meals:
+      - 
+        meal_type: "午餐"
+        primary_restaurant_ids:
+          - "restaurant-sugiya"
+        backup_restaurant_ids:
+          - "restaurant-zenpuutei-nanaban"
+        notes: "修善寺午餐。"
+      - 
+        meal_type: "晚餐"
+        primary_restaurant_ids:
+          - "restaurant-amago-chaya"
+        backup_restaurant_ids:
+          - "restaurant-nagomu-sushi"
+        notes: "修善寺晚餐。"
+    backup_plan:
+      - "若伊豆全景公園天氣不佳，可縮短停留，提早進修善寺。"
+    notes:
+      - "??????????????????????????"
+      - "????? Orix Rent-a-car Mishima ???????"
+  - 
+    date: "2026-10-14"
+    weekday: "三"
+    title: "Day 3｜山葵、天城越え與達磨山夕陽"
+    area: "修善寺、伊豆"
+    accommodation: "??? ??"
+    theme: "筏場水山葵田 → 道之驛天城越え → 修善寺午餐 → 達磨山／西伊豆 Skyline 夕陽"
+    timeline:
+      - 
+        start_time: "09:00"
+        end_time: "09:30"
+        title: "早餐後出發"
+        location: "湯回廊 菊屋"
+        transport: "開車"
+        description: "用完早餐後從住宿出發。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_yukairo_kikuya"
+      - 
+        start_time: "09:30"
+        end_time: "10:10"
+        title: "前往筏場水山葵田"
+        location: "修善寺溫泉街 → 筏場水山葵田"
+        transport: "開車"
+        description: "前往山葵田區域。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "shuzenji-onsen"
+          - "ikadaba-wasabi-fields"
+      - 
+        start_time: "10:10"
+        end_time: "11:00"
+        title: "筏場水山葵田散步"
+        location: "筏場水山葵田"
+        transport: "步行"
+        description: "以道路旁觀賞與拍照為主，不進入私人田區。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "ikadaba-wasabi-fields"
+      - 
+        start_time: "11:00"
+        end_time: "11:20"
+        title: "前往道之驛 天城越え"
+        location: "筏場水山葵田 → 道之驛 天城越え"
+        transport: "開車"
+        description: "移動至休息站補給。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "ikadaba-wasabi-fields"
+          - "michi-no-eki-amagigoe"
+      - 
+        start_time: "11:20"
+        end_time: "12:10"
+        title: "伴手禮與短暫休息"
+        location: "道之驛 天城越え"
+        transport: "步行"
+        description: "安排山葵伴手禮、山葵霜淇淋與休息時間。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "michi-no-eki-amagigoe"
+      - 
+        start_time: "12:10"
+        end_time: "12:40"
+        title: "返回修善寺"
+        location: "道之驛 天城越え → 修善寺溫泉街"
+        transport: "開車"
+        description: "返回修善寺用午餐。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "shuzenji-onsen"
+      - 
+        start_time: "12:40"
+        end_time: "14:00"
+        title: "午餐"
+        location: "修善寺"
+        transport: "步行"
+        description: "午餐第一順位為 独鈷そば大戸，備案為 修善寺 no 洋食屋。"
+        related_restaurant_ids:
+          - "restaurant-tokko-soba-oto"
+          - "restaurant-shuzenji-no-yoshokuya"
+        related_place_ids:
+          - "restaurant-tokko-soba-oto"
+          - "restaurant-shuzenji-no-yoshokuya"
+      - 
+        start_time: "14:00"
+        end_time: "15:00"
+        title: "回菊屋休息與補逛"
+        location: "湯回廊 菊屋、修善寺溫泉街"
+        transport: "步行"
+        description: "回飯店休息，或在溫泉街補逛。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_yukairo_kikuya"
+          - "shuzenji-onsen"
+      - 
+        start_time: "15:00"
+        end_time: "15:30"
+        title: "前往達磨山 Rest House"
+        location: "修善寺溫泉街 → 達磨山 Rest House"
+        transport: "開車"
+        description: "下午移動至夕陽觀景點。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "shuzenji-onsen"
+          - "darumayama-rest-house"
+      - 
+        start_time: "15:30"
+        end_time: "16:30"
+        title: "達磨山展望"
+        location: "達磨山 Rest House"
+        transport: "步行"
+        description: "觀賞富士山、駿河灣與西伊豆山稜景觀。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "darumayama-rest-house"
+      - 
+        start_time: "16:30"
+        end_time: "17:10"
+        title: "西伊豆 Skyline 夕陽"
+        location: "西伊豆 Skyline"
+        transport: "開車＋短距離步行"
+        description: "視天氣找安全展望點看夕陽。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "nishi-izu-skyline"
+      - 
+        start_time: "17:10"
+        end_time: "17:50"
+        title: "返回修善寺"
+        location: "西伊豆 Skyline → 修善寺"
+        transport: "開車"
+        description: "在天色完全變暗前回到修善寺。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "shuzenji-onsen"
+      - 
+        start_time: "18:30"
+        end_time: null
+        title: "晚餐"
+        location: "修善寺"
+        transport: "步行"
+        description: "晚餐第一順位為 まめや，備案為 山葵うなぎ 辻むら。"
+        related_restaurant_ids:
+          - "restaurant-mameya"
+          - "restaurant-tsujimura"
+        related_place_ids:
+          - "restaurant-mameya"
+          - "restaurant-tsujimura"
+      - 
+        start_time: null
+        end_time: null
+        title: "泡湯與休息"
+        location: "湯回廊 菊屋"
+        transport: "步行"
+        description: "回館內泡湯、休息。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_yukairo_kikuya"
+    transportation:
+      - 
+        segment: "修善寺 → 筏場水山葵田 → 道之驛 天城越え → 修善寺"
+        mode: "開車"
+        notes: "上午與中午以山路移動為主。"
+      - 
+        segment: "修善寺 → 達磨山／西伊豆 Skyline → 修善寺"
+        mode: "開車"
+        notes: "以夕陽動線為主。"
+    meals:
+      - 
+        meal_type: "午餐"
+        primary_restaurant_ids:
+          - "restaurant-tokko-soba-oto"
+        backup_restaurant_ids:
+          - "restaurant-shuzenji-no-yoshokuya"
+        notes: "修善寺午餐。"
+      - 
+        meal_type: "晚餐"
+        primary_restaurant_ids:
+          - "restaurant-mameya"
+        backup_restaurant_ids:
+          - "restaurant-tsujimura"
+        notes: "修善寺晚餐。"
+    backup_plan:
+      - "若天氣差或起霧，達磨山／西伊豆 Skyline 可取消，改成修善寺溫泉街慢遊與早點泡湯。"
+    notes:
+      - "夕陽安排以達磨山／西伊豆 Skyline 為主，避免夜間長距離山路回修善寺。"
+  - 
+    date: "2026-10-15"
+    weekday: "四"
+    title: "Day 4｜修善寺 → 三島還車 → 箱根湯本 → 強羅"
+    area: "修善寺、三島、箱根"
+    accommodation: "????? ??"
+    theme: "修善寺退房 → 三島還車 → 箱根湯本午餐與寄行李 → 登山電車 → 強羅入住"
+    timeline:
+      - 
+        start_time: "09:00"
+        end_time: "10:00"
+        title: "前往三島"
+        location: "修善寺 → 三島"
+        transport: "開車"
+        description: "??????????? Orix Rent-a-car Mishima ???"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_yukairo_kikuya"
+          - "orix_rentacar_mishima"
+      - 
+        start_time: "10:00"
+        end_time: "10:30"
+        title: "三島還車"
+        location: "Orix Rent-a-car Mishima"
+        transport: "租車歸還"
+        description: "?? 10:00 ?????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "orix_rentacar_mishima"
+      - 
+        start_time: "10:30"
+        end_time: "11:30"
+        title: "前往箱根湯本"
+        location: "?? ? ??? ? ????"
+        transport: "鐵路"
+        description: "由三島轉往箱根湯本。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "mishima-station"
+          - "odawara-station"
+          - "hakone-yumoto"
+      - 
+        start_time: null
+        end_time: "11:30"
+        title: "寄送或寄放行李"
+        location: "箱根湯本站"
+        transport: "步行"
+        description: "???????????? ?????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hakone-yumoto"
+          - "hotel_marroad_hakone"
+      - 
+        start_time: "11:45"
+        end_time: "13:00"
+        title: "午餐"
+        location: "箱根湯本"
+        transport: "步行"
+        description: "午餐第一順位為 Kamameshi Giyamantei 釜飯ぎやまん亭，備案為 うなぎ長谷川 箱根湯本、Roryuan 芦柳庵。"
+        related_restaurant_ids:
+          - "restaurant-giyamantei"
+          - "restaurant-hasegawa"
+          - "restaurant-roryuan"
+        related_place_ids:
+          - "restaurant-giyamantei"
+          - "restaurant-hasegawa"
+          - "restaurant-roryuan"
+      - 
+        start_time: "13:00"
+        end_time: "14:00"
+        title: "箱根湯本散步"
+        location: "箱根湯本溫泉街"
+        transport: "步行"
+        description: "安排溫泉街散步與溫泉饅頭採買。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hakone-yumoto"
+      - 
+        start_time: "14:15"
+        end_time: "15:00"
+        title: "前往強羅"
+        location: "箱根湯本 → 強羅"
+        transport: "箱根登山電車"
+        description: "搭登山電車前往強羅。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hakone-yumoto"
+          - "gora"
+      - 
+        start_time: "15:00"
+        end_time: "17:00"
+        title: "Check-in 與周邊散步"
+        location: "????? ???????"
+        transport: "步行"
+        description: "???????????????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_marroad_hakone"
+          - "gora-park"
+      - 
+        start_time: "17:30"
+        end_time: "19:00"
+        title: "晚餐"
+        location: "強羅"
+        transport: "步行"
+        description: "晚餐第一順位為 田むら銀かつ亭，備案為 Okonomi-yaki Kaji。"
+        related_restaurant_ids:
+          - "restaurant-tamura-ginkatsutei"
+          - "restaurant-kaji"
+        related_place_ids:
+          - "restaurant-tamura-ginkatsutei"
+          - "restaurant-kaji"
+      - 
+        start_time: null
+        end_time: null
+        title: "回飯店休息、泡湯"
+        location: "????? ??"
+        transport: "步行"
+        description: "晚餐後回飯店休息。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_marroad_hakone"
+    transportation:
+      - 
+        segment: "??? ? Orix Rent-a-car Mishima"
+        mode: "??"
+        notes: "10/15 ?????????"
+      - 
+        segment: "?? ? ??? ? ????"
+        mode: "??"
+        notes: "???????"
+      - 
+        segment: "???? ? ??"
+        mode: "??????"
+        notes: "???????????"
+    meals:
+      - 
+        meal_type: "午餐"
+        primary_restaurant_ids:
+          - "restaurant-giyamantei"
+        backup_restaurant_ids:
+          - "restaurant-hasegawa"
+          - "restaurant-roryuan"
+        notes: "箱根湯本午餐。"
+      - 
+        meal_type: "晚餐"
+        primary_restaurant_ids:
+          - "restaurant-tamura-ginkatsutei"
+        backup_restaurant_ids:
+          - "restaurant-kaji"
+        notes: "強羅晚餐。"
+    backup_plan:
+      - "若箱根湯本站寄送行李時間不足，可改寄物或直接帶上強羅。"
+    notes:
+      - "?????????????"
+      - "10/15 ? Orix Rent-a-car Mishima ???????????"
+  - 
+    date: "2026-10-16"
+    weekday: "五"
+    title: "Day 5｜箱根經典環線"
+    area: "箱根"
+    accommodation: "????? ??"
+    theme: "強羅 → 箱根神社 → 蘆之湖海賊船 → 桃源台 → 大涌谷 → 早雲山 → 強羅"
+    timeline:
+      - 
+        start_time: "08:15"
+        end_time: null
+        title: "強羅出發"
+        location: "????? ??"
+        transport: "巴士"
+        description: "由強羅出發前往箱根神社方向。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_marroad_hakone"
+      - 
+        start_time: "08:15"
+        end_time: "09:15"
+        title: "前往箱根神社入口"
+        location: "強羅 → 小涌園／宮之下 → 箱根神社入口"
+        transport: "巴士"
+        description: "利用巴士轉乘前往神社入口。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "gora"
+          - "hakone-shrine"
+      - 
+        start_time: "09:15"
+        end_time: "10:30"
+        title: "箱根神社參拜"
+        location: "箱根神社"
+        transport: "步行"
+        description: "安排平和鳥居與杉木參道。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hakone-shrine"
+      - 
+        start_time: "10:45"
+        end_time: "11:25"
+        title: "搭海賊船前往桃源台"
+        location: "元箱根港 → 桃源台"
+        transport: "箱根海賊船"
+        description: "橫越蘆之湖前往桃源台。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "moto-hakone-port"
+          - "togendai"
+      - 
+        start_time: "11:30"
+        end_time: "12:30"
+        title: "午餐"
+        location: "桃源台周邊"
+        transport: "步行"
+        description: "午餐第一順位為 Amimoto Oba 網元 おおば，備案為 Ueno お食事処・釣舟 うえ乃。"
+        related_restaurant_ids:
+          - "restaurant-amimoto-oba"
+          - "restaurant-ueno"
+        related_place_ids:
+          - "restaurant-amimoto-oba"
+          - "restaurant-ueno"
+      - 
+        start_time: "12:30"
+        end_time: "13:30"
+        title: "前往大涌谷"
+        location: "桃源台 → 大涌谷"
+        transport: "箱根空中纜車"
+        description: "由桃源台搭纜車上山。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "togendai"
+          - "owakudani"
+      - 
+        start_time: "13:30"
+        end_time: "15:00"
+        title: "大涌谷停留"
+        location: "大涌谷"
+        transport: "步行"
+        description: "安排黑蛋、富士山與火山地熱景觀。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "owakudani"
+      - 
+        start_time: "15:00"
+        end_time: "16:00"
+        title: "返回強羅"
+        location: "大涌谷 → 早雲山 → 強羅"
+        transport: "纜車／登山電車"
+        description: "下午循環線返回強羅。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "owakudani"
+          - "sounzan"
+          - "gora"
+      - 
+        start_time: "16:00"
+        end_time: "17:30"
+        title: "回飯店休息"
+        location: "????? ??"
+        transport: "步行"
+        description: "回飯店泡湯、休息。"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_marroad_hakone"
+      - 
+        start_time: "17:30"
+        end_time: "19:30"
+        title: "晚餐"
+        location: "強羅"
+        transport: "步行"
+        description: "晚餐第一順位為 うなぎ 元長，備案為 Itoh Dining by Nobu、豆皮壽司 かっ平壽司。"
+        related_restaurant_ids:
+          - "restaurant-motonaga"
+          - "restaurant-itoh-dining-by-nobu"
+          - "restaurant-kappei-zushi"
+        related_place_ids:
+          - "restaurant-motonaga"
+          - "restaurant-itoh-dining-by-nobu"
+          - "restaurant-kappei-zushi"
+    transportation:
+      - 
+        segment: "強羅 → 箱根神社入口"
+        mode: "巴士"
+        notes: "經小涌園／宮之下轉乘。"
+      - 
+        segment: "元箱根港 → 桃源台"
+        mode: "箱根海賊船"
+        notes: "跨越蘆之湖。"
+      - 
+        segment: "桃源台 → 大涌谷"
+        mode: "箱根空中纜車"
+        notes: "視天氣與運行狀況調整。"
+      - 
+        segment: "大涌谷 → 早雲山 → 強羅"
+        mode: "纜車／登山電車"
+        notes: "回到強羅周邊。"
+    meals:
+      - 
+        meal_type: "午餐"
+        primary_restaurant_ids:
+          - "restaurant-amimoto-oba"
+        backup_restaurant_ids:
+          - "restaurant-ueno"
+        notes: "桃源台周邊午餐。"
+      - 
+        meal_type: "晚餐"
+        primary_restaurant_ids:
+          - "restaurant-motonaga"
+        backup_restaurant_ids:
+          - "restaurant-itoh-dining-by-nobu"
+          - "restaurant-kappei-zushi"
+        notes: "強羅周邊晚餐。"
+    backup_plan:
+      - "若天氣差或空中纜車停駛，改以巴士串接蘆之湖、大涌谷或強羅周邊景點。"
+    notes:
+      - "這天是箱根主遊日。"
+      - "午餐安排在蘆之湖／桃源台周邊。"
+      - "晚餐回強羅周邊處理，不再跨區覓食。"
+  - 
+    date: "2026-10-17"
+    weekday: "六"
+    title: "Day 6｜箱根 → 東京"
+    area: "箱根、東京"
+    accommodation: "DEL style ???? by Daiwa Roynet Hotel"
+    theme: "????????????????????"
+    timeline:
+      - 
+        start_time: "08:30"
+        end_time: "09:30"
+        title: "?????"
+        location: "????? ??"
+        transport: "??"
+        description: "????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_marroad_hakone"
+      - 
+        start_time: "09:30"
+        end_time: "10:45"
+        title: "??????"
+        location: "?? ? ????"
+        transport: "????"
+        description: "?????????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "gora"
+          - "hakone-yumoto"
+      - 
+        start_time: "10:45"
+        end_time: "12:30"
+        title: "????"
+        location: "???? ? ??? ? ??"
+        transport: "??"
+        description: "???????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hakone-yumoto"
+          - "ikebukuro"
+      - 
+        start_time: "13:00"
+        end_time: "14:00"
+        title: "????? Check-in"
+        location: "DEL style ???? by Daiwa Roynet Hotel"
+        transport: "??"
+        description: "???????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_del_style_ikebukuro"
+      - 
+        start_time: "14:00"
+        end_time: null
+        title: "????"
+        location: "??"
+        transport: "??"
+        description: "??????????????????????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "ikebukuro"
+    transportation:
+      - 
+        segment: "?? ? ????"
+        mode: "????"
+        notes: "???????"
+      - 
+        segment: "???? ? ??? ? ??"
+        mode: "??"
+        notes: "??????????????????????"
+    meals:
+      - 
+        meal_type: "??"
+        primary_restaurant_ids: []
+        backup_restaurant_ids: []
+        notes: "????????????????????"
+      - 
+        meal_type: "??"
+        primary_restaurant_ids: []
+        backup_restaurant_ids: []
+        notes: "????????????????????"
+    backup_plan: []
+    notes:
+      - "10/17 ????????????"
+      - "????????????????"
+  - 
+    date: "2026-10-18"
+    weekday: "日"
+    title: "Day 7｜東京早上採買 → 成田 16:00 起飛"
+    area: "東京、成田"
+    accommodation: "DEL style ???? by Daiwa Roynet Hotel????"
+    theme: "?????????????????? Skyliner ????"
+    timeline:
+      - 
+        start_time: "08:00"
+        end_time: "09:00"
+        title: "????"
+        location: "DEL style ???? by Daiwa Roynet Hotel"
+        transport: "??"
+        description: "???????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_del_style_ikebukuro"
+      - 
+        start_time: "09:00"
+        end_time: "09:30"
+        title: "??"
+        location: "DEL style ???? by Daiwa Roynet Hotel"
+        transport: "??"
+        description: "????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "hotel_del_style_ikebukuro"
+      - 
+        start_time: "09:30"
+        end_time: "10:30"
+        title: "??????"
+        location: "???mont-bell ?????"
+        transport: "??"
+        description: "??????????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "ikebukuro"
+          - "montbell_tobu_ikebukuro"
+      - 
+        start_time: "10:30"
+        end_time: "11:00"
+        title: "?????"
+        location: "???"
+        transport: "??"
+        description: "???????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "ikebukuro_station"
+      - 
+        start_time: "11:00"
+        end_time: "11:20"
+        title: "JR ????????"
+        location: "??? ? ????"
+        transport: "JR ???"
+        description: "??????? JR ????? 5 ??????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "ikebukuro_station"
+          - "nippori_station"
+      - 
+        start_time: "11:20"
+        end_time: "12:00"
+        title: "Skyliner ??????"
+        location: "???? ? ????"
+        transport: "Skyliner"
+        description: "??????? Skyliner ???????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "nippori_station"
+          - "narita_airport"
+      - 
+        start_time: "13:00"
+        end_time: "15:00"
+        title: "???????????"
+        location: "????"
+        transport: "??"
+        description: "????????????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "narita_airport"
+      - 
+        start_time: "16:00"
+        end_time: null
+        title: "????"
+        location: "????"
+        transport: "??"
+        description: "?????"
+        related_restaurant_ids: []
+        related_place_ids:
+          - "narita_airport"
+    transportation:
+      - 
+        segment: "??? ? ????"
+        mode: "JR ???"
+        notes: "???????? 5 ??"
+      - 
+        segment: "???? ? ????"
+        mode: "Skyliner"
+        notes: "?????? Skyliner ???????"
+    meals:
+      - 
+        meal_type: "??"
+        primary_restaurant_ids: []
+        backup_restaurant_ids: []
+        notes: "????????????"
+      - 
+        meal_type: "??"
+        primary_restaurant_ids: []
+        backup_restaurant_ids: []
+        notes: "???????????????????"
+    backup_plan: []
+    notes:
+      - "16:00 ????? 13:00 ?????????"
+      - "?????????? JR ??????????? Skyliner?"

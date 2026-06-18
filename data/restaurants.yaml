@@ -1,0 +1,296 @@
+project:
+  name: "japan-trip-2026"
+  language: "zh-Hant"
+  start_date: "2026-10-11"
+  end_date: "2026-10-18"
+  version: 4
+  status: "draft"
+restaurants:
+  - 
+    id: "restaurant_nikuwarai_showacho_honten"
+    date: "2026-10-11"
+    area: "??"
+    meal_type: "??"
+    priority: 1
+    name: "?? ????? ?????"
+    japanese_name: "?? ????? ?????"
+    google_maps_url: "https://maps.app.goo.gl/z29fNgVnM4XYNWws6"
+    notes: "10/11 ???????"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant_umibouzu_main_store"
+    date: "2026-10-11"
+    area: "??"
+    meal_type: "??"
+    priority: 1
+    name: "UMIBOUZU Main Store"
+    japanese_name: "???? ??"
+    google_maps_url: "https://maps.app.goo.gl/2pAQmzWMzgMN4Hou8"
+    notes: "10/11 ???????"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant_nanaya_shizuoka"
+    date: "2026-10-12"
+    area: "??"
+    meal_type: "????"
+    priority: 1
+    name: "Nanaya Shizuoka"
+    japanese_name: "??? ???"
+    google_maps_url: "https://maps.app.goo.gl/r565wg1Z7fDZMJeGA"
+    notes: "10/12 ?????????"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant_gyoza_kenkyujo_asty"
+    date: "2026-10-12"
+    area: "??"
+    meal_type: "??"
+    priority: 1
+    name: "????? ?????"
+    japanese_name: "????? ?????"
+    google_maps_url: "https://maps.app.goo.gl/H3TY5ChE3CRhPWNr5"
+    notes: "10/12 ???????"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant_shimizuko_minami"
+    date: "2026-10-12"
+    area: "??"
+    meal_type: "??"
+    priority: 1
+    name: "Shimizuko Minami"
+    japanese_name: "??????"
+    google_maps_url: "https://maps.app.goo.gl/mZuLNEQMCNA3NLTx5"
+    notes: "10/12 ???????"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant_numazu_uogashi_zushi_premium_shizuoka"
+    date: "2026-10-12"
+    area: "??"
+    meal_type: "??"
+    priority: 2
+    name: "?????? ?????????"
+    japanese_name: "?????? ?????????"
+    google_maps_url: "https://maps.app.goo.gl/XVg1NBDCApNYzqcGA"
+    notes: "10/12 ???????????? Shimizuko Minami ????"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-amago-chaya"
+    date: "2026-10-13"
+    area: "修善寺"
+    meal_type: "晚餐"
+    priority: 1
+    name: "Amago Chaya あまご茶屋 修善寺温泉店"
+    japanese_name: "あまご茶屋 修善寺温泉店"
+    google_maps_url: "https://maps.app.goo.gl/rfQZ4Y31fFXuS45MA"
+    notes: "10/13 晚餐第一順位。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-sugiya"
+    date: "2026-10-13"
+    area: "修善寺"
+    meal_type: "午餐"
+    priority: 1
+    name: "Sugiya すぎ屋"
+    japanese_name: "すぎ屋"
+    google_maps_url: "https://maps.app.goo.gl/56znqCeFY4UWthFu7"
+    notes: "10/13 午餐第一順位。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-nagomu-sushi"
+    date: "2026-10-13"
+    area: "修善寺"
+    meal_type: "晚餐"
+    priority: 2
+    name: "Nagomu Sushi"
+    japanese_name: null
+    google_maps_url: "https://maps.app.goo.gl/pMGEuHvKwnvaebrb8"
+    notes: "10/13 晚餐備案。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-zenpuutei-nanaban"
+    date: "2026-10-13"
+    area: "修善寺"
+    meal_type: "午餐"
+    priority: 2
+    name: "Zempuuteinanaban 禅風亭 なゝ番"
+    japanese_name: "禅風亭 なゝ番"
+    google_maps_url: "https://maps.app.goo.gl/D9CsxfA3VSBqrSgU6"
+    notes: "10/13 午餐備案。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-mameya"
+    date: "2026-10-14"
+    area: "修善寺"
+    meal_type: "晚餐"
+    priority: 1
+    name: "まめや"
+    japanese_name: "まめや"
+    google_maps_url: "https://maps.app.goo.gl/LBzBCdpWd6BpACwy7"
+    notes: "10/14 晚餐第一順位。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-tokko-soba-oto"
+    date: "2026-10-14"
+    area: "修善寺"
+    meal_type: "午餐"
+    priority: 1
+    name: "独鈷そば大戸"
+    japanese_name: "独鈷そば大戸"
+    google_maps_url: "https://maps.app.goo.gl/RZd9UMGkRbERGSqf9"
+    notes: "10/14 午餐第一順位。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-shuzenji-no-yoshokuya"
+    date: "2026-10-14"
+    area: "修善寺"
+    meal_type: "午餐"
+    priority: 2
+    name: "修善寺 no 洋食屋"
+    japanese_name: "修善寺 no 洋食屋"
+    google_maps_url: "https://maps.app.goo.gl/kui4PuxfAmYNra4K9"
+    notes: "10/14 午餐備案。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-tsujimura"
+    date: "2026-10-14"
+    area: "修善寺"
+    meal_type: "晚餐"
+    priority: 2
+    name: "山葵うなぎ 辻むら"
+    japanese_name: "山葵うなぎ 辻むら"
+    google_maps_url: "https://maps.app.goo.gl/Po6qT4XTRhrCQ43t8"
+    notes: "10/14 晚餐備案。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-giyamantei"
+    date: "2026-10-15"
+    area: "箱根"
+    meal_type: "午餐"
+    priority: 1
+    name: "Kamameshi Giyamantei 釜飯ぎやまん亭"
+    japanese_name: "釜飯ぎやまん亭"
+    google_maps_url: "https://maps.app.goo.gl/SRcLZ9LY84xTn4jt8"
+    notes: "10/15 午餐第一順位。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-tamura-ginkatsutei"
+    date: "2026-10-15"
+    area: "箱根"
+    meal_type: "晚餐"
+    priority: 1
+    name: "田むら銀かつ亭"
+    japanese_name: "田むら銀かつ亭"
+    google_maps_url: "https://maps.app.goo.gl/HHuuX1yiWpyS22468"
+    notes: "10/15 晚餐第一順位。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-hasegawa"
+    date: "2026-10-15"
+    area: "箱根"
+    meal_type: "午餐"
+    priority: 2
+    name: "うなぎ長谷川 箱根湯本"
+    japanese_name: "うなぎ長谷川 箱根湯本"
+    google_maps_url: "https://maps.app.goo.gl/5PcfAg5DGRBB2VLa7"
+    notes: "10/15 午餐備案 1。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-kaji"
+    date: "2026-10-15"
+    area: "箱根"
+    meal_type: "晚餐"
+    priority: 2
+    name: "Okonomi-yaki Kaji"
+    japanese_name: null
+    google_maps_url: "https://maps.app.goo.gl/D719vc2QQcsyzeLq8"
+    notes: "10/15 晚餐備案。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-roryuan"
+    date: "2026-10-15"
+    area: "箱根"
+    meal_type: "午餐"
+    priority: 3
+    name: "Roryuan 芦柳庵"
+    japanese_name: "芦柳庵"
+    google_maps_url: "https://maps.app.goo.gl/vDm2dgABkzGznAZs8"
+    notes: "10/15 午餐備案 2。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-amimoto-oba"
+    date: "2026-10-16"
+    area: "箱根"
+    meal_type: "午餐"
+    priority: 1
+    name: "Amimoto Oba 網元 おおば"
+    japanese_name: "網元 おおば"
+    google_maps_url: "https://maps.app.goo.gl/UHgu5UitYkbbd2768"
+    notes: "10/16 午餐第一順位。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-motonaga"
+    date: "2026-10-16"
+    area: "箱根"
+    meal_type: "晚餐"
+    priority: 1
+    name: "うなぎ 元長"
+    japanese_name: "うなぎ 元長"
+    google_maps_url: "https://maps.app.goo.gl/AQ56LSN9P6tm6YKj7"
+    notes: "10/16 晚餐第一順位。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-itoh-dining-by-nobu"
+    date: "2026-10-16"
+    area: "箱根"
+    meal_type: "晚餐"
+    priority: 2
+    name: "Itoh Dining by Nobu"
+    japanese_name: null
+    google_maps_url: "https://maps.app.goo.gl/p9czNZb143gdjvhV9"
+    notes: "10/16 晚餐備案 1。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-ueno"
+    date: "2026-10-16"
+    area: "箱根"
+    meal_type: "午餐"
+    priority: 2
+    name: "Ueno お食事処・釣舟 うえ乃"
+    japanese_name: "お食事処・釣舟 うえ乃"
+    google_maps_url: "https://maps.app.goo.gl/Er4H6PRjxsWiDya98"
+    notes: "10/16 午餐備案。"
+    lat: null
+    lng: null
+  - 
+    id: "restaurant-kappei-zushi"
+    date: "2026-10-16"
+    area: "箱根"
+    meal_type: "晚餐"
+    priority: 3
+    name: "豆皮壽司 かっ平壽司"
+    japanese_name: "かっ平壽司"
+    google_maps_url: "https://maps.app.goo.gl/c9UMcR4LdaqBHqHe9"
+    notes: "10/16 晚餐備案 2。"
+    lat: null
+    lng: null
