@@ -363,29 +363,29 @@ function filterNavigationItems(items) {
 }
 
 function renderMapIndex() {
-  const groups = navigationGroups
-    .map((group) => ({
-      ...group,
-      items: filterNavigationItems(group.items),
-    }))
-    .filter((group) => group.items.length > 0);
-
   return `
     <section class="card section-card">
       <h3 class="section-title">地圖／導航索引</h3>
       <div class="map-tools">
-        <input
-          id="map-search"
-          class="search-input"
-          type="search"
-          placeholder="搜尋名稱或區域，例如：修善寺、箱根、東京站"
-          value="${escapeHtml(state.mapQuery)}"
-        />
+        <div class="search-field">
+          <input
+            id="map-search"
+            class="search-input"
+            type="search"
+            autocomplete="off"
+            inputmode="search"
+            enterkeyhint="search"
+            autocapitalize="off"
+            spellcheck="false"
+            placeholder="搜尋名稱或區域"
+            value="${escapeHtml(state.mapQuery)}"
+          />
+        </div>
         <div class="filter-row">
           ${Object.entries(CATEGORY_META)
             .map(
               ([key, label]) => `
-                <button class="filter-chip ${state.mapCategory === key ? "is-active" : ""}" data-filter="${key}">
+                <button type="button" class="filter-chip ${state.mapCategory === key ? "is-active" : ""}" data-filter="${key}">
                   ${escapeHtml(label)}
                 </button>
               `
@@ -395,6 +395,19 @@ function renderMapIndex() {
       </div>
     </section>
 
+    <div id="map-results">${renderMapResults()}</div>
+  `;
+}
+
+function renderMapResults() {
+  const groups = navigationGroups
+    .map((group) => ({
+      ...group,
+      items: filterNavigationItems(group.items),
+    }))
+    .filter((group) => group.items.length > 0);
+
+  return `
     <section class="card section-card">
       <h3 class="section-title">依日期查看</h3>
       ${
@@ -452,6 +465,12 @@ function renderMapIndex() {
   `;
 }
 
+function updateMapResults() {
+  const resultNode = document.getElementById("map-results");
+  if (!resultNode) return;
+  resultNode.innerHTML = renderMapResults();
+}
+
 function renderModeTabs() {
   modeNav.innerHTML = `
     <button class="mode-tab ${state.mode === "itinerary" ? "is-active" : ""}" data-mode="itinerary">行程</button>
@@ -505,8 +524,7 @@ function bindMapTools() {
   if (searchInput) {
     searchInput.addEventListener("input", (event) => {
       state.mapQuery = event.target.value;
-      app.innerHTML = renderMapIndex();
-      bindMapTools();
+      updateMapResults();
     });
   }
 
@@ -515,6 +533,14 @@ function bindMapTools() {
       state.mapCategory = button.dataset.filter;
       app.innerHTML = renderMapIndex();
       bindMapTools();
+      const nextSearchInput = document.getElementById("map-search");
+      if (nextSearchInput) {
+        nextSearchInput.focus({ preventScroll: true });
+        const cursorPosition = nextSearchInput.value.length;
+        if (typeof nextSearchInput.setSelectionRange === "function") {
+          nextSearchInput.setSelectionRange(cursorPosition, cursorPosition);
+        }
+      }
     });
   });
 }
