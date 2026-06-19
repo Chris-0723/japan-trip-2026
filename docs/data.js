@@ -172,68 +172,97 @@ window.TRIP_DATA = {
     {
       "date": "2026-10-12",
       "weekday": "一",
-      "title": "Day 1｜靜岡完整一天",
-      "area": "靜岡",
-      "accommodation": "Hotel Garden Square Shizuoka／ホテルガーデンスクエア静岡",
-      "theme": "靜岡市區散步、清水午餐與採買、傍晚回市區甜點與購物",
+      "title": "Day 1｜靜岡、清水 → 熱海花火之夜",
+      "area": "靜岡、清水、熱海",
+      "accommodation": "Prince Smart Inn Atami／プリンス スマート イン 熱海",
+      "theme": "靜岡／清水白天行程 → 傍晚移動熱海 → 熱海海上花火大會 → 住熱海",
       "timeline": [
         {
           "start_time": "08:30",
-          "end_time": "09:15",
-          "title": "早餐",
-          "location": "Hotel Garden Square Shizuoka 周邊",
+          "end_time": "09:00",
+          "title": "早餐、退房與寄放行李",
+          "location": "Hotel Garden Square Shizuoka、靜岡站",
           "transport": "步行",
-          "description": "在飯店周邊簡單用早餐。",
+          "description": "在飯店簡單早餐後退房，並將行李寄放飯店或改寄放靜岡站置物櫃。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "hotel_garden_square_shizuoka"
+            "hotel_garden_square_shizuoka",
+            "shizuoka-station"
           ]
         },
         {
-          "start_time": "09:30",
-          "end_time": "10:10",
-          "title": "靜岡淺間神社",
-          "location": "靜岡淺間神社",
-          "transport": "步行／計程車",
-          "description": "上午先安排靜岡淺間神社。",
+          "start_time": "09:00",
+          "end_time": "09:40",
+          "title": "前往清水與 Dream Plaza 方向",
+          "location": "靜岡站 → 清水、Dream Plaza",
+          "transport": "JR／巴士",
+          "description": "從靜岡市區移動到清水港區，準備先逛 Dream Plaza。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "shizuoka_sengen_jinja"
+            "shizuoka-station",
+            "shimizu",
+            "s_pulse_dream_plaza"
           ]
         },
         {
-          "start_time": "12:30",
-          "end_time": "13:30",
-          "title": "午餐",
-          "location": "Shimizuko Minami",
-          "transport": "計程車／巴士",
-          "description": "午餐第一順位安排 Shimizuko Minami。",
-          "related_restaurant_ids": [
-            "restaurant_shimizuko_minami"
-          ],
-          "related_place_ids": [
-            "restaurant_shimizuko_minami"
-          ]
-        },
-        {
-          "start_time": "13:30",
-          "end_time": "15:00",
+          "start_time": "09:40",
+          "end_time": "11:30",
           "title": "エスパルスドリームプラザ採買",
           "location": "エスパルスドリームプラザ",
           "transport": "步行",
-          "description": "安排 Dream Plaza 找胖胖豬和伴手禮。",
+          "description": "找胖胖褲豬並購買靜岡伴手禮。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "s_pulse_dream_plaza"
           ]
         },
         {
-          "start_time": "16:30",
-          "end_time": "17:00",
+          "start_time": "11:30",
+          "end_time": "12:10",
+          "title": "前往清水港みなみ",
+          "location": "エスパルスドリームプラザ → 清水港みなみ",
+          "transport": "步行／計程車",
+          "description": "由 Dream Plaza 前往午餐餐廳。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "s_pulse_dream_plaza",
+            "restaurant_shimizuko_minami"
+          ]
+        },
+        {
+          "start_time": "12:10",
+          "end_time": "13:20",
+          "title": "午餐",
+          "location": "Shimizuko Minami／清水港みなみ",
+          "transport": "步行",
+          "description": "午餐第一順位安排清水港みなみ。",
+          "related_restaurant_ids": [
+            "restaurant_shimizuko_minami"
+          ],
+          "related_place_ids": [
+            "restaurant_shimizuko_minami"
+          ]
+        },
+        {
+          "start_time": "13:20",
+          "end_time": "14:20",
+          "title": "返回靜岡市區",
+          "location": "清水 → 靜岡市區",
+          "transport": "JR",
+          "description": "午餐後返回靜岡市區，銜接下午短時間購物與甜點。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "shimizu",
+            "shizuoka"
+          ]
+        },
+        {
+          "start_time": "14:20",
+          "end_time": "14:50",
           "title": "下午甜點",
-          "location": "Nanaya Shizuoka",
-          "transport": "鐵路／步行",
-          "description": "回到靜岡市區安排抹茶甜點。",
+          "location": "Nanaya Shizuoka／ななや 静岡店",
+          "transport": "步行",
+          "description": "短停吃冰，不安排長時間停留。",
           "related_restaurant_ids": [
             "restaurant_nanaya_shizuoka"
           ],
@@ -242,39 +271,113 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "17:15",
-          "end_time": "18:00",
+          "start_time": "14:50",
+          "end_time": "15:30",
           "title": "靜岡 PARCO",
           "location": "靜岡 PARCO",
           "transport": "步行",
-          "description": "働晚前往 PARCO 的 Village Vanguard 找胖胖豬相關商品。",
+          "description": "直奔 Village Vanguard 找胖胖褲豬。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "shizuoka_parco"
           ]
         },
         {
-          "start_time": "18:30",
-          "end_time": "19:30",
-          "title": "晚餐",
-          "location": "餃子研究所 アスティ店",
+          "start_time": "15:30",
+          "end_time": "16:00",
+          "title": "取回行李",
+          "location": "Hotel Garden Square Shizuoka 或靜岡站",
           "transport": "步行",
-          "description": "晚餐第一順位為餃子研究所 アスティ店；若午餐沒吃到清水港みなみ，備案才考慮沼津魚がし鮨。",
-          "related_restaurant_ids": [
-            "restaurant_gyoza_kenkyujo_asty",
-            "restaurant_numazu_uogashi_zushi_premium_shizuoka"
-          ],
+          "description": "回飯店或靜岡站取回寄放行李，準備前往熱海。",
+          "related_restaurant_ids": [],
           "related_place_ids": [
-            "restaurant_gyoza_kenkyujo_asty",
-            "restaurant_numazu_uogashi_zushi_premium_shizuoka"
+            "hotel_garden_square_shizuoka",
+            "shizuoka-station"
+          ]
+        },
+        {
+          "start_time": "16:00",
+          "end_time": "17:00",
+          "title": "前往熱海",
+          "location": "靜岡站 → 熱海站",
+          "transport": "JR／新幹線",
+          "description": "傍晚移動至熱海，準備入住與晚間花火行程。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "shizuoka-station",
+            "atami-station"
+          ]
+        },
+        {
+          "start_time": "17:00",
+          "end_time": "18:00",
+          "title": "Check-in",
+          "location": "Prince Smart Inn Atami",
+          "transport": "步行",
+          "description": "抵達熱海後先辦理入住。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "hotel_prince_smart_inn_atami"
+          ]
+        },
+        {
+          "start_time": "18:00",
+          "end_time": "19:40",
+          "title": "晚餐與海岸周邊散步",
+          "location": "熱海站／熱海銀座周邊",
+          "transport": "步行",
+          "description": "不指定餐廳，以熱海站或熱海銀座周邊晚餐為主，飯後可沿海岸散步。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "atami-station",
+            "atami-ginza-area"
+          ]
+        },
+        {
+          "start_time": "20:20",
+          "end_time": "20:40",
+          "title": "熱海海上花火大會",
+          "location": "熱海陽光海灘／熱海サンビーチ",
+          "transport": "步行",
+          "description": "晚間重點活動，建議提早抵達並預留人潮移動時間。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "atami-sun-beach-fireworks"
+          ]
+        },
+        {
+          "start_time": null,
+          "end_time": null,
+          "title": "返回飯店休息",
+          "location": "Prince Smart Inn Atami",
+          "transport": "步行",
+          "description": "花火結束後返回飯店休息。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "hotel_prince_smart_inn_atami"
           ]
         }
       ],
       "transportation": [
         {
-          "segment": "靜岡站周邊 ↔ 靜岡市區／清水一帶",
+          "segment": "靜岡站 ↔ 清水港區",
           "mode": "JR、巴士、必要時計程車",
-          "notes": "10/11-10/12 靜岡市區內移動可考慮計程車。"
+          "notes": "白天以 Dream Plaza 與清水港午餐動線為主。"
+        },
+        {
+          "segment": "清水 → 靜岡市區",
+          "mode": "JR",
+          "notes": "午後回靜岡市區吃冰與短時間購物。"
+        },
+        {
+          "segment": "靜岡站 → 熱海站",
+          "mode": "JR／新幹線",
+          "notes": "傍晚移動至熱海，銜接住宿與花火活動。"
+        },
+        {
+          "segment": "熱海站 ↔ 熱海陽光海灘／飯店",
+          "mode": "步行",
+          "notes": "晚餐、花火與回飯店以步行為主。"
         }
       ],
       "meals": [
@@ -282,7 +385,7 @@ window.TRIP_DATA = {
           "meal_type": "早餐",
           "primary_restaurant_ids": [],
           "backup_restaurant_ids": [],
-          "notes": "於飯店周邊彈性安排。"
+          "notes": "於 Hotel Garden Square Shizuoka 早餐後退房。"
         },
         {
           "meal_type": "午餐",
@@ -298,45 +401,53 @@ window.TRIP_DATA = {
             "restaurant_nanaya_shizuoka"
           ],
           "backup_restaurant_ids": [],
-          "notes": "回到靜岡市區安排甜點。"
+          "notes": "短停吃冰，不安排長時間停留。"
         },
         {
           "meal_type": "晚餐",
-          "primary_restaurant_ids": [
-            "restaurant_gyoza_kenkyujo_asty"
-          ],
-          "backup_restaurant_ids": [
-            "restaurant_numazu_uogashi_zushi_premium_shizuoka"
-          ],
-          "notes": "只有在午餐沒吃到 Shimizuko Minami 時，才考慮改去沼津魚がし鮨。"
+          "primary_restaurant_ids": [],
+          "backup_restaurant_ids": [],
+          "notes": "不指定餐廳，以熱海站／熱海銀座周邊晚餐為主。"
         }
       ],
       "backup_plan": [
-        "若午餐沒吃到 Shimizuko Minami，晚餐備案才考慮沼津魚がし鮨 プレミアム静岡本店。"
+        "若熱海海上花火大會因天候或主辦單位調整，改成熱海海岸散步並提早回飯店休息。"
       ],
       "notes": [
-        "10/11-10/12 靜岡市區內移動可考慮計程車。",
-        "若想找《胖胖豬》相關商品，清水 Dream Plaza、靜岡 PARCO 與 CENOVA 可依路線安排。"
+        "10/12 不再安排靜岡淺間神社與靜岡晚餐。",
+        "熱海海上花火大會人潮較多，建議提早到熱海陽光海灘周邊卡位。"
       ]
     },
     {
       "date": "2026-10-13",
       "weekday": "二",
       "title": "Day 2｜晨光富士與修善寺古鎮慢遊",
-      "area": "靜岡、三島、伊豆、修善寺",
+      "area": "熱海、三島、伊豆、修善寺",
       "accommodation": "湯回廊 菊屋",
-      "theme": "靜岡 → 三島取車 → 伊豆全景公園 → 修善寺午餐 → 修善寺慢遊 → 菊屋泡湯",
+      "theme": "熱海早餐與退房 → 三島取車 → 伊豆全景公園 → 修善寺午餐 → 修善寺慢遊 → 菊屋泡湯",
       "timeline": [
+        {
+          "start_time": "07:30",
+          "end_time": "08:15",
+          "title": "早餐、退房",
+          "location": "Prince Smart Inn Atami",
+          "transport": "步行",
+          "description": "在 Prince Smart Inn Atami 用早餐並完成退房。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "hotel_prince_smart_inn_atami"
+          ]
+        },
         {
           "start_time": "08:30",
           "end_time": "08:52",
-          "title": "靜岡前往三島",
-          "location": "靜岡站 → 三島站",
-          "transport": "東海道新幹線",
-          "description": "從靜岡前往三島，銜接租車。",
+          "title": "熱海前往三島",
+          "location": "熱海站 → 三島站",
+          "transport": "JR／新幹線",
+          "description": "從熱海前往三島，銜接租車行程。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "shizuoka-station",
+            "atami-station",
             "mishima-station"
           ]
         },
@@ -346,7 +457,7 @@ window.TRIP_DATA = {
           "title": "三島站搭計程車前往租車店",
           "location": "三島站 → Orix Rent-a-car Mishima",
           "transport": "計程車",
-          "description": "從三島站搭乘計程車前往租車店。",
+          "description": "從三島站搭乘計程車前往 Orix Rent-a-car Mishima。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "mishima-station",
@@ -475,9 +586,9 @@ window.TRIP_DATA = {
       ],
       "transportation": [
         {
-          "segment": "靜岡站 → 三島站",
-          "mode": "東海道新幹線",
-          "notes": "上午先完成三島移動。"
+          "segment": "熱海站 → 三島站",
+          "mode": "JR／新幹線",
+          "notes": "早上自熱海移動至三島，銜接租車。"
         },
         {
           "segment": "三島站 → Orix Rent-a-car Mishima",
@@ -487,7 +598,7 @@ window.TRIP_DATA = {
         {
           "segment": "Orix Rent-a-car Mishima → 伊豆全景公園 → 修善寺",
           "mode": "開車",
-          "notes": "以伊豆全景公園與修善寺為主要動線。"
+          "notes": "09:30 取車後維持既有景觀與修善寺動線。"
         }
       ],
       "meals": [
@@ -516,6 +627,7 @@ window.TRIP_DATA = {
         "若伊豆全景公園天氣不佳，可縮短停留，提早進修善寺。"
       ],
       "notes": [
+        "早上改由 Prince Smart Inn Atami 早餐後退房出發。",
         "這天不再加排太多景點，重點是早點進入修善寺溫泉節奏。",
         "從三島站到 Orix Rent-a-car Mishima 會搭乘計程車。"
       ]
@@ -2256,16 +2368,6 @@ window.TRIP_DATA = {
       "notes": "10/11 晚餐後採買與扳蛋。"
     },
     {
-      "id": "shizuoka_sengen_jinja",
-      "name": "靜岡淺間神社",
-      "area": "靜岡",
-      "category": "景點",
-      "google_maps_url": "https://maps.app.goo.gl/ymWkrhY2H4zaTx8XA",
-      "lat": null,
-      "lng": null,
-      "notes": "10/12 上午行程。"
-    },
-    {
       "id": "shizuoka_parco",
       "name": "靜岡 PARCO",
       "area": "靜岡",
@@ -2374,6 +2476,46 @@ window.TRIP_DATA = {
       "lat": null,
       "lng": null,
       "notes": "10/12 晚餐備案；僅在午餐沒吃到 Shimizuko Minami 時考慮。"
+    },
+    {
+      "id": "hotel_prince_smart_inn_atami",
+      "name": "Prince Smart Inn Atami／プリンス スマート イン 熱海",
+      "area": "熱海",
+      "category": "accommodation",
+      "google_maps_url": "https://maps.app.goo.gl/hSr7swTMDLmKEP4h6",
+      "lat": null,
+      "lng": null,
+      "notes": "10/12 住宿，10/13 早餐後退房出發。"
+    },
+    {
+      "id": "atami-station",
+      "name": "熱海站",
+      "area": "熱海",
+      "category": "交通",
+      "google_maps_url": null,
+      "lat": null,
+      "lng": null,
+      "notes": "10/12 抵達熱海與 10/13 前往三島的交通節點。"
+    },
+    {
+      "id": "atami-ginza-area",
+      "name": "熱海銀座周邊",
+      "area": "熱海",
+      "category": "區域",
+      "google_maps_url": null,
+      "lat": null,
+      "lng": null,
+      "notes": "10/12 晚餐與花火前散步區域。"
+    },
+    {
+      "id": "atami-sun-beach-fireworks",
+      "name": "熱海陽光海灘／熱海サンビーチ",
+      "area": "熱海",
+      "category": "event",
+      "google_maps_url": "https://maps.app.goo.gl/RiekU6TjA3ssQnAx6",
+      "lat": null,
+      "lng": null,
+      "notes": "熱海海上花火大會主要觀賞點，建議提早抵達並預留人潮移動時間。"
     }
   ]
 };

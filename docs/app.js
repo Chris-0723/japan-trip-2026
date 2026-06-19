@@ -61,16 +61,18 @@ function escapeHtml(value) {
 
 function mapCategoryToFilter(category) {
   if (category === "餐廳") return "restaurant";
-  if (category === "住宿") return "stay";
+  if (category === "住宿" || category === "lodging" || category === "accommodation") return "stay";
   if (category === "交通") return "transport";
+  if (category === "event" || category === "attraction") return "sight";
   if (category === "區域") return "sight";
   return "sight";
 }
 
 function mapCategoryToLabel(category) {
   if (category === "餐廳") return "餐廳";
-  if (category === "住宿") return "住宿";
+  if (category === "住宿" || category === "lodging" || category === "accommodation") return "住宿";
   if (category === "交通") return "交通節點";
+  if (category === "event" || category === "attraction") return "景點";
   if (category === "區域") return "景點";
   return "景點";
 }
