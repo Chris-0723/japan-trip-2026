@@ -4,7 +4,8 @@ if (
   !tripPayload ||
   !Array.isArray(tripPayload.days) ||
   !Array.isArray(tripPayload.restaurants) ||
-  !Array.isArray(tripPayload.places)
+  !Array.isArray(tripPayload.places) ||
+  !tripPayload.transportation
 ) {
   throw new Error("找不到有效的行程資料，請先執行 scripts/build_web_data.py 產生 web/data.js。");
 }
@@ -16,6 +17,7 @@ const tripData = {
 
 const restaurants = tripPayload.restaurants;
 const places = tripPayload.places;
+const transportationData = tripPayload.transportation;
 
 const restaurantMap = new Map(restaurants.map((item) => [item.id, item]));
 const placeMap = new Map(places.map((item) => [item.id, item]));
@@ -467,6 +469,255 @@ function renderMapResults() {
   `;
 }
 
+function renderTextList(items = []) {
+  if (!items.length) {
+    return `<div class="empty-state">目前沒有資料。</div>`;
+  }
+  return `
+    <div class="transport-note-list">
+      ${items
+        .map(
+          (item) => `
+            <article class="mini-card">
+              <p>${escapeHtml(item)}</p>
+            </article>
+          `
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderTicketLinkButtons(links = []) {
+  if (!links.length) {
+    return `<div class="empty-state">目前沒有購票連結。</div>`;
+  }
+
+  return `
+    <div class="transport-link-grid">
+      ${links
+        .map(
+          (link) => `
+            <article class="mini-card transport-link-card">
+              <strong>${escapeHtml(link.name)}</strong>
+              <p>${escapeHtml(link.note)}</p>
+              <p>${escapeHtml(link.applies_to)}</p>
+              <div class="action-row">
+                <a class="map-button" href="${escapeHtml(link.url)}" target="_blank" rel="noreferrer">前往購票</a>
+              </div>
+            </article>
+          `
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderOnlineBookingTable(items = []) {
+  if (!items.length) {
+    return `<div class="empty-state">目前沒有需預先購票的資料。</div>`;
+  }
+
+  return `
+    <div class="transport-table-wrap">
+      <table class="transport-table">
+        <thead>
+          <tr>
+            <th>日期</th>
+            <th>購票網站</th>
+            <th>區間</th>
+            <th>列車種類</th>
+            <th>是否指定席</th>
+            <th>備註</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${items
+            .map(
+              (item) => `
+                <tr>
+                  <td>${escapeHtml(formatDate(item.date))}</td>
+                  <td>
+                    <div class="transport-table-site">
+                      <span>${escapeHtml(item.purchase_site)}</span>
+                      <a href="${escapeHtml(item.purchase_url)}" target="_blank" rel="noreferrer">購票連結</a>
+                    </div>
+                  </td>
+                  <td>${escapeHtml(item.route)}</td>
+                  <td>${escapeHtml(item.train_type)}</td>
+                  <td>${escapeHtml(item.reserved_seat)}</td>
+                  <td>
+                    <ul class="transport-inline-list">
+                      ${item.notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}
+                    </ul>
+                  </td>
+                </tr>
+              `
+            )
+            .join("")}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+function renderOnSiteSegments(items = []) {
+  if (!items.length) {
+    return `<div class="empty-state">目前沒有可現場買／Suica 處理段落。</div>`;
+  }
+
+  return `
+    <div class="transport-link-grid">
+      ${items
+        .map(
+          (item) => `
+            <article class="mini-card transport-ic-card">
+              <strong>${escapeHtml(formatDate(item.date))}｜${escapeHtml(item.title)}</strong>
+              <p>交通：${escapeHtml(item.method)}</p>
+              <p>購票：${escapeHtml(item.purchase_method)}</p>
+              <p>車程：${escapeHtml(item.estimated_time)}</p>
+              <p>指定席：${item.reservation_required ? "需要" : "不需要"}</p>
+              <ul class="transport-inline-list">
+                ${item.notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}
+              </ul>
+            </article>
+          `
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderTransportSegments(segments = []) {
+  if (!segments.length) {
+    return `<div class="empty-state">本日沒有交通段落資料。</div>`;
+  }
+
+  return `
+    <div class="transport-segment-list">
+      ${segments
+        .map(
+          (segment) => `
+            <article class="transport-segment-card">
+              <div class="transport-segment-head">
+                <h5>${escapeHtml(segment.from)} → ${escapeHtml(segment.to)}</h5>
+                <span class="type-pill">${segment.reservation_recommended ? "建議預買" : "現場處理"}</span>
+              </div>
+              <div class="map-meta">
+                <span><strong>方式：</strong>${escapeHtml(segment.method)}</span>
+                <span><strong>營運：</strong>${escapeHtml(segment.operator ?? "現場安排")}</span>
+                <span><strong>列車種類：</strong>${escapeHtml(segment.train_type ?? "無")}</span>
+                <span><strong>預估時間：</strong>${escapeHtml(segment.estimated_time ?? "依現場安排")}</span>
+                <span><strong>票券：</strong>${escapeHtml(segment.ticket_type ?? "現場處理")}</span>
+                <span><strong>購票方式：</strong>${escapeHtml(segment.purchase_method ?? "現場安排")}</span>
+                <span><strong>付款說明：</strong>${escapeHtml(segment.payment_note ?? "現場安排")}</span>
+                <span><strong>IC 卡：</strong>${escapeHtml(segment.ic_card_note ?? "無")}</span>
+              </div>
+              <p class="transport-segment-note">${escapeHtml(segment.notes ?? "")}</p>
+              <div class="action-row">
+                ${
+                  segment.purchase_url
+                    ? `<a class="map-button" href="${escapeHtml(segment.purchase_url)}" target="_blank" rel="noreferrer">${escapeHtml(segment.purchase_site ?? "購票連結")}</a>`
+                    : `<span class="map-missing">${escapeHtml(segment.purchase_site ?? "現場購買／Suica 處理")}</span>`
+                }
+              </div>
+            </article>
+          `
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderTransportationDays(days = []) {
+  if (!days.length) {
+    return `<div class="empty-state">目前沒有每日交通資料。</div>`;
+  }
+
+  return `
+    <div class="transport-day-list">
+      ${days
+        .map(
+          (day) => `
+            <section class="card section-card transport-day-card">
+              <div class="map-day-head">
+                <div>
+                  <h4>${escapeHtml(formatDate(day.date))}｜${escapeHtml(day.title)}</h4>
+                  <p>${escapeHtml(day.route_summary)}</p>
+                </div>
+                <div class="day-badge">${day.segments.length} 段</div>
+              </div>
+              ${renderTransportSegments(day.segments)}
+              <div class="transport-subsection">
+                <h5>當日購票連結</h5>
+                ${renderTicketLinkButtons(day.ticket_links)}
+              </div>
+              <div class="transport-subsection">
+                <h5>注意事項</h5>
+                ${renderTextList(day.warnings)}
+              </div>
+            </section>
+          `
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderTransportView() {
+  const principles = transportationData.global_principles ?? {};
+
+  return `
+    <section class="card section-card">
+      <h3 class="section-title">交通／票券總原則</h3>
+      <div class="transport-principle-grid">
+        <article class="mini-card">
+          <strong>本趟不買 JR Pass</strong>
+          <ul class="transport-inline-list">
+            ${(principles.no_jr_pass_reason ?? []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+          </ul>
+        </article>
+        <article class="mini-card">
+          <strong>推薦使用方式</strong>
+          <ul class="transport-inline-list">
+            ${(principles.recommended_usage ?? []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+          </ul>
+        </article>
+        <article class="mini-card">
+          <strong>Suica 注意事項</strong>
+          <ul class="transport-inline-list">
+            ${(principles.suica_notes ?? []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+          </ul>
+        </article>
+        <article class="mini-card transport-highlight">
+          <strong>箱根周遊券狀態</strong>
+          <p>${escapeHtml(principles.hakone_pass_status ?? "")}</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card section-card">
+      <h3 class="section-title">建議先上網購票／指定席</h3>
+      ${renderOnlineBookingTable(transportationData.online_booking_recommendations ?? [])}
+    </section>
+
+    <section class="card section-card">
+      <h3 class="section-title">購票連結</h3>
+      ${renderTicketLinkButtons(transportationData.ticket_links ?? [])}
+    </section>
+
+    <section class="card section-card">
+      <h3 class="section-title">可現場買／Suica 處理</h3>
+      ${renderOnSiteSegments(transportationData.on_site_or_ic_card_segments ?? [])}
+    </section>
+
+    <section class="card section-card">
+      <h3 class="section-title">每日交通細流</h3>
+      ${renderTransportationDays(transportationData.days ?? [])}
+    </section>
+  `;
+}
+
 function updateMapResults() {
   const resultNode = document.getElementById("map-results");
   if (!resultNode) return;
@@ -477,6 +728,7 @@ function renderModeTabs() {
   modeNav.innerHTML = `
     <button class="mode-tab ${state.mode === "itinerary" ? "is-active" : ""}" data-mode="itinerary">行程</button>
     <button class="mode-tab ${state.mode === "maps" ? "is-active" : ""}" data-mode="maps">地圖／導航</button>
+    <button class="mode-tab ${state.mode === "transport" ? "is-active" : ""}" data-mode="transport">交通／票券</button>
   `;
 
   modeNav.querySelectorAll(".mode-tab").forEach((button) => {
@@ -553,6 +805,10 @@ function resolveInitialState() {
     state.mode = "maps";
     return;
   }
+  if (hash === "transport") {
+    state.mode = "transport";
+    return;
+  }
   if (tripData.days.some((day) => day.date === hash)) {
     state.view = hash;
   }
@@ -561,6 +817,10 @@ function resolveInitialState() {
 function syncHash() {
   if (state.mode === "maps") {
     window.location.hash = "#maps";
+    return;
+  }
+  if (state.mode === "transport") {
+    window.location.hash = "#transport";
     return;
   }
   window.location.hash = state.view === "overview" ? "#overview" : `#${state.view}`;
@@ -573,6 +833,13 @@ function renderApp() {
     dayNav.classList.add("is-hidden");
     app.innerHTML = renderMapIndex();
     bindMapTools();
+    syncHash();
+    return;
+  }
+
+  if (state.mode === "transport") {
+    dayNav.classList.add("is-hidden");
+    app.innerHTML = renderTransportView();
     syncHash();
     return;
   }

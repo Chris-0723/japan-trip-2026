@@ -2517,5 +2517,950 @@ window.TRIP_DATA = {
       "lng": null,
       "notes": "熱海海上花火大會主要觀賞點，建議提早抵達並預留人潮移動時間。"
     }
-  ]
+  ],
+  "transportation": {
+    "global_principles": {
+      "no_jr_pass_reason": [
+        "本行程不是大量長距離 JR 移動。",
+        "主要是成田進出、東京／品川到靜岡、靜岡到熱海、熱海到三島、三島進箱根、箱根回東京。",
+        "全國 JR Pass 不划算。"
+      ],
+      "recommended_usage": [
+        "東海道新幹線：SmartEX 或現場購票。",
+        "若使用 SmartEX，可綁定 Suica / PASMO 等交通 IC 卡，作為新幹線 ticketless 進站用途。",
+        "SmartEX 票款由註冊信用卡付款，不是從 Suica 餘額扣新幹線票款。",
+        "市區 JR、普通線、地鐵、巴士：Suica / PASMO。",
+        "10/15–10/17：確定使用箱根周遊券。",
+        "箱根湯本 → 新宿 Romancecar：建議預買指定席；即使使用箱根周遊券，Romancecar 特急券仍需另外購買。",
+        "日暮里 → 成田 Skyliner：建議預買或至少提早到站購票。"
+      ],
+      "suica_notes": [
+        "Suica 主要用於一般 JR、地鐵、巴士、便利商店。",
+        "新幹線現場買票建議以現金或信用卡為主。",
+        "SmartEX 可綁定 Suica 作為 ticketless 進站。",
+        "不要把 Suica 插入售票機扣款買新幹線票寫成主要建議。"
+      ],
+      "hakone_pass_status": "10/15–10/17 確定使用箱根周遊券。箱根周遊券用於箱根區域內登山電車、登山纜車、空中纜車、海賊船、登山巴士等指定交通。若 10/17 搭乘箱根湯本 → 新宿的 Romancecar，仍需另外購買 Romancecar 特急券／指定席。"
+    },
+    "online_booking_recommendations": [
+      {
+        "date": "2026-10-11",
+        "purchase_site": "SmartEX",
+        "purchase_url": "https://reurl.cc/bdLrNy",
+        "route": "東京站或品川站 → 靜岡站",
+        "train_type": "東海道新幹線 ひかり（Hikari）／こだま（Kodama）",
+        "reserved_seat": "建議指定席",
+        "notes": [
+          "のぞみ（Nozomi）不停靜岡，不要搭。",
+          "入境日帶行李，建議先買較穩。",
+          "可綁定 Suica / PASMO 作為 SmartEX ticketless 進站。"
+        ]
+      },
+      {
+        "date": "2026-10-12",
+        "purchase_site": "SmartEX",
+        "purchase_url": "https://reurl.cc/bdLrNy",
+        "route": "靜岡站 → 熱海站",
+        "train_type": "東海道新幹線 こだま（Kodama）／部分停靠熱海的 ひかり（Hikari）",
+        "reserved_seat": "建議指定席或至少先查班次",
+        "notes": [
+          "10/12 是日本假日，晚上又有熱海海上花火大會，建議不要壓太晚。",
+          "實務上以 Kodama 最穩。",
+          "可綁定 Suica / PASMO 作為 SmartEX ticketless 進站。",
+          "SmartEX 票款由註冊信用卡付款，不是從 Suica 餘額扣款。"
+        ]
+      },
+      {
+        "date": "2026-10-15",
+        "purchase_site": "SmartEX",
+        "purchase_url": "https://reurl.cc/bdLrNy",
+        "route": "三島站 → 小田原站",
+        "train_type": "東海道新幹線 こだま（Kodama）",
+        "reserved_seat": "建議預約或現場快速購票",
+        "notes": [
+          "建議搭東海道新幹線，用最快方式銜接箱根湯本。",
+          "可用 SmartEX 預約，或現場買票。",
+          "可綁定 Suica / PASMO 作為 SmartEX ticketless 進站。",
+          "抵達小田原後，轉箱根登山線到箱根湯本。"
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "purchase_site": "小田急 Romancecar",
+        "purchase_url": "https://www.web-odakyu.com/e-romancecar/",
+        "route": "箱根湯本站 → 新宿站",
+        "train_type": "小田急ロマンスカー（Romancecar）",
+        "reserved_seat": "全車指定席",
+        "notes": [
+          "建議先上網購票。",
+          "10/15–10/17 使用箱根周遊券。",
+          "箱根周遊券通常涵蓋基本車資，但 Romancecar 特急券仍需另外購買。",
+          "到新宿後，再用 Suica / PASMO 搭 JR 山手線或其他市區交通前往池袋。"
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "purchase_site": "Keisei Skyliner",
+        "purchase_url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/e-ticket/zht/",
+        "route": "日暮里站 → 成田機場",
+        "train_type": "Keisei Skyliner",
+        "reserved_seat": "指定席制，建議預買",
+        "notes": [
+          "建議預買或至少提早到站購票。",
+          "當天 16:00 成田起飛，建議降低交通變數。",
+          "池袋 → 日暮里使用 Suica / PASMO 搭 JR 山手線。"
+        ]
+      }
+    ],
+    "ticket_links": [
+      {
+        "name": "SmartEX",
+        "url": "https://reurl.cc/bdLrNy",
+        "applies_to": "10/11 東京／品川 → 靜岡、10/12 靜岡 → 熱海、10/15 三島 → 小田原",
+        "note": "東海道新幹線預約。"
+      },
+      {
+        "name": "JR East N’EX",
+        "url": "https://www.jreast.co.jp/zh-CHT/multi/nex/",
+        "applies_to": "10/11 成田機場 → 東京／品川",
+        "note": "成田特快查詢與購票。"
+      },
+      {
+        "name": "小田急 Romancecar",
+        "url": "https://www.web-odakyu.com/e-romancecar/",
+        "applies_to": "10/17 箱根湯本 → 新宿",
+        "note": "Romancecar 指定席／特急券。"
+      },
+      {
+        "name": "EMot／箱根周遊券",
+        "url": "https://www.hakonenavi.jp/international/tw/discount_passes/free_pass",
+        "applies_to": "10/15–10/17 箱根區域交通",
+        "note": "箱根周遊券與箱根區域內交通資訊。"
+      },
+      {
+        "name": "Keisei Skyliner",
+        "url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/e-ticket/zht/",
+        "applies_to": "10/18 日暮里 → 成田機場",
+        "note": "Skyliner 指定席購票。"
+      }
+    ],
+    "on_site_or_ic_card_segments": [
+      {
+        "date": "2026-10-13",
+        "title": "熱海 → 三島",
+        "method": "JR 東海道本線普通車",
+        "purchase_method": "Suica / PASMO 直接刷卡",
+        "estimated_time": "約 13–15 分鐘",
+        "reservation_required": false,
+        "notes": [
+          "不用提前買票。",
+          "沒有指定席，直接上車。",
+          "09:30 要到 Orix 三島店取車，建議 09:00 前抵達三島站。"
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "title": "新宿 → 池袋",
+        "method": "JR 山手線等市區交通",
+        "purchase_method": "Suica / PASMO 直接刷卡",
+        "estimated_time": "約 15–20 分鐘",
+        "reservation_required": false,
+        "notes": [
+          "不用提前買票。"
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "title": "池袋 → 日暮里",
+        "method": "JR 山手線",
+        "purchase_method": "Suica / PASMO 直接刷卡",
+        "estimated_time": "約 20–25 分鐘",
+        "reservation_required": false,
+        "notes": [
+          "日暮里轉乘 Keisei Skyliner 前往成田機場。"
+        ]
+      }
+    ],
+    "days": [
+      {
+        "date": "2026-10-11",
+        "title": "成田 → 東京／品川 → 靜岡",
+        "route_summary": "成田入境後，前往東京或品川轉乘東海道新幹線到靜岡。",
+        "segments": [
+          {
+            "from": "成田機場",
+            "to": "東京／品川",
+            "method": "特急列車",
+            "operator": "JR East",
+            "train_type": "N’EX 成田特快或其他合適交通",
+            "estimated_time": "約 60–90 分鐘",
+            "ticket_type": "機場特急票",
+            "purchase_site": "JR East N’EX",
+            "purchase_url": "https://www.jreast.co.jp/zh-CHT/multi/nex/",
+            "purchase_method": "建議現場依入境時間購票，或事先查班次",
+            "reservation_recommended": true,
+            "payment_note": "可現場以現金或信用卡購票。",
+            "ic_card_note": "Suica / PASMO 可處理一般市區交通，但 N’EX 仍以正式車票為主。",
+            "notes": "不建議抓太緊，入境後保留彈性。"
+          },
+          {
+            "from": "東京站／品川站",
+            "to": "靜岡站",
+            "method": "東海道新幹線",
+            "operator": "JR 東海",
+            "train_type": "ひかり（Hikari）／こだま（Kodama）",
+            "estimated_time": "約 60–90 分鐘",
+            "ticket_type": "新幹線車票",
+            "purchase_site": "SmartEX",
+            "purchase_url": "https://reurl.cc/bdLrNy",
+            "purchase_method": "建議 SmartEX 預約指定席，或現場買自由席",
+            "reservation_recommended": true,
+            "payment_note": "若現場購買新幹線票，建議用現金或信用卡。",
+            "ic_card_note": "可綁定 Suica / PASMO 作為 SmartEX ticketless 進站。",
+            "notes": "Nozomi 不停靜岡。"
+          },
+          {
+            "from": "靜岡站",
+            "to": "Hotel Garden Square Shizuoka",
+            "method": "步行／計程車",
+            "operator": "現場移動",
+            "train_type": null,
+            "estimated_time": "約 10–20 分鐘",
+            "ticket_type": "現場移動",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "依行李與體力現場判斷",
+            "reservation_recommended": false,
+            "payment_note": "計程車以現金或信用卡支付。",
+            "ic_card_note": "不需要另外買鐵路票。",
+            "notes": "行李多可直接搭計程車。"
+          },
+          {
+            "from": "靜岡市區",
+            "to": "晚間市區動線",
+            "method": "徒步／計程車／短程交通",
+            "operator": "現場移動",
+            "train_type": null,
+            "estimated_time": "依現場安排",
+            "ticket_type": "市區短程交通",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "現場處理",
+            "reservation_recommended": false,
+            "payment_note": "短程交通以現金、信用卡或 IC 卡處理。",
+            "ic_card_note": "一般市區 JR、巴士可用 Suica / PASMO。",
+            "notes": "晚間以簡單移動為主。"
+          }
+        ],
+        "ticket_links": [
+          {
+            "name": "JR East N’EX",
+            "url": "https://www.jreast.co.jp/zh-CHT/multi/nex/",
+            "applies_to": "成田機場 → 東京／品川",
+            "note": "入境後銜接東京都內。"
+          },
+          {
+            "name": "SmartEX",
+            "url": "https://reurl.cc/bdLrNy",
+            "applies_to": "東京／品川 → 靜岡",
+            "note": "Hikari / Kodama。"
+          }
+        ],
+        "warnings": [
+          "入境日建議保留 30–45 分鐘以上轉乘緩衝。",
+          "Nozomi 不停靜岡。"
+        ],
+        "codex_notes": [
+          "本日不建議購買 JR Pass。"
+        ]
+      },
+      {
+        "date": "2026-10-12",
+        "title": "靜岡／清水 → 熱海",
+        "route_summary": "靜岡／清水白天行程，傍晚前往熱海，晚上看熱海海上花火大會。",
+        "segments": [
+          {
+            "from": "Hotel Garden Square Shizuoka",
+            "to": "退房與寄放行李",
+            "method": "步行",
+            "operator": "住宿／站內服務",
+            "train_type": null,
+            "estimated_time": "約 20–30 分鐘",
+            "ticket_type": "行李寄放",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "飯店寄放或靜岡站置物櫃",
+            "reservation_recommended": false,
+            "payment_note": "置物櫃或寄放費用現場處理。",
+            "ic_card_note": "置物櫃視設備可用現金或 IC 卡。",
+            "notes": "白天先輕裝移動。"
+          },
+          {
+            "from": "靜岡市區",
+            "to": "清水／Dream Plaza 方向",
+            "method": "JR＋巴士／計程車",
+            "operator": "JR 東海／市區巴士",
+            "train_type": "普通車",
+            "estimated_time": "約 30–45 分鐘",
+            "ticket_type": "市區交通",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "Suica / PASMO 或現場支付",
+            "reservation_recommended": false,
+            "payment_note": "時間緊時可直接搭計程車。",
+            "ic_card_note": "JR、巴士可直接刷 Suica / PASMO。",
+            "notes": "當天有行李與後續移動，時間緊時優先計程車。"
+          },
+          {
+            "from": "Dream Plaza",
+            "to": "清水港みなみ",
+            "method": "當地交通／計程車",
+            "operator": "現場移動",
+            "train_type": null,
+            "estimated_time": "約 10–20 分鐘",
+            "ticket_type": "短程移動",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "現場安排",
+            "reservation_recommended": false,
+            "payment_note": "計程車現場支付。",
+            "ic_card_note": "短程巴士可使用 Suica / PASMO。",
+            "notes": "午餐前移動。"
+          },
+          {
+            "from": "清水港みなみ",
+            "to": "靜岡市區",
+            "method": "JR／其他市區交通",
+            "operator": "JR 東海",
+            "train_type": "普通車",
+            "estimated_time": "約 30–45 分鐘",
+            "ticket_type": "市區交通",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "Suica / PASMO 直接刷卡",
+            "reservation_recommended": false,
+            "payment_note": "一般市區移動。",
+            "ic_card_note": "Suica / PASMO 可直接進出站。",
+            "notes": "回靜岡接下午甜點與購物。"
+          },
+          {
+            "from": "靜岡站",
+            "to": "熱海站",
+            "method": "東海道新幹線",
+            "operator": "JR 東海",
+            "train_type": "こだま（Kodama）／部分停靠熱海的 ひかり（Hikari）",
+            "estimated_time": "約 35–60 分鐘",
+            "ticket_type": "新幹線車票",
+            "purchase_site": "SmartEX",
+            "purchase_url": "https://reurl.cc/bdLrNy",
+            "purchase_method": "建議 SmartEX 預約，或現場買自由席",
+            "reservation_recommended": true,
+            "payment_note": "SmartEX 票款由註冊信用卡付款；現場買票建議用現金或信用卡。",
+            "ic_card_note": "可綁定 Suica / PASMO 作為 SmartEX ticketless 進站，不是從 Suica 餘額扣新幹線票款。",
+            "notes": "實務上以 Kodama 最穩。"
+          },
+          {
+            "from": "熱海站",
+            "to": "Prince Smart Inn Atami",
+            "method": "徒步／計程車",
+            "operator": "現場移動",
+            "train_type": null,
+            "estimated_time": "約 10–15 分鐘",
+            "ticket_type": "短程移動",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "現場安排",
+            "reservation_recommended": false,
+            "payment_note": "計程車現場支付。",
+            "ic_card_note": "徒步為主，不需另外購票。",
+            "notes": "先入住再去晚餐與海邊。"
+          },
+          {
+            "from": "Prince Smart Inn Atami",
+            "to": "熱海サンビーチ",
+            "method": "步行",
+            "operator": "現場移動",
+            "train_type": null,
+            "estimated_time": "約 10–20 分鐘",
+            "ticket_type": "步行",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "直接步行",
+            "reservation_recommended": false,
+            "payment_note": "無需購票。",
+            "ic_card_note": "無需 IC 卡。",
+            "notes": "建議提早移動，預留人潮時間。"
+          }
+        ],
+        "ticket_links": [
+          {
+            "name": "SmartEX",
+            "url": "https://reurl.cc/bdLrNy",
+            "applies_to": "靜岡 → 熱海",
+            "note": "晚間有熱海煙火，建議不要壓太晚。"
+          }
+        ],
+        "warnings": [
+          "10/12 晚上有熱海海上花火大會，建議靜岡 → 熱海不要壓太晚。",
+          "Suica 用於一般交通，或作為 SmartEX ticketless 進站，不作為新幹線票款扣款來源。"
+        ],
+        "codex_notes": [
+          "10/12 改住熱海後，靜岡晚餐不列為正式主推薦。"
+        ]
+      },
+      {
+        "date": "2026-10-13",
+        "title": "熱海 → 三島 → Orix 取車 → 修善寺",
+        "route_summary": "熱海早餐退房後，前往三島取車，接伊豆自駕行程。",
+        "segments": [
+          {
+            "from": "Prince Smart Inn Atami",
+            "to": "早餐與退房",
+            "method": "飯店內",
+            "operator": "住宿",
+            "train_type": null,
+            "estimated_time": "約 30–45 分鐘",
+            "ticket_type": "住宿早餐",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "由飯店提供",
+            "reservation_recommended": false,
+            "payment_note": "含於住宿安排。",
+            "ic_card_note": "無需 IC 卡。",
+            "notes": "早餐由飯店提供。"
+          },
+          {
+            "from": "熱海站",
+            "to": "三島站",
+            "method": "JR 東海道本線普通車",
+            "operator": "JR 東海",
+            "train_type": "普通車",
+            "estimated_time": "約 13–15 分鐘",
+            "ticket_type": "一般 JR",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "Suica / PASMO 直接刷卡",
+            "reservation_recommended": false,
+            "payment_note": "不用提前買票。",
+            "ic_card_note": "Suica / PASMO 直接進出站。",
+            "notes": "沒有指定席，直接上車。"
+          },
+          {
+            "from": "三島站",
+            "to": "Orix Rent-a-car Mishima",
+            "method": "計程車",
+            "operator": "計程車",
+            "train_type": null,
+            "estimated_time": "約 10–15 分鐘",
+            "ticket_type": "計程車",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "現場搭乘",
+            "reservation_recommended": false,
+            "payment_note": "現場以現金或信用卡支付。",
+            "ic_card_note": "不使用 IC 卡作為主要付款建議。",
+            "notes": "目標 09:30 前抵達租車店。"
+          },
+          {
+            "from": "Orix Rent-a-car Mishima",
+            "to": "伊豆全景公園、碧色展望台、修禪寺、竹林小徑、湯回廊 菊屋",
+            "method": "自駕",
+            "operator": "租車",
+            "train_type": null,
+            "estimated_time": "依當日行程安排",
+            "ticket_type": "租車",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "09:30 取車後依既定路線自駕",
+            "reservation_recommended": true,
+            "payment_note": "租車費與油資依租車預約內容處理。",
+            "ic_card_note": "不使用 IC 卡作為主要付款。",
+            "notes": "重點是準時 09:30 取車。"
+          }
+        ],
+        "ticket_links": [
+          {
+            "name": "Orix Rent-a-car Mishima 地點",
+            "url": "https://maps.app.goo.gl/hS1R23ZiAXDv3D9y5",
+            "applies_to": "三島站 → Orix 租車店",
+            "note": "搭計程車前往。"
+          }
+        ],
+        "warnings": [
+          "熱海 → 三島不用新幹線，普通車最簡單。",
+          "建議 09:00 前到三島站。"
+        ],
+        "codex_notes": [
+          "取車後維持原本伊豆與修善寺景點安排。"
+        ]
+      },
+      {
+        "date": "2026-10-14",
+        "title": "修善寺／伊豆自駕",
+        "route_summary": "修善寺周邊與伊豆山區自駕。",
+        "segments": [
+          {
+            "from": "湯回廊 菊屋",
+            "to": "筏場水山葵田",
+            "method": "自駕",
+            "operator": "租車",
+            "train_type": null,
+            "estimated_time": "依當日路況",
+            "ticket_type": "租車",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "自駕",
+            "reservation_recommended": false,
+            "payment_note": "不需另外購買交通票。",
+            "ic_card_note": "不適用。",
+            "notes": "山路保守駕駛。"
+          },
+          {
+            "from": "筏場水山葵田",
+            "to": "道之驛 天城越え",
+            "method": "自駕",
+            "operator": "租車",
+            "train_type": null,
+            "estimated_time": "依當日路況",
+            "ticket_type": "租車",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "自駕",
+            "reservation_recommended": false,
+            "payment_note": "不需另外購買交通票。",
+            "ic_card_note": "不適用。",
+            "notes": "山區道路以安全為優先。"
+          },
+          {
+            "from": "修善寺或周邊",
+            "to": "達磨山 Rest House",
+            "method": "自駕",
+            "operator": "租車",
+            "train_type": null,
+            "estimated_time": "依當日路況",
+            "ticket_type": "租車",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "自駕",
+            "reservation_recommended": false,
+            "payment_note": "不需另外購買交通票。",
+            "ic_card_note": "不適用。",
+            "notes": "若看夕陽，避免摸黑開太久。"
+          },
+          {
+            "from": "達磨山 Rest House",
+            "to": "湯回廊 菊屋",
+            "method": "自駕",
+            "operator": "租車",
+            "train_type": null,
+            "estimated_time": "依當日路況",
+            "ticket_type": "租車",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "自駕",
+            "reservation_recommended": false,
+            "payment_note": "不需另外購買交通票。",
+            "ic_card_note": "不適用。",
+            "notes": "天候不佳時，山區與展望點可調整。"
+          }
+        ],
+        "ticket_links": [],
+        "warnings": [
+          "本日不用買交通票。",
+          "天候不佳時，山區與展望點可調整。"
+        ],
+        "codex_notes": [
+          "自駕日以保守駕駛為主。"
+        ]
+      },
+      {
+        "date": "2026-10-15",
+        "title": "修善寺 → 三島還車 → 箱根湯本 → 強羅",
+        "route_summary": "三島還車後，用最快且穩定的鐵路路線進箱根湯本，再前往強羅飯店。",
+        "segments": [
+          {
+            "from": "修善寺",
+            "to": "Orix Rent-a-car Mishima",
+            "method": "自駕",
+            "operator": "租車",
+            "train_type": null,
+            "estimated_time": "09:30–10:00",
+            "ticket_type": "租車還車",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "自駕至租車店還車",
+            "reservation_recommended": false,
+            "payment_note": "依租車契約完成還車。",
+            "ic_card_note": "不適用。",
+            "notes": "10:00 還車。"
+          },
+          {
+            "from": "Orix Rent-a-car Mishima",
+            "to": "三島站",
+            "method": "計程車",
+            "operator": "計程車",
+            "train_type": null,
+            "estimated_time": "10:00–10:20",
+            "ticket_type": "計程車",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "現場搭乘",
+            "reservation_recommended": false,
+            "payment_note": "現場支付。",
+            "ic_card_note": "不使用 IC 卡作為主要付款建議。",
+            "notes": "行李多時比公車穩。"
+          },
+          {
+            "from": "三島站",
+            "to": "小田原站",
+            "method": "東海道新幹線",
+            "operator": "JR 東海",
+            "train_type": "こだま（Kodama）",
+            "estimated_time": "10:50–11:10",
+            "ticket_type": "新幹線車票",
+            "purchase_site": "SmartEX",
+            "purchase_url": "https://reurl.cc/bdLrNy",
+            "purchase_method": "可用 SmartEX 預約，或現場買票",
+            "reservation_recommended": true,
+            "payment_note": "若現場買票，建議現金或信用卡。",
+            "ic_card_note": "若使用 SmartEX，可綁定 Suica / PASMO 作為 ticketless 進站。",
+            "notes": "用最快方式進箱根。"
+          },
+          {
+            "from": "小田原站",
+            "to": "箱根湯本站",
+            "method": "箱根登山線／小田急系統",
+            "operator": "箱根登山線／小田急",
+            "train_type": "區間列車",
+            "estimated_time": "11:30–11:50",
+            "ticket_type": "箱根周遊券",
+            "purchase_site": "EMot／箱根周遊券",
+            "purchase_url": "https://www.hakonenavi.jp/international/tw/discount_passes/free_pass",
+            "purchase_method": "使用箱根周遊券",
+            "reservation_recommended": true,
+            "payment_note": "箱根區域段落由箱根周遊券處理。",
+            "ic_card_note": "不建議再另外用 IC 卡重複支付。",
+            "notes": "10/15–10/17 確定使用箱根周遊券。"
+          },
+          {
+            "from": "箱根湯本站",
+            "to": "強羅站",
+            "method": "箱根登山電車",
+            "operator": "箱根登山電車",
+            "train_type": "區間列車",
+            "estimated_time": "13:30–14:10",
+            "ticket_type": "箱根周遊券",
+            "purchase_site": "EMot／箱根周遊券",
+            "purchase_url": "https://www.hakonenavi.jp/international/tw/discount_passes/free_pass",
+            "purchase_method": "使用箱根周遊券",
+            "reservation_recommended": true,
+            "payment_note": "箱根周遊券涵蓋指定區域交通。",
+            "ic_card_note": "不建議再另外用 IC 卡重複支付。",
+            "notes": "搭箱根登山電車前往強羅。"
+          },
+          {
+            "from": "強羅站",
+            "to": "ホテルマロウド箱根",
+            "method": "步行／計程車",
+            "operator": "現場移動",
+            "train_type": null,
+            "estimated_time": "14:10–14:40",
+            "ticket_type": "短程移動",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "依行李與坡度現場判斷",
+            "reservation_recommended": false,
+            "payment_note": "必要時計程車現場支付。",
+            "ic_card_note": "不需要另外購買鐵路票。",
+            "notes": "15:00 前後 Check-in 或寄放行李。"
+          }
+        ],
+        "ticket_links": [
+          {
+            "name": "SmartEX",
+            "url": "https://reurl.cc/bdLrNy",
+            "applies_to": "三島 → 小田原",
+            "note": "最快銜接箱根。"
+          },
+          {
+            "name": "EMot／箱根周遊券",
+            "url": "https://www.hakonenavi.jp/international/tw/discount_passes/free_pass",
+            "applies_to": "小田原 → 箱根湯本 → 強羅",
+            "note": "10/15–10/17 確定使用。"
+          }
+        ],
+        "warnings": [
+          "三島 → 小田原建議搭東海道新幹線。",
+          "小田原 → 箱根湯本與箱根區域內正式採用箱根周遊券。"
+        ],
+        "codex_notes": [
+          "這天起算箱根周遊券使用區間。"
+        ]
+      },
+      {
+        "date": "2026-10-16",
+        "title": "箱根經典環線",
+        "route_summary": "箱根神社、蘆之湖、海賊船、空中纜車、大涌谷、早雲山。",
+        "segments": [
+          {
+            "from": "ホテルマロウド箱根／強羅周邊",
+            "to": "箱根神社",
+            "method": "登山電車／登山纜車／空中纜車／巴士／必要時計程車",
+            "operator": "箱根交通系統",
+            "train_type": "區域交通",
+            "estimated_time": "依當日路線安排",
+            "ticket_type": "箱根周遊券",
+            "purchase_site": "EMot／箱根周遊券",
+            "purchase_url": "https://www.hakonenavi.jp/international/tw/discount_passes/free_pass",
+            "purchase_method": "使用箱根周遊券",
+            "reservation_recommended": true,
+            "payment_note": "區域內指定交通以箱根周遊券處理。",
+            "ic_card_note": "不建議區域內重複用 IC 卡支付。",
+            "notes": "依當日天氣與實際動線調整。"
+          },
+          {
+            "from": "箱根神社",
+            "to": "桃源台",
+            "method": "箱根海賊船",
+            "operator": "箱根海賊船",
+            "train_type": "觀光船",
+            "estimated_time": "依當日班次",
+            "ticket_type": "箱根周遊券",
+            "purchase_site": "EMot／箱根周遊券",
+            "purchase_url": "https://www.hakonenavi.jp/international/tw/discount_passes/free_pass",
+            "purchase_method": "使用箱根周遊券",
+            "reservation_recommended": true,
+            "payment_note": "由箱根周遊券處理。",
+            "ic_card_note": "不建議重複刷 IC 卡。",
+            "notes": "搭海賊船跨蘆之湖。"
+          },
+          {
+            "from": "桃源台",
+            "to": "大涌谷",
+            "method": "箱根空中纜車",
+            "operator": "箱根空中纜車",
+            "train_type": "空中纜車",
+            "estimated_time": "依當日班次",
+            "ticket_type": "箱根周遊券",
+            "purchase_site": "EMot／箱根周遊券",
+            "purchase_url": "https://www.hakonenavi.jp/international/tw/discount_passes/free_pass",
+            "purchase_method": "使用箱根周遊券",
+            "reservation_recommended": true,
+            "payment_note": "由箱根周遊券處理。",
+            "ic_card_note": "不建議重複刷 IC 卡。",
+            "notes": "天氣差時可能停駛。"
+          },
+          {
+            "from": "大涌谷",
+            "to": "早雲山",
+            "method": "箱根空中纜車",
+            "operator": "箱根空中纜車",
+            "train_type": "空中纜車",
+            "estimated_time": "依當日班次",
+            "ticket_type": "箱根周遊券",
+            "purchase_site": "EMot／箱根周遊券",
+            "purchase_url": "https://www.hakonenavi.jp/international/tw/discount_passes/free_pass",
+            "purchase_method": "使用箱根周遊券",
+            "reservation_recommended": true,
+            "payment_note": "由箱根周遊券處理。",
+            "ic_card_note": "不建議重複刷 IC 卡。",
+            "notes": "保留替代方案與彈性。"
+          },
+          {
+            "from": "早雲山",
+            "to": "強羅／飯店",
+            "method": "登山纜車／登山電車／必要時計程車",
+            "operator": "箱根交通系統",
+            "train_type": "區域交通",
+            "estimated_time": "依當日路線安排",
+            "ticket_type": "箱根周遊券",
+            "purchase_site": "EMot／箱根周遊券",
+            "purchase_url": "https://www.hakonenavi.jp/international/tw/discount_passes/free_pass",
+            "purchase_method": "使用箱根周遊券",
+            "reservation_recommended": true,
+            "payment_note": "區域內指定交通以箱根周遊券處理。",
+            "ic_card_note": "不建議重複刷 IC 卡。",
+            "notes": "必要時可改計程車。"
+          }
+        ],
+        "ticket_links": [
+          {
+            "name": "EMot／箱根周遊券",
+            "url": "https://www.hakonenavi.jp/international/tw/discount_passes/free_pass",
+            "applies_to": "箱根環線所有指定交通",
+            "note": "10/15–10/17 確定使用。"
+          }
+        ],
+        "warnings": [
+          "海賊船、空中纜車、登山電車、登山巴士等指定交通，原則上以箱根周遊券處理。",
+          "天氣差時，空中纜車可能停駛或影響景觀。"
+        ],
+        "codex_notes": [
+          "保留替代方案與彈性。"
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "title": "箱根 → 新宿 → 池袋",
+        "route_summary": "從箱根回東京，下午／晚上池袋購物。",
+        "segments": [
+          {
+            "from": "ホテルマロウド箱根",
+            "to": "箱根湯本",
+            "method": "登山電車／巴士／必要時計程車",
+            "operator": "箱根交通系統",
+            "train_type": "區域交通",
+            "estimated_time": "依住宿位置與當日接駁安排",
+            "ticket_type": "箱根周遊券",
+            "purchase_site": "EMot／箱根周遊券",
+            "purchase_url": "https://www.hakonenavi.jp/international/tw/discount_passes/free_pass",
+            "purchase_method": "使用箱根周遊券",
+            "reservation_recommended": true,
+            "payment_note": "箱根區域交通以周遊券處理。",
+            "ic_card_note": "不建議重複刷 IC 卡。",
+            "notes": "依住宿位置安排下山方式。"
+          },
+          {
+            "from": "箱根湯本",
+            "to": "新宿",
+            "method": "小田急 Romancecar",
+            "operator": "小田急",
+            "train_type": "小田急ロマンスカー（Romancecar）",
+            "estimated_time": "約 85–95 分鐘",
+            "ticket_type": "箱根周遊券＋Romancecar 特急券",
+            "purchase_site": "小田急 Romancecar",
+            "purchase_url": "https://www.web-odakyu.com/e-romancecar/",
+            "purchase_method": "建議事先預買指定席",
+            "reservation_recommended": true,
+            "payment_note": "Romancecar 特急券／指定席需另外購買。",
+            "ic_card_note": "箱根周遊券處理基本車資，不以 Suica 作為主要付款建議。",
+            "notes": "Romancecar 為全車指定席。"
+          },
+          {
+            "from": "新宿",
+            "to": "池袋",
+            "method": "JR 山手線或其他市區交通",
+            "operator": "JR 東日本等",
+            "train_type": "市區通勤列車",
+            "estimated_time": "約 15–20 分鐘",
+            "ticket_type": "市區交通",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "Suica / PASMO 直接刷卡",
+            "reservation_recommended": false,
+            "payment_note": "不用提前買票。",
+            "ic_card_note": "Suica / PASMO 直接進出站。",
+            "notes": "新宿 → 池袋不用提前買票。"
+          },
+          {
+            "from": "池袋站",
+            "to": "DEL style 池袋東口 by Daiwa Roynet Hotel",
+            "method": "徒步／計程車",
+            "operator": "現場移動",
+            "train_type": null,
+            "estimated_time": "約 10–20 分鐘",
+            "ticket_type": "短程移動",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "現場安排",
+            "reservation_recommended": false,
+            "payment_note": "必要時計程車現場支付。",
+            "ic_card_note": "徒步為主，不需另外購票。",
+            "notes": "抵達後入住或寄放行李。"
+          }
+        ],
+        "ticket_links": [
+          {
+            "name": "EMot／箱根周遊券",
+            "url": "https://www.hakonenavi.jp/international/tw/discount_passes/free_pass",
+            "applies_to": "箱根 → 箱根湯本",
+            "note": "10/15–10/17 確定使用。"
+          },
+          {
+            "name": "小田急 Romancecar",
+            "url": "https://www.web-odakyu.com/e-romancecar/",
+            "applies_to": "箱根湯本 → 新宿",
+            "note": "全車指定席，特急券另購。"
+          }
+        ],
+        "warnings": [
+          "10/15–10/17 使用箱根周遊券。",
+          "Romancecar 特急券／指定席需另外購買。"
+        ],
+        "codex_notes": [
+          "新宿 → 池袋用 Suica / PASMO 處理即可。"
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "title": "池袋 → 日暮里 → 成田機場",
+        "route_summary": "上午池袋購物，下午前往成田機場，16:00 起飛。",
+        "segments": [
+          {
+            "from": "DEL style 池袋東口",
+            "to": "早餐／退房",
+            "method": "飯店內",
+            "operator": "住宿",
+            "train_type": null,
+            "estimated_time": "約 30–60 分鐘",
+            "ticket_type": "住宿早餐",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "依飯店安排",
+            "reservation_recommended": false,
+            "payment_note": "含於住宿安排。",
+            "ic_card_note": "無需 IC 卡。",
+            "notes": "退房後前往池袋最後購物。"
+          },
+          {
+            "from": "池袋",
+            "to": "日暮里",
+            "method": "JR 山手線",
+            "operator": "JR 東日本",
+            "train_type": "市區通勤列車",
+            "estimated_time": "約 20–25 分鐘",
+            "ticket_type": "市區交通",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "Suica / PASMO 直接刷卡",
+            "reservation_recommended": false,
+            "payment_note": "不用提前買票。",
+            "ic_card_note": "Suica / PASMO 直接進出站。",
+            "notes": "日暮里轉乘 Skyliner。"
+          },
+          {
+            "from": "日暮里",
+            "to": "成田機場",
+            "method": "Keisei Skyliner",
+            "operator": "京成電鐵",
+            "train_type": "Skyliner",
+            "estimated_time": "約 40–45 分鐘",
+            "ticket_type": "Skyliner 指定席",
+            "purchase_site": "Keisei Skyliner",
+            "purchase_url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/e-ticket/zht/",
+            "purchase_method": "建議預買或至少提早到站購票",
+            "reservation_recommended": true,
+            "payment_note": "指定席制，建議降低變數。",
+            "ic_card_note": "池袋到日暮里只要 Suica，Skyliner 另行購票。",
+            "notes": "建議約 13:00 左右抵達機場。"
+          }
+        ],
+        "ticket_links": [
+          {
+            "name": "Keisei Skyliner",
+            "url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/e-ticket/zht/",
+            "applies_to": "日暮里 → 成田機場",
+            "note": "指定席制。"
+          }
+        ],
+        "warnings": [
+          "Skyliner 為指定席制，建議不要壓太晚。",
+          "當天以準時抵達機場為優先。"
+        ],
+        "codex_notes": [
+          "池袋到日暮里只要 Suica。"
+        ]
+      }
+    ]
+  }
 };

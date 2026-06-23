@@ -107,7 +107,7 @@ a {
 
 .mode-nav {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
   margin: 16px 0 0;
 }
@@ -658,6 +658,110 @@ a {
   font-weight: 800;
 }
 
+.transport-principle-grid,
+.transport-day-list,
+.transport-link-grid,
+.transport-note-list,
+.transport-segment-list {
+  display: grid;
+  gap: 12px;
+}
+
+.transport-highlight {
+  background: linear-gradient(180deg, #f0fbfa, #fffdf9);
+}
+
+.transport-table-wrap {
+  overflow-x: auto;
+}
+
+.transport-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.transport-table th,
+.transport-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.transport-table th {
+  color: var(--accent-deep);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  background: #f7f3ec;
+}
+
+.transport-table-site {
+  display: grid;
+  gap: 6px;
+}
+
+.transport-table-site a {
+  color: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.transport-inline-list {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.transport-inline-list li + li {
+  margin-top: 6px;
+}
+
+.transport-link-card p,
+.transport-ic-card p,
+.transport-highlight p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.transport-day-card {
+  padding: 16px;
+}
+
+.transport-segment-card {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #fffefb, #fffaf5);
+}
+
+.transport-segment-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.transport-segment-head h5,
+.transport-subsection h5 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.transport-segment-note {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.transport-subsection {
+  margin-top: 14px;
+}
+
 @media (min-width: 720px) {
   .app-shell {
     padding-top: 24px;
@@ -672,7 +776,16 @@ a {
   }
 
   .mode-nav {
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(3, max-content);
     justify-content: start;
+  }
+
+  .transport-principle-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .transport-link-grid,
+  .transport-note-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
