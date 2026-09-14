@@ -18,8 +18,8 @@ window.TRIP_DATA = {
     {
       "date": "2026-10-11",
       "weekday": "日",
-      "title": "Day 0｜成田抵達 → 靜岡住宿",
-      "area": "成田、東京、靜岡",
+      "title": "Day 0｜成田 → 品川 → 靜岡",
+      "area": "成田、品川、靜岡",
       "accommodation": "Hotel Garden Square Shizuoka／ホテルガーデンスクエア静岡",
       "theme": "成田抵達、日本境內長距離移動、靜岡晚餐與簡單採買",
       "timeline": [
@@ -48,35 +48,45 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "15:30",
-          "end_time": "16:30",
-          "title": "前往東京站／品川站",
-          "location": "成田機場 → 東京站／品川站",
-          "transport": "N'EX 成田特快",
-          "description": "由機場進入東京都內，銜接新幹線。",
+          "start_time": "15:48",
+          "end_time": "16:53",
+          "title": "N'EX 34號前往品川",
+          "location": "成田機場第 2、3 航廈 → 品川",
+          "transport": "N'EX 34號",
+          "description": "順位1，入境後依實際狀況當日購票；不要標示為已預約。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "narita_airport",
-            "tokyo-station",
             "shinagawa-station"
           ]
         },
         {
-          "start_time": "16:30",
-          "end_time": "18:00",
-          "title": "前往靜岡",
-          "location": "東京站／品川站 → 靜岡站",
-          "transport": "東海道新幹線",
-          "description": "搭乘新幹線前往靜岡，完成當日長距離轉場。",
+          "start_time": "16:53",
+          "end_time": "17:10",
+          "title": "品川站轉乘",
+          "location": "品川站",
+          "transport": "站內步行",
+          "description": "N'EX 34 抵達後轉乘 Hikari 721，主要方案轉乘時間 17 分鐘。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "tokyo-station",
+            "shinagawa-station"
+          ]
+        },
+        {
+          "start_time": "17:10",
+          "end_time": "18:02",
+          "title": "Hikari 721 前往靜岡",
+          "location": "品川 → 靜岡",
+          "transport": "東海道新幹線 ひかり 721號",
+          "description": "已預約的主要接續車次。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
             "shinagawa-station",
             "shizuoka-station"
           ]
         },
         {
-          "start_time": "18:00",
+          "start_time": "18:02",
           "end_time": "18:30",
           "title": "飯店 Check-in",
           "location": "Hotel Garden Square Shizuoka",
@@ -104,10 +114,10 @@ window.TRIP_DATA = {
         {
           "start_time": "20:30",
           "end_time": "21:15",
-          "title": "晚餐後採買",
+          "title": "晚餐後採買（optional）",
           "location": "新靜岡 CENOVA",
           "transport": "步行",
-          "description": "前往新靜岡 CENOVA 找扳蛋與簡單採買。",
+          "description": "若時間、營業時間與體力允許，再前往新靜岡 CENOVA 尋找胖胖褲豬商品或扭蛋；不是必去。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "cenova_shizuoka"
@@ -130,14 +140,14 @@ window.TRIP_DATA = {
       ],
       "transportation": [
         {
-          "segment": "成田機場 → 東京站／品川站",
-          "mode": "N'EX 成田特快",
-          "notes": "進東京後銜接新幹線。"
+          "segment": "成田機場 → 品川站",
+          "mode": "N'EX 34號",
+          "notes": "15:48–16:53，當日購票／順位1。"
         },
         {
-          "segment": "東京站／品川站 → 靜岡站",
-          "mode": "東海道新幹線",
-          "notes": "抵達後入住 Hotel Garden Square Shizuoka。"
+          "segment": "品川站 → 靜岡站",
+          "mode": "ひかり 721號",
+          "notes": "17:10–18:02，已預約。"
         },
         {
           "segment": "靜岡站周邊移動",
@@ -163,102 +173,104 @@ window.TRIP_DATA = {
           "notes": "若仍有體力可安排消夜。"
         }
       ],
-      "backup_plan": [],
+      "backup_plan": [
+        "備案2：N'EX 34號 15:48–16:53，轉乘 Kodama 845 17:34–18:47。",
+        "備案3：N'EX 36號 16:23–17:28，轉乘 Hikari 655 18:10–19:02。"
+      ],
       "notes": [
         "這天不排景點，以長距離移動、入住與晚餐為主。",
-        "10/11-10/12 靜岡市區內移動可考慮計程車。"
+        "10/11-10/12 靜岡市區內移動可考慮計程車。",
+        "主要方案的品川轉乘時間為 17 分鐘；若入境延誤，改採備案2或備案3。",
+        "10/11 不強制採買清酒，主要採購日為 10/12。"
       ]
     },
     {
       "date": "2026-10-12",
       "weekday": "一",
-      "title": "Day 1｜靜岡、清水 → 熱海花火之夜",
-      "area": "靜岡、清水、熱海",
+      "title": "Day 1｜靜岡市中心 → 熱海花火之夜",
+      "area": "靜岡、熱海",
       "accommodation": "Prince Smart Inn Atami／プリンス スマート イン 熱海",
-      "theme": "靜岡／清水白天行程 → 傍晚移動熱海 → 熱海海上花火大會 → 住熱海",
+      "theme": "靜岡市中心找胖胖褲豬、採買地酒與鮪魚午餐 → 15:56 前往熱海 → 熱海海上花火大會",
       "timeline": [
         {
           "start_time": "08:30",
-          "end_time": "09:00",
+          "end_time": "09:20",
           "title": "早餐、退房與寄放行李",
           "location": "Hotel Garden Square Shizuoka、靜岡站",
           "transport": "步行",
-          "description": "在飯店簡單早餐後退房，並將行李寄放飯店或改寄放靜岡站置物櫃。",
+          "description": "早餐後退房，行李寄放 Hotel Garden Square Shizuoka。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "hotel_garden_square_shizuoka",
-            "shizuoka-station"
+            "hotel_garden_square_shizuoka"
           ]
         },
         {
-          "start_time": "09:00",
-          "end_time": "09:40",
-          "title": "前往清水與 Dream Plaza 方向",
-          "location": "靜岡站 → 清水、Dream Plaza",
-          "transport": "JR／巴士",
-          "description": "從靜岡市區移動到清水港區，準備先逛 Dream Plaza。",
-          "related_restaurant_ids": [],
-          "related_place_ids": [
-            "shizuoka-station",
-            "shimizu",
-            "s_pulse_dream_plaza"
-          ]
-        },
-        {
-          "start_time": "09:40",
-          "end_time": "11:30",
-          "title": "エスパルスドリームプラザ採買",
-          "location": "エスパルスドリームプラザ",
+          "start_time": "09:30",
+          "end_time": "10:30",
+          "title": "第一順位：靜岡 PARCO／Village Vanguard",
+          "location": "靜岡 PARCO 6F Village Vanguard",
           "transport": "步行",
-          "description": "找胖胖褲豬並購買靜岡伴手禮。",
+          "description": "10/12 找パンパカパンツ／胖胖褲豬的最高優先點。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "s_pulse_dream_plaza"
+            "shizuoka_parco"
+          ]
+        },
+        {
+          "start_time": "10:40",
+          "end_time": "11:20",
+          "title": "第二順位：新靜岡 CENOVA",
+          "location": "新靜岡 CENOVA",
+          "transport": "步行",
+          "description": "尋找胖胖褲豬、角色商品與扭蛋；若 10/11 晚上已逛過，可縮短停留。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "cenova_shizuoka"
           ]
         },
         {
           "start_time": "11:30",
           "end_time": "12:10",
-          "title": "前往清水港みなみ",
-          "location": "エスパルスドリームプラザ → 清水港みなみ",
-          "transport": "步行／計程車",
-          "description": "由 Dream Plaza 前往午餐餐廳。",
+          "title": "第三順位：D&M CAVE SHIZUOKA",
+          "location": "松坂屋靜岡店北館 D&M CAVE SHIZUOKA",
+          "transport": "步行",
+          "description": "靜岡地酒主要採購點；優先找磯自慢、初龜，其次喜久醉、臥龍梅、英君、正雪，以合理價格的吟釀／純米吟釀自飲酒為主。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "s_pulse_dream_plaza",
-            "restaurant_shimizuko_minami"
+            "dm_cave_shizuoka"
           ]
         },
         {
           "start_time": "12:10",
-          "end_time": "13:20",
-          "title": "午餐",
-          "location": "Shimizuko Minami／清水港みなみ",
+          "end_time": "12:30",
+          "title": "第四順位：ふしみや呉服町本店（optional）",
+          "location": "ふしみや呉服町本店",
           "transport": "步行",
-          "description": "午餐第一順位安排清水港みなみ。",
-          "related_restaurant_ids": [
-            "restaurant_shimizuko_minami"
-          ],
-          "related_place_ids": [
-            "restaurant_shimizuko_minami"
-          ]
-        },
-        {
-          "start_time": "13:20",
-          "end_time": "14:20",
-          "title": "返回靜岡市區",
-          "location": "清水 → 靜岡市區",
-          "transport": "JR",
-          "description": "午餐後返回靜岡市區，銜接下午短時間購物與甜點。",
+          "description": "胖胖褲豬／角色商品補充搜尋；順位最低，時間不足時第一個取消。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "shimizu",
-            "shizuoka"
+            "fushimiya_gofukucho"
           ]
         },
         {
-          "start_time": "14:20",
-          "end_time": "14:50",
+          "start_time": "12:30",
+          "end_time": "13:40",
+          "title": "鮪魚午餐",
+          "location": "清水港みなみ／まぐろ一筋 みやもと",
+          "transport": "步行",
+          "description": "第一順位為清水港みなみ；若等待過久，直接改到靜岡站／ASTY 的まぐろ一筋 みやもと，不為排隊影響 15:56 新幹線。",
+          "related_restaurant_ids": [
+            "restaurant_shimizuko_minami",
+            "restaurant_maguro_miyamoto"
+          ],
+          "related_place_ids": [
+            "restaurant_shimizuko_minami",
+            "restaurant_maguro_miyamoto"
+          ]
+        },
+        {
+          "start_time": "13:50",
+          "end_time": "14:15",
           "title": "下午甜點",
           "location": "Nanaya Shizuoka／ななや 静岡店",
           "transport": "步行",
@@ -271,24 +283,12 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "14:50",
-          "end_time": "15:30",
-          "title": "靜岡 PARCO",
-          "location": "靜岡 PARCO",
-          "transport": "步行",
-          "description": "直奔 Village Vanguard 找胖胖褲豬。",
-          "related_restaurant_ids": [],
-          "related_place_ids": [
-            "shizuoka_parco"
-          ]
-        },
-        {
-          "start_time": "15:30",
-          "end_time": "16:00",
+          "start_time": "14:15",
+          "end_time": "15:20",
           "title": "取回行李",
-          "location": "Hotel Garden Square Shizuoka 或靜岡站",
+          "location": "Hotel Garden Square Shizuoka → 靜岡站",
           "transport": "步行",
-          "description": "回飯店或靜岡站取回寄放行李，準備前往熱海。",
+          "description": "視剩餘時間做最後購物，約 15:00 前回飯店取行李，15:20–15:30 抵達靜岡站。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_garden_square_shizuoka",
@@ -296,12 +296,12 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "16:00",
-          "end_time": "17:00",
-          "title": "前往熱海",
+          "start_time": "15:56",
+          "end_time": "16:31",
+          "title": "Kodama 830 前往熱海",
           "location": "靜岡站 → 熱海站",
-          "transport": "JR／新幹線",
-          "description": "傍晚移動至熱海，準備入住與晚間花火行程。",
+          "transport": "東海道新幹線 こだま 830號",
+          "description": "已預約；15:56 是硬時間。備案1為 Kodama 832，16:26–17:01。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "shizuoka-station",
@@ -309,8 +309,8 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "17:00",
-          "end_time": "18:00",
+          "start_time": "16:45",
+          "end_time": "17:30",
           "title": "Check-in",
           "location": "Prince Smart Inn Atami",
           "transport": "步行",
@@ -321,7 +321,7 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "18:00",
+          "start_time": "17:30",
           "end_time": "19:40",
           "title": "晚餐與海岸周邊散步",
           "location": "熱海站／熱海銀座周邊",
@@ -360,19 +360,14 @@ window.TRIP_DATA = {
       ],
       "transportation": [
         {
-          "segment": "靜岡站 ↔ 清水港區",
-          "mode": "JR、巴士、必要時計程車",
-          "notes": "白天以 Dream Plaza 與清水港午餐動線為主。"
-        },
-        {
-          "segment": "清水 → 靜岡市區",
-          "mode": "JR",
-          "notes": "午後回靜岡市區吃冰與短時間購物。"
+          "segment": "靜岡市中心購物動線",
+          "mode": "步行／必要時計程車",
+          "notes": "依序為 PARCO、CENOVA、D&M CAVE、ふしみや optional、午餐、ななや。"
         },
         {
           "segment": "靜岡站 → 熱海站",
-          "mode": "JR／新幹線",
-          "notes": "傍晚移動至熱海，銜接住宿與花火活動。"
+          "mode": "こだま 830號",
+          "notes": "15:56–16:31，已預約。"
         },
         {
           "segment": "熱海站 ↔ 熱海陽光海灘／飯店",
@@ -392,8 +387,10 @@ window.TRIP_DATA = {
           "primary_restaurant_ids": [
             "restaurant_shimizuko_minami"
           ],
-          "backup_restaurant_ids": [],
-          "notes": "清水港午餐第一順位。"
+          "backup_restaurant_ids": [
+            "restaurant_maguro_miyamoto"
+          ],
+          "notes": "若第一順位等待過久，立即改備案，不影響 15:56 新幹線。"
         },
         {
           "meal_type": "下午甜點",
@@ -411,10 +408,12 @@ window.TRIP_DATA = {
         }
       ],
       "backup_plan": [
-        "若熱海海上花火大會因天候或主辦單位調整，改成熱海海岸散步並提早回飯店休息。"
+        "若熱海海上花火大會因天候或主辦單位調整，改成熱海海岸散步並提早回飯店休息。",
+        "靜岡 → 熱海備案1：Kodama 832，16:26–17:01。"
       ],
       "notes": [
-        "10/12 不再安排靜岡淺間神社與靜岡晚餐。",
+        "10/12 白天集中靜岡市中心，不安排靜岡淺間神社與靜岡晚餐。",
+        "15:56 Kodama 830 為硬時間，約 14:30 前完成主要購物。",
         "熱海海上花火大會人潮較多，建議提早到熱海陽光海灘周邊卡位。"
       ]
     },
@@ -452,7 +451,7 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "09:00",
+          "start_time": "09:30",
           "end_time": "09:20",
           "title": "三島站搭計程車前往租車店",
           "location": "三島站 → Orix Rent-a-car Mishima",
@@ -874,33 +873,58 @@ window.TRIP_DATA = {
         },
         {
           "start_time": "10:00",
-          "end_time": "10:30",
-          "title": "三島還車",
-          "location": "Orix Rent-a-car Mishima",
-          "transport": "租車歸還",
-          "description": "完成 10:00 還車手續。",
+          "end_time": "10:20",
+          "title": "還車後前往三島站",
+          "location": "Orix Rent-a-car Mishima → 三島站",
+          "transport": "租車歸還／計程車",
+          "description": "10:00 完成還車後，搭計程車前往三島站。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "orix_rentacar_mishima"
+            "orix_rentacar_mishima",
+            "mishima-station"
           ]
         },
         {
-          "start_time": "10:30",
-          "end_time": "11:30",
-          "title": "前往箱根湯本",
-          "location": "三島 → 小田原 → 箱根湯本",
-          "transport": "鐵路",
-          "description": "由三島轉往箱根湯本。",
+          "start_time": "10:20",
+          "end_time": "10:50",
+          "title": "三島站購票／進站",
+          "location": "三島站",
+          "transport": "站內步行",
+          "description": "準備搭乘已預約的 Kodama 808。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "mishima-station"
+          ]
+        },
+        {
+          "start_time": "10:54",
+          "end_time": "11:09",
+          "title": "Kodama 808 前往小田原",
+          "location": "三島 → 小田原",
+          "transport": "東海道新幹線 こだま 808號",
+          "description": "已預約。順位2為 Kodama 810，11:24–11:39。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "mishima-station",
+            "odawara-station"
+          ]
+        },
+        {
+          "start_time": "11:09",
+          "end_time": "11:50",
+          "title": "轉乘前往箱根湯本",
+          "location": "小田原 → 箱根湯本",
+          "transport": "箱根登山線／小田急箱根線",
+          "description": "小田原站轉乘後，使用箱根周遊券前往箱根湯本。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
             "odawara-station",
             "hakone-yumoto"
           ]
         },
         {
-          "start_time": null,
-          "end_time": "11:30",
+          "start_time": "11:50",
+          "end_time": "12:00",
           "title": "寄送或寄放行李",
           "location": "箱根湯本站",
           "transport": "步行",
@@ -912,8 +936,8 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "11:45",
-          "end_time": "13:00",
+          "start_time": "12:00",
+          "end_time": "13:20",
           "title": "午餐",
           "location": "箱根湯本",
           "transport": "步行",
@@ -930,20 +954,20 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "13:00",
-          "end_time": "14:00",
+          "start_time": "13:20",
+          "end_time": "13:30",
           "title": "箱根湯本散步",
           "location": "箱根湯本溫泉街",
           "transport": "步行",
-          "description": "安排溫泉街散步與溫泉饅頭採買。",
+          "description": "午餐後短暫整理，準備搭登山電車。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hakone-yumoto"
           ]
         },
         {
-          "start_time": "14:15",
-          "end_time": "15:00",
+          "start_time": "13:30",
+          "end_time": "14:10",
           "title": "前往強羅",
           "location": "箱根湯本 → 強羅",
           "transport": "箱根登山電車",
@@ -955,7 +979,7 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "15:00",
+          "start_time": "14:10",
           "end_time": "17:00",
           "title": "Check-in 與周邊散步",
           "location": "馬洛德飯店 箱根",
@@ -1004,7 +1028,7 @@ window.TRIP_DATA = {
         {
           "segment": "三島 → 小田原 → 箱根湯本",
           "mode": "鐵路",
-          "notes": "進入箱根區域。"
+          "notes": "Kodama 808 10:54–11:09 已預約；到小田原後轉箱根登山／小田急箱根線。"
         },
         {
           "segment": "箱根湯本 → 強羅",
@@ -1040,7 +1064,8 @@ window.TRIP_DATA = {
       ],
       "notes": [
         "這天不要急著衝箱根大景點。",
-        "10/15 的 Orix Rent-a-car Mishima 行程是還車，不是取車。"
+        "10/15 的 Orix Rent-a-car Mishima 行程是還車，不是取車。",
+        "10/15–10/17 確定使用箱根周遊券。"
       ]
     },
     {
@@ -1243,10 +1268,10 @@ window.TRIP_DATA = {
     {
       "date": "2026-10-17",
       "weekday": "六",
-      "title": "Day 6｜箱根 → 東京",
-      "area": "箱根、東京",
+      "title": "Day 6｜箱根 → 池袋寄放行李 → 澀谷購物",
+      "area": "箱根、新宿、池袋、澀谷",
       "accommodation": "DEL style 池袋東口 by Daiwa Roynet Hotel",
-      "theme": "箱根下山 → 新宿轉乘 → 池袋購物",
+      "theme": "箱根下山 → 新宿轉乘 → 池袋寄放行李 → HOKA → Nintendo TOKYO → mont-bell 澀谷",
       "timeline": [
         {
           "start_time": "08:30",
@@ -1262,11 +1287,11 @@ window.TRIP_DATA = {
         },
         {
           "start_time": "09:30",
-          "end_time": "10:45",
+          "end_time": "11:20",
           "title": "前往箱根湯本",
           "location": "馬洛德飯店 箱根 → 箱根湯本",
           "transport": "登山電車",
-          "description": "早上直接下山，準備進東京。",
+          "description": "使用箱根周遊券下山，預留轉乘與候車時間。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_marroad_hakone",
@@ -1274,12 +1299,12 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "10:45",
-          "end_time": "12:30",
-          "title": "前往新宿",
+          "start_time": "11:38",
+          "end_time": "13:05",
+          "title": "Romancecar 順位1（待預約）",
           "location": "箱根湯本 → 新宿",
           "transport": "小田急浪漫特快",
-          "description": "搭乘小田急浪漫特快進東京。",
+          "description": "主要目標為小田急ロマンスカー はこね6號；Romancecar 特急券另購。順位2為はこね10號 13:15–14:45。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hakone-yumoto",
@@ -1287,8 +1312,8 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "12:30",
-          "end_time": "13:00",
+          "start_time": "13:05",
+          "end_time": "13:30",
           "title": "前往池袋",
           "location": "新宿 → 池袋",
           "transport": "JR 電車",
@@ -1300,8 +1325,8 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "13:00",
-          "end_time": "14:00",
+          "start_time": "13:30",
+          "end_time": "14:15",
           "title": "寄放行李或 Check-in",
           "location": "DEL style 池袋東口 by Daiwa Roynet Hotel",
           "transport": "步行",
@@ -1312,15 +1337,52 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "14:00",
-          "end_time": null,
-          "title": "池袋購物",
-          "location": "池袋",
-          "transport": "步行",
-          "description": "下午與晚上以池袋的電器用品店、藥妝店與百貨周邊為主。",
+          "start_time": "14:15",
+          "end_time": "15:00",
+          "title": "前往澀谷",
+          "location": "池袋 → 澀谷",
+          "transport": "JR／市區交通",
+          "description": "放妥行李後前往澀谷，當天不安排新宿購物。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "ikebukuro"
+            "ikebukuro",
+            "shibuya"
+          ]
+        },
+        {
+          "start_time": "15:00",
+          "end_time": "16:30",
+          "title": "第一站：HOKA Shibuya",
+          "location": "HOKA Shibuya",
+          "transport": "步行",
+          "description": "主要購買 HOKA Bondi，現場確認尺寸、楦頭與配色。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "hoka_shibuya"
+          ]
+        },
+        {
+          "start_time": "16:30",
+          "end_time": "18:00",
+          "title": "第二站：Nintendo TOKYO",
+          "location": "Nintendo TOKYO",
+          "transport": "步行",
+          "description": "主要購買 Pikmin 官方周邊。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "nintendo_tokyo"
+          ]
+        },
+        {
+          "start_time": "18:00",
+          "end_time": null,
+          "title": "第三站：mont-bell 澀谷店",
+          "location": "mont-bell 澀谷店",
+          "transport": "步行",
+          "description": "選購機能衣、外套、旅行用品與戶外用品；若未逛完或無合適商品，10/18 到 mont-bell 東武池袋店繼續。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "montbell_shibuya"
           ]
         }
       ],
@@ -1338,7 +1400,12 @@ window.TRIP_DATA = {
         {
           "segment": "新宿 → 池袋",
           "mode": "JR 電車",
-          "notes": "抵達新宿後再轉往池袋。"
+          "notes": "抵達新宿後直接轉往池袋，不安排新宿購物。"
+        },
+        {
+          "segment": "池袋 → 澀谷",
+          "mode": "JR／市區交通",
+          "notes": "先到飯店寄放行李，再依 HOKA、Nintendo TOKYO、mont-bell 澀谷順序購物。"
         }
       ],
       "meals": [
@@ -1358,7 +1425,8 @@ window.TRIP_DATA = {
       "backup_plan": [],
       "notes": [
         "10/17 早上沒有雕刻之森美術館。",
-        "下午與晚上購物主軸改為池袋地區。"
+        "Romancecar 尚未預約，順位1為はこね6號，順位2為はこね10號。",
+        "澀谷購物順序固定為 HOKA Shibuya → Nintendo TOKYO → mont-bell 澀谷店。"
       ]
     },
     {
@@ -1370,36 +1438,36 @@ window.TRIP_DATA = {
       "theme": "早餐、退房、池袋最後購物，經日暮里搭 Skyliner 前往成田",
       "timeline": [
         {
-          "start_time": "08:00",
-          "end_time": "09:00",
-          "title": "飯店早餐",
+          "start_time": "08:30",
+          "end_time": "09:20",
+          "title": "早餐、整理行李",
           "location": "DEL style 池袋東口 by Daiwa Roynet Hotel",
           "transport": "步行",
-          "description": "在飯店用早餐。",
+          "description": "早餐並整理返程行李。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_del_style_ikebukuro"
           ]
         },
         {
-          "start_time": "09:00",
-          "end_time": "09:30",
+          "start_time": "09:20",
+          "end_time": "09:35",
           "title": "退房",
           "location": "DEL style 池袋東口 by Daiwa Roynet Hotel",
           "transport": "步行",
-          "description": "吃飽後完成退房。",
+          "description": "完成退房，行李先寄放飯店。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_del_style_ikebukuro"
           ]
         },
         {
-          "start_time": "09:30",
-          "end_time": "10:30",
-          "title": "池袋最後購物",
+          "start_time": "10:00",
+          "end_time": "11:45",
+          "title": "mont-bell 東武池袋店",
           "location": "池袋、mont-bell 東武池袋店",
           "transport": "步行",
-          "description": "早上以池袋戶外用品採買為主。",
+          "description": "作為 10/17 澀谷 mont-bell 的補充購物或主要採買；若提早完成，直接提早前往機場。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "ikebukuro",
@@ -1407,20 +1475,20 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "10:30",
-          "end_time": "11:00",
-          "title": "前往池袋站",
-          "location": "池袋站",
+          "start_time": "11:45",
+          "end_time": "12:00",
+          "title": "回飯店取行李",
+          "location": "DEL style 池袋東口 by Daiwa Roynet Hotel",
           "transport": "步行",
-          "description": "整理行李後前往池袋站。",
+          "description": "取回寄放行李後立即前往池袋站。",
           "related_restaurant_ids": [],
           "related_place_ids": [
-            "ikebukuro_station"
+            "hotel_del_style_ikebukuro"
           ]
         },
         {
-          "start_time": "11:00",
-          "end_time": "11:20",
+          "start_time": "12:00",
+          "end_time": "12:20",
           "title": "JR 山手線前往日暮里",
           "location": "池袋站 → 日暮里站",
           "transport": "JR 山手線",
@@ -1432,12 +1500,12 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "11:20",
-          "end_time": "12:00",
-          "title": "Skyliner 前往成田機場",
+          "start_time": "12:25",
+          "end_time": "13:02",
+          "title": "Skyliner 41 順位1（待預約）",
           "location": "日暮里站 → 成田機場",
           "transport": "Skyliner",
-          "description": "在日暮里站轉乘 Skyliner 前往成田機場。",
+          "description": "順位1為 Skyliner 41；順位2為 Skyliner 143，12:40–13:22。兩班目前皆待預約。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "nippori_station",
@@ -1445,8 +1513,20 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "13:00",
-          "end_time": "15:00",
+          "start_time": "13:10",
+          "end_time": "13:25",
+          "title": "寄明信片",
+          "location": "成田機場",
+          "transport": "步行",
+          "description": "固定小任務，預留約 10–15 分鐘；郵筒確切位置到現場確認。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "narita_airport"
+          ]
+        },
+        {
+          "start_time": "13:25",
+          "end_time": "15:30",
           "title": "報到、托運、安檢、出境",
           "location": "成田機場",
           "transport": "步行",
@@ -1498,7 +1578,10 @@ window.TRIP_DATA = {
       "backup_plan": [],
       "notes": [
         "16:00 起飛，建議 13:00 左右抵達成田機場。",
-        "購物結束後由池袋站搭 JR 山手線前往日暮里，再轉 Skyliner。"
+        "購物結束後由池袋站搭 JR 山手線前往日暮里，再轉 Skyliner。",
+        "Skyliner 尚未預約；順位1為 Skyliner 41，順位2為 Skyliner 143。",
+        "mont-bell 若提早完成，不需要等到 11:45，直接提早前往機場。",
+        "成田機場寄明信片預留 10–15 分鐘，郵筒位置現場確認。"
       ]
     }
   ],
@@ -1543,41 +1626,28 @@ window.TRIP_DATA = {
       "lng": null
     },
     {
-      "id": "restaurant_gyoza_kenkyujo_asty",
-      "date": "2026-10-12",
-      "area": "靜岡",
-      "meal_type": "晚餐",
-      "priority": 1,
-      "name": "餃子研究所 アスティ店",
-      "japanese_name": "餃子研究所 アスティ店",
-      "google_maps_url": "https://maps.app.goo.gl/H3TY5ChE3CRhPWNr5",
-      "notes": "10/12 晚餐第一順位。",
-      "lat": null,
-      "lng": null
-    },
-    {
       "id": "restaurant_shimizuko_minami",
       "date": "2026-10-12",
-      "area": "清水",
+      "area": "靜岡",
       "meal_type": "午餐",
       "priority": 1,
       "name": "Shimizuko Minami",
       "japanese_name": "清水港みなみ",
       "google_maps_url": "https://maps.app.goo.gl/mZuLNEQMCNA3NLTx5",
-      "notes": "10/12 午餐第一順位。",
+      "notes": "10/12 靜岡市中心鮪魚午餐第一順位。",
       "lat": null,
       "lng": null
     },
     {
-      "id": "restaurant_numazu_uogashi_zushi_premium_shizuoka",
+      "id": "restaurant_maguro_miyamoto",
       "date": "2026-10-12",
       "area": "靜岡",
-      "meal_type": "晚餐",
+      "meal_type": "午餐",
       "priority": 2,
-      "name": "沼津魚がし鮨 プレミアム静岡本店",
-      "japanese_name": "沼津魚がし鮨 プレミアム静岡本店",
-      "google_maps_url": "https://maps.app.goo.gl/XVg1NBDCApNYzqcGA",
-      "notes": "10/12 晚餐備案；僅在午餐沒吃到 Shimizuko Minami 時考慮。",
+      "name": "Maguro Hitosuji Miyamoto",
+      "japanese_name": "まぐろ一筋 みやもと",
+      "google_maps_url": "https://maps.app.goo.gl/gBjCbxZhop2845Tt7",
+      "notes": "10/12 午餐第二順位；清水港みなみ等待過久時，直接改用此備案。",
       "lat": null,
       "lng": null
     },
@@ -1898,16 +1968,6 @@ window.TRIP_DATA = {
       "notes": "靜岡住宿與移動核心節點。"
     },
     {
-      "id": "shimizu",
-      "name": "清水",
-      "area": "靜岡",
-      "category": "區域",
-      "google_maps_url": null,
-      "lat": null,
-      "lng": null,
-      "notes": "10/12 午餐與港區動線。"
-    },
-    {
       "id": "kunozan-toshogu",
       "name": "久能山東照宮",
       "area": "靜岡",
@@ -1926,16 +1986,6 @@ window.TRIP_DATA = {
       "lat": null,
       "lng": null,
       "notes": "10/12 下午候選動線。"
-    },
-    {
-      "id": "s_pulse_dream_plaza",
-      "name": "エスパルスドリームプラザ",
-      "area": "清水",
-      "category": "購物",
-      "google_maps_url": "https://maps.app.goo.gl/Ebd7egUc4Mu83gce6",
-      "lat": null,
-      "lng": null,
-      "notes": "10/12 找胖胖豬與購買靜岡伴手禮。"
     },
     {
       "id": "mishima-station",
@@ -2365,7 +2415,7 @@ window.TRIP_DATA = {
       "google_maps_url": "https://maps.app.goo.gl/1XePnSVsLx9BTXjU8",
       "lat": null,
       "lng": null,
-      "notes": "10/11 晚餐後採買與扳蛋。"
+      "notes": "10/11 晚餐後 optional；10/12 第二順位，尋找胖胖褲豬、角色商品與扭蛋。"
     },
     {
       "id": "shizuoka_parco",
@@ -2375,7 +2425,27 @@ window.TRIP_DATA = {
       "google_maps_url": "https://maps.app.goo.gl/HkQuTHU3ifmnWDQC6",
       "lat": null,
       "lng": null,
-      "notes": "10/12 働晚購物。"
+      "notes": "10/12 第一順位；Village Vanguard 位於 6F，主要尋找胖胖褲豬。"
+    },
+    {
+      "id": "dm_cave_shizuoka",
+      "name": "松坂屋（北館）D&M CAVE SHIZUOKA",
+      "area": "靜岡",
+      "category": "購物",
+      "google_maps_url": "https://maps.app.goo.gl/ntpnEBtAjy5GVSbd9",
+      "lat": null,
+      "lng": null,
+      "notes": "10/12 靜岡地酒主要採購點；磯自慢、初龜最高優先。"
+    },
+    {
+      "id": "fushimiya_gofukucho",
+      "name": "ふしみや呉服町本店",
+      "area": "靜岡",
+      "category": "購物",
+      "google_maps_url": "https://maps.app.goo.gl/wxar4Pt4TvCjewWX8",
+      "lat": null,
+      "lng": null,
+      "notes": "10/12 胖胖褲豬／角色商品補充搜尋，optional 且順位最低。"
     },
     {
       "id": "orix_rentacar_mishima",
@@ -2395,7 +2465,47 @@ window.TRIP_DATA = {
       "google_maps_url": "https://maps.app.goo.gl/yNYnBMoXqjdJvAfF9",
       "lat": null,
       "lng": null,
-      "notes": "10/17 JR 電車由新宿轉往池袋，10/17-10/18 東京購物主軸區域。"
+      "notes": "10/17 JR 電車由新宿轉往池袋並先寄放行李；10/18 上午購物。"
+    },
+    {
+      "id": "shibuya",
+      "name": "澀谷",
+      "area": "東京",
+      "category": "區域",
+      "google_maps_url": null,
+      "lat": null,
+      "lng": null,
+      "notes": "10/17 東京購物主軸區域。"
+    },
+    {
+      "id": "hoka_shibuya",
+      "name": "HOKA Shibuya",
+      "area": "澀谷",
+      "category": "購物",
+      "google_maps_url": "https://maps.app.goo.gl/HET91YmQ97N5GAoaA",
+      "lat": null,
+      "lng": null,
+      "notes": "10/17 澀谷購物第一站，主要試穿與購買 HOKA Bondi。"
+    },
+    {
+      "id": "nintendo_tokyo",
+      "name": "Nintendo TOKYO",
+      "area": "澀谷",
+      "category": "購物",
+      "google_maps_url": "https://maps.app.goo.gl/5nUBePGx7mXJ7YUQ6",
+      "lat": null,
+      "lng": null,
+      "notes": "10/17 澀谷購物第二站，主要購買 Pikmin 官方周邊。"
+    },
+    {
+      "id": "montbell_shibuya",
+      "name": "mont-bell 澀谷店",
+      "area": "澀谷",
+      "category": "購物",
+      "google_maps_url": "https://maps.app.goo.gl/grAq69fwRZXq2ymLA",
+      "lat": null,
+      "lng": null,
+      "notes": "10/17 澀谷購物第三站；未完成時 10/18 續逛東武池袋店。"
     },
     {
       "id": "ikebukuro_station",
@@ -2440,12 +2550,22 @@ window.TRIP_DATA = {
     {
       "id": "restaurant_shimizuko_minami",
       "name": "Shimizuko Minami／清水港みなみ",
-      "area": "清水",
+      "area": "靜岡",
       "category": "餐廳",
       "google_maps_url": "https://maps.app.goo.gl/mZuLNEQMCNA3NLTx5",
       "lat": null,
       "lng": null,
-      "notes": "10/12 午餐第一順位。"
+      "notes": "10/12 靜岡市中心鮪魚午餐第一順位。"
+    },
+    {
+      "id": "restaurant_maguro_miyamoto",
+      "name": "まぐろ一筋 みやもと",
+      "area": "靜岡",
+      "category": "餐廳",
+      "google_maps_url": "https://maps.app.goo.gl/gBjCbxZhop2845Tt7",
+      "lat": null,
+      "lng": null,
+      "notes": "10/12 午餐第二順位，位於靜岡站／ASTY 靜岡區域。"
     },
     {
       "id": "restaurant_nanaya_shizuoka",
@@ -2456,26 +2576,6 @@ window.TRIP_DATA = {
       "lat": null,
       "lng": null,
       "notes": "10/12 下午甜點第一順位。"
-    },
-    {
-      "id": "restaurant_gyoza_kenkyujo_asty",
-      "name": "餃子研究所 アスティ店",
-      "area": "靜岡",
-      "category": "餐廳",
-      "google_maps_url": "https://maps.app.goo.gl/H3TY5ChE3CRhPWNr5",
-      "lat": null,
-      "lng": null,
-      "notes": "10/12 晚餐第一順位。"
-    },
-    {
-      "id": "restaurant_numazu_uogashi_zushi_premium_shizuoka",
-      "name": "沼津魚がし鮨 プレミアム静岡本店",
-      "area": "靜岡",
-      "category": "餐廳",
-      "google_maps_url": "https://maps.app.goo.gl/XVg1NBDCApNYzqcGA",
-      "lat": null,
-      "lng": null,
-      "notes": "10/12 晚餐備案；僅在午餐沒吃到 Shimizuko Minami 時考慮。"
     },
     {
       "id": "hotel_prince_smart_inn_atami",
@@ -2547,12 +2647,12 @@ window.TRIP_DATA = {
         "date": "2026-10-11",
         "purchase_site": "SmartEX",
         "purchase_url": "https://reurl.cc/bdLrNy",
-        "route": "東京站或品川站 → 靜岡站",
-        "train_type": "東海道新幹線 ひかり（Hikari）／こだま（Kodama）",
-        "reserved_seat": "建議指定席",
+        "route": "品川站 → 靜岡站",
+        "train_type": "ひかり 721號（Hikari 721）",
+        "reserved_seat": "已預約",
         "notes": [
           "のぞみ（Nozomi）不停靜岡，不要搭。",
-          "入境日帶行李，建議先買較穩。",
+          "Hikari 721 已完成預約。",
           "可綁定 Suica / PASMO 作為 SmartEX ticketless 進站。"
         ]
       },
@@ -2561,11 +2661,11 @@ window.TRIP_DATA = {
         "purchase_site": "SmartEX",
         "purchase_url": "https://reurl.cc/bdLrNy",
         "route": "靜岡站 → 熱海站",
-        "train_type": "東海道新幹線 こだま（Kodama）／部分停靠熱海的 ひかり（Hikari）",
-        "reserved_seat": "建議指定席或至少先查班次",
+        "train_type": "こだま 830號（Kodama 830）",
+        "reserved_seat": "已預約",
         "notes": [
-          "10/12 是日本假日，晚上又有熱海海上花火大會，建議不要壓太晚。",
-          "實務上以 Kodama 最穩。",
+          "Kodama 830 15:56–16:31 已完成預約。",
+          "備案1為 Kodama 832 16:26–17:01。",
           "可綁定 Suica / PASMO 作為 SmartEX ticketless 進站。",
           "SmartEX 票款由註冊信用卡付款，不是從 Suica 餘額扣款。"
         ]
@@ -2575,11 +2675,12 @@ window.TRIP_DATA = {
         "purchase_site": "SmartEX",
         "purchase_url": "https://reurl.cc/bdLrNy",
         "route": "三島站 → 小田原站",
-        "train_type": "東海道新幹線 こだま（Kodama）",
-        "reserved_seat": "建議預約或現場快速購票",
+        "train_type": "こだま 808號（Kodama 808）",
+        "reserved_seat": "已預約",
         "notes": [
           "建議搭東海道新幹線，用最快方式銜接箱根湯本。",
-          "可用 SmartEX 預約，或現場買票。",
+          "Kodama 808 10:54–11:09 已完成預約。",
+          "順位2為 Kodama 810 11:24–11:39。",
           "可綁定 Suica / PASMO 作為 SmartEX ticketless 進站。",
           "抵達小田原後，轉箱根登山線到箱根湯本。"
         ]
@@ -2590,7 +2691,7 @@ window.TRIP_DATA = {
         "purchase_url": "https://www.web-odakyu.com/e-romancecar/",
         "route": "箱根湯本站 → 新宿站",
         "train_type": "小田急ロマンスカー（Romancecar）",
-        "reserved_seat": "全車指定席",
+        "reserved_seat": "待預約／全車指定席",
         "notes": [
           "建議先上網購票。",
           "10/15–10/17 使用箱根周遊券。",
@@ -2604,7 +2705,7 @@ window.TRIP_DATA = {
         "purchase_url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/e-ticket/zht/",
         "route": "日暮里站 → 成田機場",
         "train_type": "Keisei Skyliner",
-        "reserved_seat": "指定席制，建議預買",
+        "reserved_seat": "待預約／指定席制",
         "notes": [
           "建議預買或至少提早到站購票。",
           "當天 16:00 成田起飛，建議降低交通變數。",
@@ -2684,40 +2785,123 @@ window.TRIP_DATA = {
     "days": [
       {
         "date": "2026-10-11",
-        "title": "成田 → 東京／品川 → 靜岡",
-        "route_summary": "成田入境後，前往東京或品川轉乘東海道新幹線到靜岡。",
+        "title": "成田 → 品川 → 靜岡",
+        "route_summary": "14:00 抵達成田；順位1搭 N'EX 34 到品川，再接已預約的 Hikari 721 前往靜岡。",
+        "journey_plans": [
+          {
+            "label": "順位1",
+            "status": "主要方案",
+            "legs": [
+              {
+                "service_name": "N'EX 34號",
+                "from": "成田機場（NARITA APT TERMINAL2･3）",
+                "to": "品川（Shinagawa）",
+                "departure_time": "15:48",
+                "arrival_time": "16:53",
+                "status": "當日購票",
+                "purchase_site": "JR East N’EX",
+                "purchase_url": "https://www.jreast.co.jp/zh-CHT/multi/nex/"
+              },
+              {
+                "service_name": "ひかり 721號（Hikari 721）",
+                "from": "品川（Shinagawa）",
+                "to": "靜岡（Shizuoka）",
+                "departure_time": "17:10",
+                "arrival_time": "18:02",
+                "status": "已預約",
+                "purchase_site": "SmartEX",
+                "purchase_url": "https://reurl.cc/bdLrNy"
+              }
+            ],
+            "notes": "主要方案；品川轉乘時間 17 分鐘。"
+          },
+          {
+            "label": "備案2",
+            "status": "備案",
+            "legs": [
+              {
+                "service_name": "N'EX 34號",
+                "from": "成田機場（NARITA APT TERMINAL2･3）",
+                "to": "品川（Shinagawa）",
+                "departure_time": "15:48",
+                "arrival_time": "16:53",
+                "status": "當日購票",
+                "purchase_site": "JR East N’EX",
+                "purchase_url": "https://www.jreast.co.jp/zh-CHT/multi/nex/"
+              },
+              {
+                "service_name": "こだま 845號（Kodama 845）",
+                "from": "品川（Shinagawa）",
+                "to": "靜岡（Shizuoka）",
+                "departure_time": "17:34",
+                "arrival_time": "18:47",
+                "status": "備案",
+                "purchase_site": "SmartEX",
+                "purchase_url": "https://reurl.cc/bdLrNy"
+              }
+            ],
+            "notes": "N'EX 34 未能接上 Hikari 721 時使用。"
+          },
+          {
+            "label": "備案3",
+            "status": "備案",
+            "legs": [
+              {
+                "service_name": "N'EX 36號",
+                "from": "成田機場（NARITA APT TERMINAL2･3）",
+                "to": "品川（Shinagawa）",
+                "departure_time": "16:23",
+                "arrival_time": "17:28",
+                "status": "當日購票",
+                "purchase_site": "JR East N’EX",
+                "purchase_url": "https://www.jreast.co.jp/zh-CHT/multi/nex/"
+              },
+              {
+                "service_name": "ひかり 655號（Hikari 655）",
+                "from": "品川（Shinagawa）",
+                "to": "靜岡（Shizuoka）",
+                "departure_time": "18:10",
+                "arrival_time": "19:02",
+                "status": "備案",
+                "purchase_site": "SmartEX",
+                "purchase_url": "https://reurl.cc/bdLrNy"
+              }
+            ],
+            "notes": "入境較晚時使用。"
+          }
+        ],
         "segments": [
           {
-            "from": "成田機場",
-            "to": "東京／品川",
-            "method": "特急列車",
+            "from": "成田機場（NARITA APT TERMINAL2･3）",
+            "to": "品川（Shinagawa）",
+            "method": "N'EX 34號",
             "operator": "JR East",
-            "train_type": "N’EX 成田特快或其他合適交通",
-            "estimated_time": "約 60–90 分鐘",
+            "train_type": "N’EX 成田特快",
+            "estimated_time": "15:48–16:53",
             "ticket_type": "機場特急票",
             "purchase_site": "JR East N’EX",
             "purchase_url": "https://www.jreast.co.jp/zh-CHT/multi/nex/",
             "purchase_method": "建議現場依入境時間購票，或事先查班次",
-            "reservation_recommended": true,
+            "reservation_recommended": false,
             "payment_note": "可現場以現金或信用卡購票。",
             "ic_card_note": "Suica / PASMO 可處理一般市區交通，但 N’EX 仍以正式車票為主。",
-            "notes": "不建議抓太緊，入境後保留彈性。"
+            "notes": "當日購票／順位1；不要標示為已預約。"
           },
           {
-            "from": "東京站／品川站",
+            "from": "品川（Shinagawa）",
             "to": "靜岡站",
             "method": "東海道新幹線",
             "operator": "JR 東海",
-            "train_type": "ひかり（Hikari）／こだま（Kodama）",
-            "estimated_time": "約 60–90 分鐘",
+            "train_type": "ひかり 721號（Hikari 721）",
+            "estimated_time": "17:10–18:02",
             "ticket_type": "新幹線車票",
             "purchase_site": "SmartEX",
             "purchase_url": "https://reurl.cc/bdLrNy",
-            "purchase_method": "建議 SmartEX 預約指定席，或現場買自由席",
+            "purchase_method": "已完成 SmartEX 預約",
             "reservation_recommended": true,
             "payment_note": "若現場購買新幹線票，建議用現金或信用卡。",
             "ic_card_note": "可綁定 Suica / PASMO 作為 SmartEX ticketless 進站。",
-            "notes": "Nozomi 不停靜岡。"
+            "notes": "已預約；主要方案。Nozomi 不停靜岡。"
           },
           {
             "from": "靜岡站",
@@ -2756,18 +2940,19 @@ window.TRIP_DATA = {
           {
             "name": "JR East N’EX",
             "url": "https://www.jreast.co.jp/zh-CHT/multi/nex/",
-            "applies_to": "成田機場 → 東京／品川",
+            "applies_to": "成田機場 → 品川",
             "note": "入境後銜接東京都內。"
           },
           {
             "name": "SmartEX",
             "url": "https://reurl.cc/bdLrNy",
-            "applies_to": "東京／品川 → 靜岡",
-            "note": "Hikari / Kodama。"
+            "applies_to": "品川 → 靜岡",
+            "note": "Hikari 721 已預約；另供備案車次使用。"
           }
         ],
         "warnings": [
-          "入境日建議保留 30–45 分鐘以上轉乘緩衝。",
+          "N'EX 34 抵達品川 16:53，Hikari 721 17:10 發車，轉乘時間 17 分鐘。",
+          "N'EX 預計入境後當日購票，不要標示為已預約。",
           "Nozomi 不停靜岡。"
         ],
         "codex_notes": [
@@ -2776,8 +2961,44 @@ window.TRIP_DATA = {
       },
       {
         "date": "2026-10-12",
-        "title": "靜岡／清水 → 熱海",
-        "route_summary": "靜岡／清水白天行程，傍晚前往熱海，晚上看熱海海上花火大會。",
+        "title": "靜岡市中心 → 熱海",
+        "route_summary": "靜岡市中心購物與午餐後，搭已預約的 Kodama 830 前往熱海看花火。",
+        "journey_plans": [
+          {
+            "label": "主要方案",
+            "status": "已預約",
+            "legs": [
+              {
+                "service_name": "こだま 830號（Kodama 830）",
+                "from": "靜岡（Shizuoka）",
+                "to": "熱海（Atami）",
+                "departure_time": "15:56",
+                "arrival_time": "16:31",
+                "status": "已預約",
+                "purchase_site": "SmartEX",
+                "purchase_url": "https://reurl.cc/bdLrNy"
+              }
+            ],
+            "notes": "15:56 為硬時間。"
+          },
+          {
+            "label": "備案1",
+            "status": "備案",
+            "legs": [
+              {
+                "service_name": "こだま 832號（Kodama 832）",
+                "from": "靜岡（Shizuoka）",
+                "to": "熱海（Atami）",
+                "departure_time": "16:26",
+                "arrival_time": "17:01",
+                "status": "備案",
+                "purchase_site": "SmartEX",
+                "purchase_url": "https://reurl.cc/bdLrNy"
+              }
+            ],
+            "notes": "錯過主要方案時使用。"
+          }
+        ],
         "segments": [
           {
             "from": "Hotel Garden Square Shizuoka",
@@ -2796,68 +3017,36 @@ window.TRIP_DATA = {
             "notes": "白天先輕裝移動。"
           },
           {
-            "from": "靜岡市區",
-            "to": "清水／Dream Plaza 方向",
-            "method": "JR＋巴士／計程車",
-            "operator": "JR 東海／市區巴士",
-            "train_type": "普通車",
-            "estimated_time": "約 30–45 分鐘",
-            "ticket_type": "市區交通",
-            "purchase_site": null,
-            "purchase_url": null,
-            "purchase_method": "Suica / PASMO 或現場支付",
-            "reservation_recommended": false,
-            "payment_note": "時間緊時可直接搭計程車。",
-            "ic_card_note": "JR、巴士可直接刷 Suica / PASMO。",
-            "notes": "當天有行李與後續移動，時間緊時優先計程車。"
-          },
-          {
-            "from": "Dream Plaza",
-            "to": "清水港みなみ",
-            "method": "當地交通／計程車",
-            "operator": "現場移動",
+            "from": "靜岡市中心",
+            "to": "PARCO、CENOVA、D&M CAVE、ふしみや、午餐、ななや",
+            "method": "步行／必要時計程車",
+            "operator": "市區移動",
             "train_type": null,
-            "estimated_time": "約 10–20 分鐘",
-            "ticket_type": "短程移動",
+            "estimated_time": "上午至 15:20",
+            "ticket_type": "市區短程交通",
             "purchase_site": null,
             "purchase_url": null,
-            "purchase_method": "現場安排",
+            "purchase_method": "徒步為主，必要時現場搭計程車",
             "reservation_recommended": false,
-            "payment_note": "計程車現場支付。",
-            "ic_card_note": "短程巴士可使用 Suica / PASMO。",
-            "notes": "午餐前移動。"
-          },
-          {
-            "from": "清水港みなみ",
-            "to": "靜岡市區",
-            "method": "JR／其他市區交通",
-            "operator": "JR 東海",
-            "train_type": "普通車",
-            "estimated_time": "約 30–45 分鐘",
-            "ticket_type": "市區交通",
-            "purchase_site": null,
-            "purchase_url": null,
-            "purchase_method": "Suica / PASMO 直接刷卡",
-            "reservation_recommended": false,
-            "payment_note": "一般市區移動。",
-            "ic_card_note": "Suica / PASMO 可直接進出站。",
-            "notes": "回靜岡接下午甜點與購物。"
+            "payment_note": "必要時計程車現場支付。",
+            "ic_card_note": "一般市區交通可用 Suica / PASMO。",
+            "notes": "白天集中靜岡市中心，以步行與必要時計程車移動。"
           },
           {
             "from": "靜岡站",
             "to": "熱海站",
             "method": "東海道新幹線",
             "operator": "JR 東海",
-            "train_type": "こだま（Kodama）／部分停靠熱海的 ひかり（Hikari）",
-            "estimated_time": "約 35–60 分鐘",
+            "train_type": "こだま 830號（Kodama 830）",
+            "estimated_time": "15:56–16:31",
             "ticket_type": "新幹線車票",
             "purchase_site": "SmartEX",
             "purchase_url": "https://reurl.cc/bdLrNy",
-            "purchase_method": "建議 SmartEX 預約，或現場買自由席",
+            "purchase_method": "已完成 SmartEX 預約",
             "reservation_recommended": true,
             "payment_note": "SmartEX 票款由註冊信用卡付款；現場買票建議用現金或信用卡。",
             "ic_card_note": "可綁定 Suica / PASMO 作為 SmartEX ticketless 進站，不是從 Suica 餘額扣新幹線票款。",
-            "notes": "實務上以 Kodama 最穩。"
+            "notes": "已預約；15:56 為硬時間。備案1為 Kodama 832，16:26–17:01。"
           },
           {
             "from": "熱海站",
@@ -2897,15 +3086,15 @@ window.TRIP_DATA = {
             "name": "SmartEX",
             "url": "https://reurl.cc/bdLrNy",
             "applies_to": "靜岡 → 熱海",
-            "note": "晚間有熱海煙火，建議不要壓太晚。"
+            "note": "Kodama 830 已預約；備案1為 Kodama 832。"
           }
         ],
         "warnings": [
-          "10/12 晚上有熱海海上花火大會，建議靜岡 → 熱海不要壓太晚。",
+          "Kodama 830 已預約，15:56 為硬時間。",
           "Suica 用於一般交通，或作為 SmartEX ticketless 進站，不作為新幹線票款扣款來源。"
         ],
         "codex_notes": [
-          "10/12 改住熱海後，靜岡晚餐不列為正式主推薦。"
+          "10/12 白天集中靜岡市中心，靜岡晚餐不列為正式主推薦。"
         ]
       },
       {
@@ -3077,6 +3266,42 @@ window.TRIP_DATA = {
         "date": "2026-10-15",
         "title": "修善寺 → 三島還車 → 箱根湯本 → 強羅",
         "route_summary": "三島還車後，用最快且穩定的鐵路路線進箱根湯本，再前往強羅飯店。",
+        "journey_plans": [
+          {
+            "label": "主要方案",
+            "status": "已預約",
+            "legs": [
+              {
+                "service_name": "こだま 808號（Kodama 808）",
+                "from": "三島（Mishima）",
+                "to": "小田原（Odawara）",
+                "departure_time": "10:54",
+                "arrival_time": "11:09",
+                "status": "已預約",
+                "purchase_site": "SmartEX",
+                "purchase_url": "https://reurl.cc/bdLrNy"
+              }
+            ],
+            "notes": "10:00 還車後搭計程車前往三島站。"
+          },
+          {
+            "label": "順位2",
+            "status": "備案",
+            "legs": [
+              {
+                "service_name": "こだま 810號（Kodama 810）",
+                "from": "三島（Mishima）",
+                "to": "小田原（Odawara）",
+                "departure_time": "11:24",
+                "arrival_time": "11:39",
+                "status": "備案",
+                "purchase_site": "SmartEX",
+                "purchase_url": "https://reurl.cc/bdLrNy"
+              }
+            ],
+            "notes": "錯過主要方案時使用。"
+          }
+        ],
         "segments": [
           {
             "from": "修善寺",
@@ -3116,15 +3341,15 @@ window.TRIP_DATA = {
             "method": "東海道新幹線",
             "operator": "JR 東海",
             "train_type": "こだま（Kodama）",
-            "estimated_time": "10:50–11:10",
+            "estimated_time": "10:54–11:09",
             "ticket_type": "新幹線車票",
             "purchase_site": "SmartEX",
             "purchase_url": "https://reurl.cc/bdLrNy",
-            "purchase_method": "可用 SmartEX 預約，或現場買票",
+            "purchase_method": "已完成 SmartEX 預約",
             "reservation_recommended": true,
             "payment_note": "若現場買票，建議現金或信用卡。",
             "ic_card_note": "若使用 SmartEX，可綁定 Suica / PASMO 作為 ticketless 進站。",
-            "notes": "用最快方式進箱根。"
+            "notes": "Kodama 808 已預約；順位2為 Kodama 810 11:24–11:39。"
           },
           {
             "from": "小田原站",
@@ -3180,7 +3405,7 @@ window.TRIP_DATA = {
             "name": "SmartEX",
             "url": "https://reurl.cc/bdLrNy",
             "applies_to": "三島 → 小田原",
-            "note": "最快銜接箱根。"
+            "note": "Kodama 808 已預約；順位2為 Kodama 810。"
           },
           {
             "name": "EMot／箱根周遊券",
@@ -3190,7 +3415,7 @@ window.TRIP_DATA = {
           }
         ],
         "warnings": [
-          "三島 → 小田原建議搭東海道新幹線。",
+          "三島 → 小田原採已預約的 Kodama 808。",
           "小田原 → 箱根湯本與箱根區域內正式採用箱根周遊券。"
         ],
         "codex_notes": [
@@ -3301,8 +3526,44 @@ window.TRIP_DATA = {
       },
       {
         "date": "2026-10-17",
-        "title": "箱根 → 新宿 → 池袋",
-        "route_summary": "從箱根回東京，下午／晚上池袋購物。",
+        "title": "箱根 → 新宿 → 池袋 → 澀谷",
+        "route_summary": "從箱根回東京，先到池袋寄放行李，再依固定順序前往澀谷購物。",
+        "journey_plans": [
+          {
+            "label": "順位1",
+            "status": "待預約",
+            "legs": [
+              {
+                "service_name": "小田急ロマンスカー はこね6號（Romancecar はこね6號）",
+                "from": "箱根湯本（Hakone-Yumoto）",
+                "to": "新宿（Shinjuku）",
+                "departure_time": "11:38",
+                "arrival_time": "13:05",
+                "status": "待預約",
+                "purchase_site": "小田急 Romancecar",
+                "purchase_url": "https://www.web-odakyu.com/e-romancecar/"
+              }
+            ],
+            "notes": "主要目標；Romancecar 特急券另購。"
+          },
+          {
+            "label": "順位2",
+            "status": "待預約",
+            "legs": [
+              {
+                "service_name": "小田急ロマンスカー はこね10號（Romancecar はこね10號）",
+                "from": "箱根湯本（Hakone-Yumoto）",
+                "to": "新宿（Shinjuku）",
+                "departure_time": "13:15",
+                "arrival_time": "14:45",
+                "status": "待預約",
+                "purchase_site": "小田急 Romancecar",
+                "purchase_url": "https://www.web-odakyu.com/e-romancecar/"
+              }
+            ],
+            "notes": "順位2；Romancecar 特急券另購。"
+          }
+        ],
         "segments": [
           {
             "from": "ホテルマロウド箱根",
@@ -3325,16 +3586,16 @@ window.TRIP_DATA = {
             "to": "新宿",
             "method": "小田急 Romancecar",
             "operator": "小田急",
-            "train_type": "小田急ロマンスカー（Romancecar）",
-            "estimated_time": "約 85–95 分鐘",
+            "train_type": "小田急ロマンスカー はこね6號",
+            "estimated_time": "11:38–13:05",
             "ticket_type": "箱根周遊券＋Romancecar 特急券",
             "purchase_site": "小田急 Romancecar",
             "purchase_url": "https://www.web-odakyu.com/e-romancecar/",
-            "purchase_method": "建議事先預買指定席",
+            "purchase_method": "待預約；建議事先預買指定席",
             "reservation_recommended": true,
             "payment_note": "Romancecar 特急券／指定席需另外購買。",
             "ic_card_note": "箱根周遊券處理基本車資，不以 Suica 作為主要付款建議。",
-            "notes": "Romancecar 為全車指定席。"
+            "notes": "待預約／順位1；順位2為はこね10號 13:15–14:45。Romancecar 特急券另購。"
           },
           {
             "from": "新宿",
@@ -3367,6 +3628,22 @@ window.TRIP_DATA = {
             "payment_note": "必要時計程車現場支付。",
             "ic_card_note": "徒步為主，不需另外購票。",
             "notes": "抵達後入住或寄放行李。"
+          },
+          {
+            "from": "DEL style 池袋東口",
+            "to": "澀谷（HOKA → Nintendo TOKYO → mont-bell）",
+            "method": "JR／市區交通＋步行",
+            "operator": "JR 東日本等",
+            "train_type": "市區通勤列車",
+            "estimated_time": "下午至晚間",
+            "ticket_type": "市區交通",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "Suica / PASMO 直接刷卡",
+            "reservation_recommended": false,
+            "payment_note": "不用提前買票。",
+            "ic_card_note": "市區交通使用 Suica / PASMO。",
+            "notes": "不安排新宿購物；澀谷購物順序固定。"
           }
         ],
         "ticket_links": [
@@ -3385,16 +3662,53 @@ window.TRIP_DATA = {
         ],
         "warnings": [
           "10/15–10/17 使用箱根周遊券。",
-          "Romancecar 特急券／指定席需另外購買。"
+          "Romancecar 尚未預約，順位1為はこね6號，順位2為はこね10號。",
+          "Romancecar 特急券另購。"
         ],
         "codex_notes": [
-          "新宿 → 池袋用 Suica / PASMO 處理即可。"
+          "新宿 → 池袋與池袋 → 澀谷用 Suica / PASMO 處理即可。"
         ]
       },
       {
         "date": "2026-10-18",
         "title": "池袋 → 日暮里 → 成田機場",
         "route_summary": "上午池袋購物，下午前往成田機場，16:00 起飛。",
+        "journey_plans": [
+          {
+            "label": "順位1",
+            "status": "待預約",
+            "legs": [
+              {
+                "service_name": "Skyliner 41",
+                "from": "日暮里（Nippori）",
+                "to": "成田機場（NARITA APT TERMINAL2･3）",
+                "departure_time": "12:25",
+                "arrival_time": "13:02",
+                "status": "待預約",
+                "purchase_site": "Keisei Skyliner",
+                "purchase_url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/e-ticket/zht/"
+              }
+            ],
+            "notes": "主要目標；16:00 成田機場起飛。"
+          },
+          {
+            "label": "順位2",
+            "status": "待預約",
+            "legs": [
+              {
+                "service_name": "Skyliner 143",
+                "from": "日暮里（Nippori）",
+                "to": "成田機場（NARITA APT TERMINAL2･3）",
+                "departure_time": "12:40",
+                "arrival_time": "13:22",
+                "status": "待預約",
+                "purchase_site": "Keisei Skyliner",
+                "purchase_url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/e-ticket/zht/"
+              }
+            ],
+            "notes": "順位2。"
+          }
+        ],
         "segments": [
           {
             "from": "DEL style 池袋東口",
@@ -3410,7 +3724,23 @@ window.TRIP_DATA = {
             "reservation_recommended": false,
             "payment_note": "含於住宿安排。",
             "ic_card_note": "無需 IC 卡。",
-            "notes": "退房後前往池袋最後購物。"
+            "notes": "08:30–09:20 早餐與整理行李，09:20–09:35 退房並寄放行李。"
+          },
+          {
+            "from": "池袋",
+            "to": "mont-bell 東武池袋店／飯店取行李",
+            "method": "步行",
+            "operator": "現場移動",
+            "train_type": null,
+            "estimated_time": "10:00–11:45",
+            "ticket_type": "步行",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "直接步行",
+            "reservation_recommended": false,
+            "payment_note": "無需購票。",
+            "ic_card_note": "無需 IC 卡。",
+            "notes": "若提早完成，直接提早前往機場。"
           },
           {
             "from": "池袋",
@@ -3433,16 +3763,16 @@ window.TRIP_DATA = {
             "to": "成田機場",
             "method": "Keisei Skyliner",
             "operator": "京成電鐵",
-            "train_type": "Skyliner",
-            "estimated_time": "約 40–45 分鐘",
+            "train_type": "Skyliner 41",
+            "estimated_time": "12:25–13:02",
             "ticket_type": "Skyliner 指定席",
             "purchase_site": "Keisei Skyliner",
             "purchase_url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/e-ticket/zht/",
-            "purchase_method": "建議預買或至少提早到站購票",
+            "purchase_method": "待預約；建議預買或至少提早到站購票",
             "reservation_recommended": true,
             "payment_note": "指定席制，建議降低變數。",
             "ic_card_note": "池袋到日暮里只要 Suica，Skyliner 另行購票。",
-            "notes": "建議約 13:00 左右抵達機場。"
+            "notes": "待預約／順位1；順位2為 Skyliner 143 12:40–13:22。"
           }
         ],
         "ticket_links": [
@@ -3450,15 +3780,15 @@ window.TRIP_DATA = {
             "name": "Keisei Skyliner",
             "url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/e-ticket/zht/",
             "applies_to": "日暮里 → 成田機場",
-            "note": "指定席制。"
+            "note": "Skyliner 41、143 目前待預約。"
           }
         ],
         "warnings": [
-          "Skyliner 為指定席制，建議不要壓太晚。",
+          "Skyliner 尚未預約，順位1為 41，順位2為 143。",
           "當天以準時抵達機場為優先。"
         ],
         "codex_notes": [
-          "池袋到日暮里只要 Suica。"
+          "池袋到日暮里只要 Suica；抵達機場後預留 10–15 分鐘寄明信片。"
         ]
       }
     ]

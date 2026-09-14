@@ -110,7 +110,7 @@ function createMapActions(ids = []) {
   return actions.join("");
 }
 
-function renderMealRestaurants(ids = []) {
+function renderMealRestaurants(ids = [], tone = "primary") {
   if (!ids.length) {
     return `<p class="restaurant-note">未提供特定餐廳，依當天動線彈性安排。</p>`;
   }
@@ -120,7 +120,7 @@ function renderMealRestaurants(ids = []) {
       const restaurant = restaurantMap.get(id);
       if (!restaurant) return "";
       return `
-        <div class="meal-group">
+        <div class="meal-group meal-group-${escapeHtml(tone)}">
           <span class="restaurant-name">${escapeHtml(restaurant.name)}</span>
           ${restaurant.notes ? `<p class="restaurant-note">${escapeHtml(restaurant.notes)}</p>` : ""}
           ${restaurant.google_maps_url ? `<div class="action-row"><a class="map-button" href="${escapeHtml(restaurant.google_maps_url)}" target="_blank" rel="noreferrer">Google Maps</a></div>` : ""}
@@ -216,9 +216,9 @@ function renderDay(day) {
             <article class="meal-card">
               <h4>${escapeHtml(meal.meal_type)}</h4>
               <span class="meal-label">第一順位</span>
-              ${renderMealRestaurants(meal.primary_restaurant_ids)}
+              ${renderMealRestaurants(meal.primary_restaurant_ids, "primary")}
               <span class="meal-label">備案</span>
-              ${renderMealRestaurants(meal.backup_restaurant_ids)}
+              ${renderMealRestaurants(meal.backup_restaurant_ids, "backup")}
               ${meal.notes ? `<p class="restaurant-note">${escapeHtml(meal.notes)}</p>` : ""}
             </article>
           `
@@ -588,6 +588,71 @@ function renderOnSiteSegments(items = []) {
   `;
 }
 
+function statusClass(status) {
+  const statusMap = {
+    已預約: "is-booked",
+    待預約: "is-pending",
+    當日購票: "is-onsite",
+    備案: "is-backup",
+    主要方案: "is-primary",
+  };
+  return statusMap[status] ?? "is-neutral";
+}
+
+function renderStatusBadge(status) {
+  return `<span class="status-badge ${statusClass(status)}">${escapeHtml(status)}</span>`;
+}
+
+function renderJourneyPlans(plans = []) {
+  if (!plans.length) return "";
+
+  return `
+    <div class="journey-plan-list">
+      ${plans
+        .map(
+          (plan) => `
+            <article class="journey-plan-card ${plan.status === "備案" ? "is-backup-plan" : ""}">
+              <div class="journey-plan-head">
+                <strong>${escapeHtml(plan.label)}</strong>
+                ${renderStatusBadge(plan.status)}
+              </div>
+              <div class="journey-leg-list">
+                ${(plan.legs ?? [])
+                  .map(
+                    (leg) => `
+                      <div class="journey-leg">
+                        <div class="journey-service-row">
+                          <strong>${escapeHtml(leg.service_name)}</strong>
+                          ${renderStatusBadge(leg.status)}
+                        </div>
+                        <div class="journey-route">
+                          <div>
+                            <span class="journey-station">${escapeHtml(leg.from)}</span>
+                            <time>${escapeHtml(leg.departure_time)}</time>
+                          </div>
+                          <span class="journey-arrow" aria-hidden="true">↓</span>
+                          <div>
+                            <span class="journey-station">${escapeHtml(leg.to)}</span>
+                            <time>${escapeHtml(leg.arrival_time)}</time>
+                          </div>
+                        </div>
+                        <div class="action-row journey-actions">
+                          <a class="map-button" href="${escapeHtml(leg.purchase_url)}" target="_blank" rel="noreferrer">${escapeHtml(leg.purchase_site)}</a>
+                        </div>
+                      </div>
+                    `
+                  )
+                  .join("")}
+              </div>
+              ${plan.notes ? `<p class="journey-plan-note">${escapeHtml(plan.notes)}</p>` : ""}
+            </article>
+          `
+        )
+        .join("")}
+    </div>
+  `;
+}
+
 function renderTransportSegments(segments = []) {
   if (!segments.length) {
     return `<div class="empty-state">本日沒有交通段落資料。</div>`;
@@ -647,7 +712,15 @@ function renderTransportationDays(days = []) {
                 </div>
                 <div class="day-badge">${day.segments.length} 段</div>
               </div>
-              ${renderTransportSegments(day.segments)}
+              ${
+                day.journey_plans?.length
+                  ? `<div class="transport-subsection transport-key-routes"><h5>重要車次</h5>${renderJourneyPlans(day.journey_plans)}</div>`
+                  : ""
+              }
+              <details class="transport-details" ${day.journey_plans?.length ? "" : "open"}>
+                <summary>每日交通細流</summary>
+                ${renderTransportSegments(day.segments)}
+              </details>
               <div class="transport-subsection">
                 <h5>當日購票連結</h5>
                 ${renderTicketLinkButtons(day.ticket_links)}

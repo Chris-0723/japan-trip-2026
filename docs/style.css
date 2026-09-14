@@ -789,3 +789,497 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* 出發前手機版壓縮：保留既有視覺語言，優先提高掃讀效率。 */
+.app-shell {
+  padding: 12px 10px 28px;
+}
+
+.hero {
+  padding: 16px 15px 14px;
+  border-radius: 20px;
+}
+
+.hero h1 {
+  font-size: 27px;
+}
+
+.hero-copy {
+  margin-top: 7px;
+}
+
+.mode-nav {
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.mode-tab {
+  min-height: 44px;
+  padding-inline: 9px;
+  border-radius: 13px;
+  font-size: 13px;
+}
+
+.day-nav {
+  margin: 10px 0 12px;
+}
+
+.day-tab {
+  min-width: 82px;
+  padding: 9px 12px;
+}
+
+.app-main {
+  gap: 10px;
+}
+
+.card {
+  border-radius: 17px;
+}
+
+.overview-card,
+.day-view {
+  padding: 14px;
+}
+
+.overview-head h2,
+.day-view-head h2 {
+  font-size: 21px;
+}
+
+.overview-day {
+  padding: 11px;
+}
+
+.day-view-head .day-badge,
+.map-day-head .day-badge {
+  background: var(--accent-deep);
+  color: #fff;
+}
+
+.summary-grid {
+  margin-top: 12px;
+}
+
+.summary-box {
+  padding: 10px;
+}
+
+.section-card,
+.transport-day-card {
+  padding: 12px;
+}
+
+.section-title {
+  margin-bottom: 9px;
+  font-size: 17px;
+}
+
+.timeline-list {
+  gap: 8px;
+}
+
+.timeline-item {
+  padding: 10px;
+  border-radius: 14px;
+}
+
+.timeline-top {
+  gap: 9px;
+}
+
+.timeline-time {
+  flex-basis: 78px;
+  padding: 7px 6px;
+  border-radius: 11px;
+  font-size: 13px;
+}
+
+.timeline-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.timeline-content h4 {
+  font-size: 15px;
+}
+
+.timeline-meta {
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.timeline-description {
+  margin-top: 6px;
+  color: #36434b;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.action-row {
+  margin-top: 8px;
+}
+
+.map-button,
+.inline-button {
+  min-height: 44px;
+}
+
+.mini-card {
+  padding: 10px 11px;
+  border-radius: 13px;
+}
+
+.meal-list {
+  gap: 9px;
+}
+
+.meal-card {
+  padding: 11px;
+  border-radius: 14px;
+}
+
+.meal-group-backup {
+  opacity: 0.76;
+}
+
+.meal-group-backup .restaurant-name {
+  font-weight: 700;
+}
+
+.transport-segment-card {
+  padding: 10px;
+  border-radius: 14px;
+}
+
+.transport-subsection {
+  margin-top: 11px;
+}
+
+.transport-key-routes {
+  margin-top: 0;
+}
+
+.journey-plan-list,
+.journey-leg-list {
+  display: grid;
+  gap: 8px;
+}
+
+.journey-plan-card {
+  padding: 11px;
+  border: 1px solid rgba(15, 118, 110, 0.28);
+  border-radius: 14px;
+  background: linear-gradient(180deg, #f2fbf9, #fffdf9);
+}
+
+.journey-plan-card.is-backup-plan {
+  border-color: var(--line);
+  background: #faf8f4;
+  box-shadow: none;
+}
+
+.journey-plan-card.is-backup-plan .journey-leg,
+.journey-plan-card.is-backup-plan .journey-plan-note {
+  opacity: 0.8;
+}
+
+.journey-plan-head,
+.journey-service-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.journey-plan-head {
+  margin-bottom: 8px;
+}
+
+.journey-service-row strong {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.journey-leg {
+  padding: 9px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.journey-route {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 18px minmax(0, 1fr);
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.journey-route > div {
+  display: grid;
+  gap: 3px;
+}
+
+.journey-station {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.journey-route time {
+  color: var(--accent-deep);
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.journey-arrow {
+  color: var(--muted);
+  font-size: 18px;
+  text-align: center;
+}
+
+.journey-actions {
+  margin-top: 7px;
+}
+
+.journey-actions .map-button {
+  min-height: 40px;
+  padding-inline: 13px;
+}
+
+.journey-plan-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.status-badge {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  min-height: 26px;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.status-badge.is-booked,
+.status-badge.is-primary {
+  background: #d8f3e7;
+  color: #116447;
+}
+
+.status-badge.is-pending {
+  background: #fff0c7;
+  color: #985c00;
+}
+
+.status-badge.is-onsite {
+  background: #dcecf8;
+  color: #17597e;
+}
+
+.status-badge.is-backup,
+.status-badge.is-neutral {
+  background: #ece8e1;
+  color: #6b6258;
+}
+
+.transport-details {
+  margin-top: 10px;
+}
+
+.transport-details summary {
+  min-height: 42px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fffaf2;
+  color: var(--accent-deep);
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.transport-details[open] summary {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 430px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero-copy {
+    font-size: 13px;
+  }
+
+  .overview-head,
+  .day-view-head {
+    gap: 8px;
+  }
+
+  .hero-badge,
+  .day-badge {
+    padding: 8px 9px;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-box.full {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-main:has(.transport-principle-grid) {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  .app-main:has(.transport-principle-grid) > .section-card:first-child > .section-title {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .app-main:has(.transport-principle-grid) > .section-card:not(:first-child) > .section-title {
+    margin-bottom: 8px;
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .transport-principle-grid {
+    gap: 8px;
+  }
+
+  .transport-principle-grid .mini-card {
+    padding: 9px 10px;
+  }
+
+  .transport-principle-grid .mini-card > strong {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.35;
+  }
+
+  .transport-principle-grid .transport-inline-list {
+    margin: 5px 0 0;
+    padding-left: 18px;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .transport-principle-grid .transport-inline-list li + li {
+    margin-top: 3px;
+  }
+
+  .transport-principle-grid .transport-highlight p {
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .transport-table-wrap {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .transport-table {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .transport-table th,
+  .transport-table td {
+    min-width: 0;
+    padding: 8px 5px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .transport-table th {
+    font-size: 13px;
+    letter-spacing: 0;
+  }
+
+  .transport-table th:nth-child(1),
+  .transport-table td:nth-child(1) {
+    width: 20%;
+  }
+
+  .transport-table th:nth-child(2),
+  .transport-table td:nth-child(2) {
+    width: 25%;
+  }
+
+  .transport-table th:nth-child(3),
+  .transport-table td:nth-child(3) {
+    width: 25%;
+  }
+
+  .transport-table th:nth-child(4),
+  .transport-table td:nth-child(4) {
+    width: 30%;
+  }
+
+  .transport-table th:nth-child(n + 5),
+  .transport-table td:nth-child(n + 5) {
+    display: none;
+  }
+
+  .transport-table-site {
+    gap: 3px;
+  }
+
+  .transport-table-site a,
+  .transport-table-site span {
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  .transport-link-grid {
+    gap: 8px;
+  }
+
+  .transport-link-card {
+    padding: 10px 11px;
+  }
+
+  .transport-link-card > strong {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .transport-link-card p {
+    margin-top: 4px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .transport-link-card .map-button {
+    min-height: 44px;
+    padding-inline: 14px;
+    font-size: 15px;
+  }
+
+  .app-main:has(.transport-principle-grid) .transport-ic-card p,
+  .app-main:has(.transport-principle-grid) .transport-inline-list,
+  .app-main:has(.transport-principle-grid) .transport-segment-note,
+  .app-main:has(.transport-principle-grid) .journey-plan-note {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+}
