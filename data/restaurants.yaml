@@ -9,73 +9,61 @@ restaurants:
   - 
     id: "restaurant_nikuwarai_showacho_honten"
     date: "2026-10-11"
-    area: "??"
-    meal_type: "??"
+    area: "靜岡"
+    meal_type: "晚餐"
     priority: 1
-    name: "?? ????? ?????"
-    japanese_name: "?? ????? ?????"
+    name: "焼肉 にくわらい 昭和町本店"
+    japanese_name: "焼肉 にくわらい 昭和町本店"
     google_maps_url: "https://maps.app.goo.gl/z29fNgVnM4XYNWws6"
-    notes: "10/11 ???????"
+    notes: "10/11 晚餐第一順位。"
     lat: null
     lng: null
   - 
     id: "restaurant_umibouzu_main_store"
     date: "2026-10-11"
-    area: "??"
-    meal_type: "??"
+    area: "靜岡"
+    meal_type: "消夜"
     priority: 1
     name: "UMIBOUZU Main Store"
-    japanese_name: "???? ??"
+    japanese_name: "海ぼうず 本店"
     google_maps_url: "https://maps.app.goo.gl/2pAQmzWMzgMN4Hou8"
-    notes: "10/11 ???????"
+    notes: "10/11 消夜第一順位。"
     lat: null
     lng: null
   - 
     id: "restaurant_nanaya_shizuoka"
     date: "2026-10-12"
-    area: "??"
-    meal_type: "????"
+    area: "靜岡"
+    meal_type: "下午甜點"
     priority: 1
     name: "Nanaya Shizuoka"
-    japanese_name: "??? ???"
+    japanese_name: "ななや 静岡店"
     google_maps_url: "https://maps.app.goo.gl/r565wg1Z7fDZMJeGA"
-    notes: "10/12 ?????????"
-    lat: null
-    lng: null
-  - 
-    id: "restaurant_gyoza_kenkyujo_asty"
-    date: "2026-10-12"
-    area: "??"
-    meal_type: "??"
-    priority: 1
-    name: "????? ?????"
-    japanese_name: "????? ?????"
-    google_maps_url: "https://maps.app.goo.gl/H3TY5ChE3CRhPWNr5"
-    notes: "10/12 ???????"
+    notes: "10/12 下午甜點第一順位。"
     lat: null
     lng: null
   - 
     id: "restaurant_shimizuko_minami"
     date: "2026-10-12"
-    area: "??"
-    meal_type: "??"
+    area: "靜岡"
+    meal_type: "午餐"
     priority: 1
     name: "Shimizuko Minami"
-    japanese_name: "??????"
+    japanese_name: "清水港みなみ"
     google_maps_url: "https://maps.app.goo.gl/mZuLNEQMCNA3NLTx5"
-    notes: "10/12 ???????"
+    notes: "10/12 靜岡市中心鮪魚午餐第一順位。"
     lat: null
     lng: null
   - 
-    id: "restaurant_numazu_uogashi_zushi_premium_shizuoka"
+    id: "restaurant_maguro_miyamoto"
     date: "2026-10-12"
-    area: "??"
-    meal_type: "??"
+    area: "靜岡"
+    meal_type: "午餐"
     priority: 2
-    name: "?????? ?????????"
-    japanese_name: "?????? ?????????"
-    google_maps_url: "https://maps.app.goo.gl/XVg1NBDCApNYzqcGA"
-    notes: "10/12 ???????????? Shimizuko Minami ????"
+    name: "Maguro Hitosuji Miyamoto"
+    japanese_name: "まぐろ一筋 みやもと"
+    google_maps_url: "https://maps.app.goo.gl/gBjCbxZhop2845Tt7"
+    notes: "10/12 午餐第二順位；清水港みなみ等待過久時，直接改用此備案。"
     lat: null
     lng: null
   - 

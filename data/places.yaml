@@ -44,13 +44,13 @@ places:
     notes: "主軸區域。"
   - 
     id: "narita_airport"
-    name: "????"
-    area: "??"
-    category: "??"
+    name: "成田機場"
+    area: "成田"
+    category: "交通"
     google_maps_url: null
     lat: null
     lng: null
-    notes: "????????"
+    notes: "入境與返程機場。"
   - 
     id: "tokyo-station"
     name: "東京站"
@@ -79,33 +79,6 @@ places:
     lng: null
     notes: "靜岡住宿與移動核心節點。"
   - 
-    id: "sunpu-castle-park"
-    name: "駿府城公園"
-    area: "靜岡"
-    category: "景點"
-    google_maps_url: null
-    lat: null
-    lng: null
-    notes: "10/12 靜岡市區散步重點。"
-  - 
-    id: "nihondaira"
-    name: "日本平"
-    area: "靜岡"
-    category: "景點"
-    google_maps_url: null
-    lat: null
-    lng: null
-    notes: "10/12 景觀主軸。"
-  - 
-    id: "shimizu"
-    name: "清水"
-    area: "靜岡"
-    category: "區域"
-    google_maps_url: null
-    lat: null
-    lng: null
-    notes: "10/12 午餐與港區動線。"
-  - 
     id: "kunozan-toshogu"
     name: "久能山東照宮"
     area: "靜岡"
@@ -124,42 +97,6 @@ places:
     lng: null
     notes: "10/12 下午候選動線。"
   - 
-    id: "miho-no-matsubara"
-    name: "三保松原"
-    area: "靜岡"
-    category: "景點"
-    google_maps_url: null
-    lat: null
-    lng: null
-    notes: "10/12 下午景點。"
-  - 
-    id: "shimizu-port"
-    name: "清水港"
-    area: "靜岡"
-    category: "景點"
-    google_maps_url: null
-    lat: null
-    lng: null
-    notes: "10/12 港區散步節點。"
-  - 
-    id: "shimizu-fish-market"
-    name: "清水魚市場"
-    area: "靜岡"
-    category: "景點"
-    google_maps_url: null
-    lat: null
-    lng: null
-    notes: "10/12 港區散步節點。"
-  - 
-    id: "s_pulse_dream_plaza"
-    name: "????????????"
-    area: "??"
-    category: "??"
-    google_maps_url: "https://maps.app.goo.gl/Ebd7egUc4Mu83gce6"
-    lat: null
-    lng: null
-    notes: "10/12 ?????????????"
-  - 
     id: "mishima-station"
     name: "三島站"
     area: "三島"
@@ -173,43 +110,34 @@ places:
     name: "伊豆全景公園"
     area: "伊豆"
     category: "景點"
-    google_maps_url: null
+    google_maps_url: "https://maps.app.goo.gl/onLLbWaNbDbQQGUF7"
     lat: null
     lng: null
     notes: "10/13 上午景觀重點。"
   - 
     id: "ao-terrace"
-    name: "碧露台 Ao Terrace"
+    name: "碧色展望台"
     area: "伊豆"
     category: "景點"
-    google_maps_url: null
+    google_maps_url: "https://maps.app.goo.gl/117B1YDXabLEmWZg7"
     lat: null
     lng: null
-    notes: "10/13 上午景觀重點。"
-  - 
-    id: "shuzenji-onsen"
-    name: "修善寺溫泉街"
-    area: "修善寺"
-    category: "景點"
-    google_maps_url: null
-    lat: null
-    lng: null
-    notes: "10/13–10/14 修善寺主要步行區域。"
+    notes: "10/13 上午景觀重點；原名稱為碧露台 Ao Terrace。"
   - 
     id: "hotel_yukairo_kikuya"
-    name: "??? ??"
-    area: "???"
-    category: "??"
+    name: "湯回廊 菊屋"
+    area: "修善寺"
+    category: "住宿"
     google_maps_url: "https://maps.app.goo.gl/scKCqpC5T8hkTLbc6"
     lat: null
     lng: null
-    notes: "10/13-10/14 ???"
+    notes: "10/13-10/14 住宿。"
   - 
     id: "shuzenji-temple"
     name: "修禪寺"
     area: "修善寺"
     category: "景點"
-    google_maps_url: null
+    google_maps_url: "https://maps.app.goo.gl/EWrxnKPc9Pe9AaVs6"
     lat: null
     lng: null
     notes: "修善寺慢遊景點。"
@@ -218,16 +146,7 @@ places:
     name: "竹林小徑"
     area: "修善寺"
     category: "景點"
-    google_maps_url: null
-    lat: null
-    lng: null
-    notes: "修善寺慢遊景點。"
-  - 
-    id: "katsura-river"
-    name: "桂川沿岸"
-    area: "修善寺"
-    category: "景點"
-    google_maps_url: null
+    google_maps_url: "https://maps.app.goo.gl/vog8eWHjpedHDUD76"
     lat: null
     lng: null
     notes: "修善寺慢遊景點。"
@@ -236,7 +155,7 @@ places:
     name: "筏場水山葵田"
     area: "伊豆"
     category: "景點"
-    google_maps_url: null
+    google_maps_url: "https://maps.app.goo.gl/3MEkUs68UCYerbPb7"
     lat: null
     lng: null
     notes: "10/14 上午景點。"
@@ -245,7 +164,7 @@ places:
     name: "道之驛 天城越え"
     area: "伊豆"
     category: "景點"
-    google_maps_url: null
+    google_maps_url: "https://maps.app.goo.gl/t3AkzmXLbSo7aKP57"
     lat: null
     lng: null
     notes: "10/14 中途休息與伴手禮節點。"
@@ -254,16 +173,7 @@ places:
     name: "達磨山 Rest House"
     area: "伊豆"
     category: "景點"
-    google_maps_url: null
-    lat: null
-    lng: null
-    notes: "10/14 夕陽主軸。"
-  - 
-    id: "nishi-izu-skyline"
-    name: "西伊豆 Skyline"
-    area: "伊豆"
-    category: "景點"
-    google_maps_url: null
+    google_maps_url: "https://maps.app.goo.gl/rmWdf4PVovucGQMK8"
     lat: null
     lng: null
     notes: "10/14 夕陽主軸。"
@@ -281,82 +191,64 @@ places:
     name: "箱根湯本"
     area: "箱根"
     category: "區域"
-    google_maps_url: null
+    google_maps_url: "https://maps.app.goo.gl/mQVjgUWpNRtRh6VL7"
     lat: null
     lng: null
-    notes: "10/15 午餐與 10/17 最後採買區域。"
+    notes: "10/15 午餐與 10/17 下山轉乘重點區域。"
   - 
     id: "gora"
     name: "強羅"
     area: "箱根"
     category: "區域"
-    google_maps_url: null
+    google_maps_url: "https://maps.app.goo.gl/N8cq8RLJiQZ18HF5A"
     lat: null
     lng: null
-    notes: "10/15–10/16 住宿與晚餐核心區域。"
-  - 
-    id: "gora-park"
-    name: "強羅公園"
-    area: "箱根"
-    category: "景點"
-    google_maps_url: null
-    lat: null
-    lng: null
-    notes: "10/15 下午周邊散步點。"
+    notes: "10/15 抵達與晚餐核心區域。"
   - 
     id: "hakone-shrine"
     name: "箱根神社"
     area: "箱根"
     category: "景點"
-    google_maps_url: null
+    google_maps_url: "https://maps.app.goo.gl/rHhjLWxRtZ1BLyCe6"
     lat: null
     lng: null
-    notes: "10/16 上午主景點。"
-  - 
-    id: "moto-hakone-port"
-    name: "元箱根港"
-    area: "箱根"
-    category: "交通"
-    google_maps_url: null
-    lat: null
-    lng: null
-    notes: "10/16 搭海賊船出發點。"
+    notes: "10/16 上午主景點；纜車轉巴士動線。"
   - 
     id: "togendai"
     name: "桃源台"
     area: "箱根"
     category: "區域"
-    google_maps_url: null
+    google_maps_url: "https://maps.app.goo.gl/kLzMNjtpJGqX5ji97"
     lat: null
     lng: null
-    notes: "10/16 午餐與纜車銜接區域。"
+    notes: "10/16 搭海賊船抵達，午餐與纜車銜接區域。"
   - 
     id: "owakudani"
     name: "大涌谷"
     area: "箱根"
     category: "景點"
-    google_maps_url: null
+    google_maps_url: "https://maps.app.goo.gl/qCMnGgP9BDxtxFZ59"
     lat: null
     lng: null
-    notes: "10/16 下午主景點。"
+    notes: "10/16 下午主景點；搭纜車前往。"
   - 
     id: "sounzan"
     name: "早雲山"
     area: "箱根"
     category: "景點"
-    google_maps_url: null
+    google_maps_url: "https://maps.app.goo.gl/dCVBM62Y1F4moq26A"
     lat: null
     lng: null
-    notes: "10/16 返回強羅的銜接節點。"
+    notes: "10/16 搭纜車返回時的銜接節點。"
   - 
     id: "shinjuku"
     name: "新宿"
     area: "東京"
-    category: "區域"
-    google_maps_url: null
+    category: "景點"
+    google_maps_url: "https://maps.app.goo.gl/ySvHbTPy4goraKw37"
     lat: null
     lng: null
-    notes: "10/17 東京購物主軸候選。"
+    notes: "10/17 由箱根湯本搭小田急浪漫特快抵達的新宿節點。"
   - 
     id: "ginza"
     name: "銀座"
@@ -386,13 +278,13 @@ places:
     notes: "10/17 東京購物主軸候選。"
   - 
     id: "nippori_station"
-    name: "????"
-    area: "??"
-    category: "??"
+    name: "日暮里站"
+    area: "東京"
+    category: "交通"
     google_maps_url: null
     lat: null
     lng: null
-    notes: "10/18 ?? Skyliner ???????"
+    notes: "10/18 轉乘 Skyliner 前往成田機場。"
   - 
     id: "restaurant-sugiya"
     name: "Sugiya すぎ屋"
@@ -557,145 +449,217 @@ places:
     notes: "10/16 晚餐備案 2。"
   - 
     id: "hotel_garden_square_shizuoka"
-    name: "Hotel Garden Square Shizuoka"
-    area: "??"
-    category: "??"
+    name: "Hotel Garden Square Shizuoka／ホテルガーデンスクエア静岡"
+    area: "靜岡"
+    category: "住宿"
     google_maps_url: "https://maps.app.goo.gl/PQMPaSQnzaywcGa88"
     lat: null
     lng: null
-    notes: "10/11-10/12 ???"
+    notes: "10/11-10/12 住宿。"
   - 
     id: "hotel_marroad_hakone"
-    name: "????? ??"
-    area: "??"
-    category: "??"
+    name: "馬洛德飯店 箱根／ホテルマロウド箱根"
+    area: "箱根"
+    category: "住宿"
     google_maps_url: "https://maps.app.goo.gl/se1iuZo7QjSA1s3h8"
     lat: null
     lng: null
-    notes: "10/15-10/16 ???"
+    notes: "10/15-10/16 住宿。"
   - 
     id: "hotel_del_style_ikebukuro"
-    name: "DEL style ???? by Daiwa Roynet Hotel"
-    area: "??"
-    category: "??"
-    google_maps_url: "https://maps.app.goo.gl/qBkqL7LzmiPgWSYH8"
+    name: "DEL style 池袋東口 by Daiwa Roynet Hotel"
+    area: "東京"
+    category: "住宿"
+    google_maps_url: "https://maps.app.goo.gl/SXhmDAT98MNHtjns8"
     lat: null
     lng: null
-    notes: "10/17 ???"
+    notes: "10/17 住宿。"
   - 
     id: "cenova_shizuoka"
-    name: "??? CENOVA"
-    area: "??"
-    category: "??"
+    name: "新靜岡 CENOVA"
+    area: "靜岡"
+    category: "購物"
     google_maps_url: "https://maps.app.goo.gl/1XePnSVsLx9BTXjU8"
     lat: null
     lng: null
-    notes: "10/11 ?????????"
-  - 
-    id: "shizuoka_sengen_jinja"
-    name: "??????"
-    area: "??"
-    category: "??"
-    google_maps_url: "https://maps.app.goo.gl/ymWkrhY2H4zaTx8XA"
-    lat: null
-    lng: null
-    notes: "10/12 ?????"
+    notes: "10/11 晚餐後 optional；10/12 第二順位，尋找胖胖褲豬、角色商品與扭蛋。"
   - 
     id: "shizuoka_parco"
-    name: "?? PARCO"
-    area: "??"
-    category: "??"
+    name: "靜岡 PARCO"
+    area: "靜岡"
+    category: "購物"
     google_maps_url: "https://maps.app.goo.gl/HkQuTHU3ifmnWDQC6"
     lat: null
     lng: null
-    notes: "10/12 ?????"
+    notes: "10/12 第一順位；Village Vanguard 位於 6F，主要尋找胖胖褲豬。"
+  - 
+    id: "dm_cave_shizuoka"
+    name: "松坂屋（北館）D&M CAVE SHIZUOKA"
+    area: "靜岡"
+    category: "購物"
+    google_maps_url: "https://maps.app.goo.gl/ntpnEBtAjy5GVSbd9"
+    lat: null
+    lng: null
+    notes: "10/12 靜岡地酒主要採購點；磯自慢、初龜最高優先。"
+  - 
+    id: "fushimiya_gofukucho"
+    name: "ふしみや呉服町本店"
+    area: "靜岡"
+    category: "購物"
+    google_maps_url: "https://maps.app.goo.gl/wxar4Pt4TvCjewWX8"
+    lat: null
+    lng: null
+    notes: "10/12 胖胖褲豬／角色商品補充搜尋，optional 且順位最低。"
   - 
     id: "orix_rentacar_mishima"
-    name: "Orix Rent-a-car Mishima"
-    area: "??"
-    category: "??"
+    name: "Orix Rent-a-car Mishima／オリックスレンタカー 三島店"
+    area: "三島"
+    category: "交通"
     google_maps_url: "https://maps.app.goo.gl/hS1R23ZiAXDv3D9y5"
     lat: null
     lng: null
-    notes: "10/13 ??? 10/15 ?????"
+    notes: "10/13 取車與 10/15 還車地點。"
   - 
     id: "ikebukuro"
-    name: "??"
-    area: "??"
-    category: "??"
+    name: "池袋"
+    area: "東京"
+    category: "景點"
+    google_maps_url: "https://maps.app.goo.gl/yNYnBMoXqjdJvAfF9"
+    lat: null
+    lng: null
+    notes: "10/17 JR 電車由新宿轉往池袋並先寄放行李；10/18 上午購物。"
+  - 
+    id: "shibuya"
+    name: "澀谷"
+    area: "東京"
+    category: "區域"
     google_maps_url: null
     lat: null
     lng: null
-    notes: "10/17-10/18 ?????????"
+    notes: "10/17 東京購物主軸區域。"
+  - 
+    id: "hoka_shibuya"
+    name: "HOKA Shibuya"
+    area: "澀谷"
+    category: "購物"
+    google_maps_url: "https://maps.app.goo.gl/HET91YmQ97N5GAoaA"
+    lat: null
+    lng: null
+    notes: "10/17 澀谷購物第一站，主要試穿與購買 HOKA Bondi。"
+  - 
+    id: "nintendo_tokyo"
+    name: "Nintendo TOKYO"
+    area: "澀谷"
+    category: "購物"
+    google_maps_url: "https://maps.app.goo.gl/5nUBePGx7mXJ7YUQ6"
+    lat: null
+    lng: null
+    notes: "10/17 澀谷購物第二站，主要購買 Pikmin 官方周邊。"
+  - 
+    id: "montbell_shibuya"
+    name: "mont-bell 澀谷店"
+    area: "澀谷"
+    category: "購物"
+    google_maps_url: "https://maps.app.goo.gl/grAq69fwRZXq2ymLA"
+    lat: null
+    lng: null
+    notes: "10/17 澀谷購物第三站；未完成時 10/18 續逛東武池袋店。"
   - 
     id: "ikebukuro_station"
-    name: "???"
-    area: "??"
-    category: "??"
+    name: "池袋站"
+    area: "東京"
+    category: "交通"
     google_maps_url: null
     lat: null
     lng: null
-    notes: "10/18 ????????????"
+    notes: "10/18 前往日暮里前的交通節點。"
   - 
     id: "montbell_tobu_ikebukuro"
-    name: "mont-bell ?????"
-    area: "??"
-    category: "??"
+    name: "mont-bell 東武池袋店"
+    area: "池袋"
+    category: "購物"
     google_maps_url: "https://maps.app.goo.gl/f7Pg6bwAmBRo2bSn8"
     lat: null
     lng: null
-    notes: "10/18 ?????????"
+    notes: "10/18 早上戶外用品購物。"
   - 
     id: "restaurant_nikuwarai_showacho_honten"
-    name: "?? ????? ?????"
-    area: "??"
-    category: "??"
+    name: "焼肉 にくわらい 昭和町本店"
+    area: "靜岡"
+    category: "餐廳"
     google_maps_url: "https://maps.app.goo.gl/z29fNgVnM4XYNWws6"
     lat: null
     lng: null
-    notes: "10/11 ???????"
+    notes: "10/11 晚餐第一順位。"
   - 
     id: "restaurant_umibouzu_main_store"
-    name: "UMIBOUZU Main Store"
-    area: "??"
-    category: "??"
+    name: "UMIBOUZU Main Store／海ぼうず 本店"
+    area: "靜岡"
+    category: "餐廳"
     google_maps_url: "https://maps.app.goo.gl/2pAQmzWMzgMN4Hou8"
     lat: null
     lng: null
-    notes: "10/11 ???????"
+    notes: "10/11 消夜第一順位。"
   - 
     id: "restaurant_shimizuko_minami"
-    name: "Shimizuko Minami"
-    area: "??"
-    category: "??"
+    name: "Shimizuko Minami／清水港みなみ"
+    area: "靜岡"
+    category: "餐廳"
     google_maps_url: "https://maps.app.goo.gl/mZuLNEQMCNA3NLTx5"
     lat: null
     lng: null
-    notes: "10/12 ???????"
+    notes: "10/12 靜岡市中心鮪魚午餐第一順位。"
+  - 
+    id: "restaurant_maguro_miyamoto"
+    name: "まぐろ一筋 みやもと"
+    area: "靜岡"
+    category: "餐廳"
+    google_maps_url: "https://maps.app.goo.gl/gBjCbxZhop2845Tt7"
+    lat: null
+    lng: null
+    notes: "10/12 午餐第二順位，位於靜岡站／ASTY 靜岡區域。"
   - 
     id: "restaurant_nanaya_shizuoka"
-    name: "Nanaya Shizuoka"
-    area: "??"
-    category: "??"
+    name: "Nanaya Shizuoka／ななや 静岡店"
+    area: "靜岡"
+    category: "餐廳"
     google_maps_url: "https://maps.app.goo.gl/r565wg1Z7fDZMJeGA"
     lat: null
     lng: null
-    notes: "10/12 ?????????"
+    notes: "10/12 下午甜點第一順位。"
   - 
-    id: "restaurant_gyoza_kenkyujo_asty"
-    name: "????? ?????"
-    area: "??"
-    category: "??"
-    google_maps_url: "https://maps.app.goo.gl/H3TY5ChE3CRhPWNr5"
+    id: "hotel_prince_smart_inn_atami"
+    name: "Prince Smart Inn Atami／プリンス スマート イン 熱海"
+    area: "熱海"
+    category: "accommodation"
+    google_maps_url: "https://maps.app.goo.gl/hSr7swTMDLmKEP4h6"
     lat: null
     lng: null
-    notes: "10/12 ???????"
+    notes: "10/12 住宿，10/13 早餐後退房出發。"
   - 
-    id: "restaurant_numazu_uogashi_zushi_premium_shizuoka"
-    name: "?????? ?????????"
-    area: "??"
-    category: "??"
-    google_maps_url: "https://maps.app.goo.gl/XVg1NBDCApNYzqcGA"
+    id: "atami-station"
+    name: "熱海站"
+    area: "熱海"
+    category: "交通"
+    google_maps_url: null
     lat: null
     lng: null
-    notes: "10/12 ???????????? Shimizuko Minami ????"
+    notes: "10/12 抵達熱海與 10/13 前往三島的交通節點。"
+  - 
+    id: "atami-ginza-area"
+    name: "熱海銀座周邊"
+    area: "熱海"
+    category: "區域"
+    google_maps_url: null
+    lat: null
+    lng: null
+    notes: "10/12 晚餐與花火前散步區域。"
+  - 
+    id: "atami-sun-beach-fireworks"
+    name: "熱海陽光海灘／熱海サンビーチ"
+    area: "熱海"
+    category: "event"
+    google_maps_url: "https://maps.app.goo.gl/RiekU6TjA3ssQnAx6"
+    lat: null
+    lng: null
+    notes: "熱海海上花火大會主要觀賞點，建議提早抵達並預留人潮移動時間。"
