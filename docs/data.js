@@ -1271,15 +1271,27 @@ window.TRIP_DATA = {
       "title": "Day 6｜箱根 → 池袋寄放行李 → 澀谷購物",
       "area": "箱根、新宿、池袋、澀谷",
       "accommodation": "DEL style 池袋東口 by Daiwa Roynet Hotel",
-      "theme": "箱根下山 → 新宿轉乘 → 池袋寄放行李 → HOKA → Nintendo TOKYO → mont-bell 澀谷",
+      "theme": "箱根湯本寄放行李、商店街與湯葉丼午餐 → 已預約 Romancecar → 池袋寄放行李 → 澀谷購物",
       "timeline": [
         {
-          "start_time": "08:30",
-          "end_time": "09:30",
-          "title": "早餐、退房",
+          "start_time": "08:00",
+          "end_time": "09:00",
+          "title": "早餐",
           "location": "馬洛德飯店 箱根",
           "transport": "步行",
-          "description": "完成早餐與退房。",
+          "description": "在飯店用早餐。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "hotel_marroad_hakone"
+          ]
+        },
+        {
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "title": "退房",
+          "location": "馬洛德飯店 箱根",
+          "transport": "步行",
+          "description": "完成退房後前往箱根湯本。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_marroad_hakone"
@@ -1287,11 +1299,11 @@ window.TRIP_DATA = {
         },
         {
           "start_time": "09:30",
-          "end_time": "11:20",
+          "end_time": "10:30",
           "title": "前往箱根湯本",
           "location": "馬洛德飯店 箱根 → 箱根湯本",
-          "transport": "登山電車",
-          "description": "使用箱根周遊券下山，預留轉乘與候車時間。",
+          "transport": "登山電車／巴士",
+          "description": "使用箱根周遊券前往箱根湯本。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hotel_marroad_hakone",
@@ -1299,12 +1311,74 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "11:38",
-          "end_time": "13:05",
-          "title": "Romancecar 順位1（待預約）",
+          "start_time": "10:30",
+          "end_time": "10:45",
+          "title": "寄放行李",
+          "location": "小田急旅行中心（箱根湯本站）",
+          "transport": "步行",
+          "description": "於小田急旅行中心（箱根湯本站）寄放行李；未新增未提供的 Google Maps 連結。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "hakone-yumoto"
+          ]
+        },
+        {
+          "start_time": "10:45",
+          "end_time": "11:30",
+          "title": "箱根湯本商店街購買伴手禮",
+          "location": "箱根湯本商店街",
+          "transport": "步行",
+          "description": "利用搭車前時間購買伴手禮。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "hakone-yumoto"
+          ]
+        },
+        {
+          "start_time": "11:30",
+          "end_time": "12:20",
+          "title": "午餐：湯葉丼 直吉",
+          "location": "湯葉丼 直吉",
+          "transport": "步行",
+          "description": "搭乘 Romancecar 前於箱根湯本用午餐。",
+          "related_restaurant_ids": [
+            "restaurant_yubadon_naokichi"
+          ],
+          "related_place_ids": [
+            "restaurant_yubadon_naokichi"
+          ]
+        },
+        {
+          "start_time": "12:20",
+          "end_time": "12:35",
+          "title": "取回行李",
+          "location": "小田急旅行中心（箱根湯本站）",
+          "transport": "步行",
+          "description": "取回寄放行李，準備進站。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "hakone-yumoto"
+          ]
+        },
+        {
+          "start_time": "12:40",
+          "end_time": "13:15",
+          "title": "回到箱根湯本站準備搭車",
+          "location": "箱根湯本站",
+          "transport": "步行／站內候車",
+          "description": "12:40 是回到車站準備搭車的目標時間，不是列車發車時間。",
+          "related_restaurant_ids": [],
+          "related_place_ids": [
+            "hakone-yumoto"
+          ]
+        },
+        {
+          "start_time": "13:15",
+          "end_time": "14:45",
+          "title": "Romancecar はこね10号（已預約）",
           "location": "箱根湯本 → 新宿",
-          "transport": "小田急浪漫特快",
-          "description": "主要目標為小田急ロマンスカー はこね6號；Romancecar 特急券另購。順位2為はこね10號 13:15–14:45。",
+          "transport": "小田急ロマンスカー はこね10号／GSE",
+          "description": "已預約前展望席，7號車 14A／14B，成人2名，購買金額 2,300日圓；Romancecar 特急券另購。",
           "related_restaurant_ids": [],
           "related_place_ids": [
             "hakone-yumoto",
@@ -1312,8 +1386,8 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "13:05",
-          "end_time": "13:30",
+          "start_time": "14:45",
+          "end_time": "15:10",
           "title": "前往池袋",
           "location": "新宿 → 池袋",
           "transport": "JR 電車",
@@ -1325,8 +1399,8 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "13:30",
-          "end_time": "14:15",
+          "start_time": "15:10",
+          "end_time": "15:45",
           "title": "寄放行李或 Check-in",
           "location": "DEL style 池袋東口 by Daiwa Roynet Hotel",
           "transport": "步行",
@@ -1337,8 +1411,8 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "14:15",
-          "end_time": "15:00",
+          "start_time": "15:45",
+          "end_time": "16:20",
           "title": "前往澀谷",
           "location": "池袋 → 澀谷",
           "transport": "JR／市區交通",
@@ -1350,8 +1424,8 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "15:00",
-          "end_time": "16:30",
+          "start_time": "16:20",
+          "end_time": "17:30",
           "title": "第一站：HOKA Shibuya",
           "location": "HOKA Shibuya",
           "transport": "步行",
@@ -1362,8 +1436,8 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "16:30",
-          "end_time": "18:00",
+          "start_time": "17:30",
+          "end_time": "18:45",
           "title": "第二站：Nintendo TOKYO",
           "location": "Nintendo TOKYO",
           "transport": "步行",
@@ -1374,7 +1448,7 @@ window.TRIP_DATA = {
           ]
         },
         {
-          "start_time": "18:00",
+          "start_time": "18:45",
           "end_time": null,
           "title": "第三站：mont-bell 澀谷店",
           "location": "mont-bell 澀谷店",
@@ -1389,13 +1463,18 @@ window.TRIP_DATA = {
       "transportation": [
         {
           "segment": "馬洛德飯店 箱根 → 箱根湯本",
-          "mode": "登山電車",
-          "notes": "早上直接下山。"
+          "mode": "登山電車／巴士",
+          "notes": "早餐、退房後使用箱根周遊券前往箱根湯本。"
+        },
+        {
+          "segment": "箱根湯本站周邊",
+          "mode": "步行",
+          "notes": "小田急旅行中心寄放行李、商店街購物、湯葉丼 直吉午餐、取回行李；12:40 回到車站準備搭車。"
         },
         {
           "segment": "箱根湯本 → 新宿",
-          "mode": "小田急浪漫特快",
-          "notes": "依更新資料改走浪漫特快進東京。"
+          "mode": "小田急ロマンスカー はこね10号／GSE",
+          "notes": "13:15–14:45，已預約前展望席，7號車 14A／14B。"
         },
         {
           "segment": "新宿 → 池袋",
@@ -1411,9 +1490,11 @@ window.TRIP_DATA = {
       "meals": [
         {
           "meal_type": "午餐",
-          "primary_restaurant_ids": [],
+          "primary_restaurant_ids": [
+            "restaurant_yubadon_naokichi"
+          ],
           "backup_restaurant_ids": [],
-          "notes": "未提供特定餐廳，依池袋購物動線彈性安排。"
+          "notes": "搭乘 Romancecar 前於箱根湯本午餐。"
         },
         {
           "meal_type": "晚餐",
@@ -1425,8 +1506,9 @@ window.TRIP_DATA = {
       "backup_plan": [],
       "notes": [
         "10/17 早上沒有雕刻之森美術館。",
-        "Romancecar 尚未預約，順位1為はこね6號，順位2為はこね10號。",
-        "澀谷購物順序固定為 HOKA Shibuya → Nintendo TOKYO → mont-bell 澀谷店。"
+        "Romancecar はこね10号已預約；12:40 為回到箱根湯本站準備搭車的目標時間，13:15 才是固定發車時間。",
+        "澀谷購物順序固定為 HOKA Shibuya → Nintendo TOKYO → mont-bell 澀谷店。",
+        "因 Romancecar 14:45 抵達新宿，澀谷購物時間較原規劃壓縮，依現場時間彈性調整停留長度。"
       ]
     },
     {
@@ -1882,6 +1964,19 @@ window.TRIP_DATA = {
       "japanese_name": "かっ平壽司",
       "google_maps_url": "https://maps.app.goo.gl/c9UMcR4LdaqBHqHe9",
       "notes": "10/16 晚餐備案 2。",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "restaurant_yubadon_naokichi",
+      "date": "2026-10-17",
+      "area": "箱根湯本",
+      "meal_type": "午餐",
+      "priority": 1,
+      "name": "湯葉丼 直吉",
+      "japanese_name": "湯葉丼 直吉",
+      "google_maps_url": "https://maps.app.goo.gl/iPcQ5dP2pagdNNTu5",
+      "notes": "10/17 搭乘 Romancecar 前於箱根湯本午餐。",
       "lat": null,
       "lng": null
     }
@@ -2616,6 +2711,16 @@ window.TRIP_DATA = {
       "lat": null,
       "lng": null,
       "notes": "熱海海上花火大會主要觀賞點，建議提早抵達並預留人潮移動時間。"
+    },
+    {
+      "id": "restaurant_yubadon_naokichi",
+      "name": "湯葉丼 直吉",
+      "area": "箱根湯本",
+      "category": "餐廳",
+      "google_maps_url": "https://maps.app.goo.gl/iPcQ5dP2pagdNNTu5",
+      "lat": null,
+      "lng": null,
+      "notes": "10/17 午餐第一順位；搭乘 Romancecar 前用餐。"
     }
   ],
   "transportation": {
@@ -2690,10 +2795,11 @@ window.TRIP_DATA = {
         "purchase_site": "小田急 Romancecar",
         "purchase_url": "https://www.web-odakyu.com/e-romancecar/",
         "route": "箱根湯本站 → 新宿站",
-        "train_type": "小田急ロマンスカー（Romancecar）",
-        "reserved_seat": "待預約／全車指定席",
+        "train_type": "小田急ロマンスカー はこね10号（Romancecar はこね10号／GSE）",
+        "reserved_seat": "已預約／前展望席",
         "notes": [
-          "建議先上網購票。",
+          "已預約 13:15–14:45 班次。",
+          "前展望席：7號車 14A、7號車 14B；成人2名；購買金額 2,300日圓。",
           "10/15–10/17 使用箱根周遊券。",
           "箱根周遊券通常涵蓋基本車資，但 Romancecar 特急券仍需另外購買。",
           "到新宿後，再用 Suica / PASMO 搭 JR 山手線或其他市區交通前往池袋。"
@@ -3527,41 +3633,31 @@ window.TRIP_DATA = {
       {
         "date": "2026-10-17",
         "title": "箱根 → 新宿 → 池袋 → 澀谷",
-        "route_summary": "從箱根回東京，先到池袋寄放行李，再依固定順序前往澀谷購物。",
+        "route_summary": "早餐退房後前往箱根湯本寄放行李、購物與午餐，搭乘已預約的 はこね10号 返回東京，再到池袋寄放行李並依固定順序前往澀谷購物。",
         "journey_plans": [
           {
-            "label": "順位1",
-            "status": "待預約",
+            "label": "已預約",
+            "status": "已預約",
             "legs": [
               {
-                "service_name": "小田急ロマンスカー はこね6號（Romancecar はこね6號）",
-                "from": "箱根湯本（Hakone-Yumoto）",
-                "to": "新宿（Shinjuku）",
-                "departure_time": "11:38",
-                "arrival_time": "13:05",
-                "status": "待預約",
-                "purchase_site": "小田急 Romancecar",
-                "purchase_url": "https://www.web-odakyu.com/e-romancecar/"
-              }
-            ],
-            "notes": "主要目標；Romancecar 特急券另購。"
-          },
-          {
-            "label": "順位2",
-            "status": "待預約",
-            "legs": [
-              {
-                "service_name": "小田急ロマンスカー はこね10號（Romancecar はこね10號）",
+                "service_name": "小田急ロマンスカー はこね10号（Romancecar はこね10号／GSE）",
                 "from": "箱根湯本（Hakone-Yumoto）",
                 "to": "新宿（Shinjuku）",
                 "departure_time": "13:15",
                 "arrival_time": "14:45",
-                "status": "待預約",
+                "status": "已預約",
                 "purchase_site": "小田急 Romancecar",
-                "purchase_url": "https://www.web-odakyu.com/e-romancecar/"
+                "purchase_url": "https://www.web-odakyu.com/e-romancecar/",
+                "seat_type": "前展望席",
+                "seats": [
+                  "7號車 14A",
+                  "7號車 14B"
+                ],
+                "passengers": "成人2名",
+                "purchase_amount": "2,300日圓"
               }
             ],
-            "notes": "順位2；Romancecar 特急券另購。"
+            "notes": "已預約；GSE 前展望席；7號車 14A／14B；成人2名；購買金額 2,300日圓；Romancecar 特急券另購。"
           }
         ],
         "segments": [
@@ -3571,31 +3667,47 @@ window.TRIP_DATA = {
             "method": "登山電車／巴士／必要時計程車",
             "operator": "箱根交通系統",
             "train_type": "區域交通",
-            "estimated_time": "依住宿位置與當日接駁安排",
+            "estimated_time": "09:30–10:30",
             "ticket_type": "箱根周遊券",
             "purchase_site": "EMot／箱根周遊券",
             "purchase_url": "https://www.hakonenavi.jp/international/tw/discount_passes/free_pass",
             "purchase_method": "使用箱根周遊券",
-            "reservation_recommended": true,
+            "reservation_recommended": false,
             "payment_note": "箱根區域交通以周遊券處理。",
             "ic_card_note": "不建議重複刷 IC 卡。",
-            "notes": "依住宿位置安排下山方式。"
+            "notes": "早餐與退房後前往箱根湯本；依住宿位置安排下山方式。"
+          },
+          {
+            "from": "箱根湯本站",
+            "to": "小田急旅行中心／箱根湯本商店街／湯葉丼 直吉",
+            "method": "徒步",
+            "operator": "現場移動",
+            "train_type": null,
+            "estimated_time": "10:30–12:35",
+            "ticket_type": "不需交通票",
+            "purchase_site": null,
+            "purchase_url": null,
+            "purchase_method": "不需購票",
+            "reservation_recommended": false,
+            "payment_note": "寄放行李、購買伴手禮與午餐依現場方式付款。",
+            "ic_card_note": "本段以徒步為主。",
+            "notes": "先在小田急旅行中心（箱根湯本站）寄放行李，再逛商店街、於湯葉丼 直吉午餐，餐後取回行李；12:40 回到箱根湯本站準備搭車。"
           },
           {
             "from": "箱根湯本",
             "to": "新宿",
             "method": "小田急 Romancecar",
             "operator": "小田急",
-            "train_type": "小田急ロマンスカー はこね6號",
-            "estimated_time": "11:38–13:05",
+            "train_type": "小田急ロマンスカー はこね10号（GSE）",
+            "estimated_time": "13:15–14:45",
             "ticket_type": "箱根周遊券＋Romancecar 特急券",
             "purchase_site": "小田急 Romancecar",
             "purchase_url": "https://www.web-odakyu.com/e-romancecar/",
-            "purchase_method": "待預約；建議事先預買指定席",
-            "reservation_recommended": true,
+            "purchase_method": "已完成預約",
+            "reservation_recommended": false,
             "payment_note": "Romancecar 特急券／指定席需另外購買。",
             "ic_card_note": "箱根周遊券處理基本車資，不以 Suica 作為主要付款建議。",
-            "notes": "待預約／順位1；順位2為はこね10號 13:15–14:45。Romancecar 特急券另購。"
+            "notes": "已預約；GSE 前展望席；7號車 14A／14B；成人2名；購買金額 2,300日圓。12:40 為回到車站準備搭車的目標時間，列車固定於 13:15 發車。"
           },
           {
             "from": "新宿",
@@ -3657,16 +3769,18 @@ window.TRIP_DATA = {
             "name": "小田急 Romancecar",
             "url": "https://www.web-odakyu.com/e-romancecar/",
             "applies_to": "箱根湯本 → 新宿",
-            "note": "全車指定席，特急券另購。"
+            "note": "はこね10号已預約；全車指定席，特急券另購。"
           }
         ],
         "warnings": [
           "10/15–10/17 使用箱根周遊券。",
-          "Romancecar 尚未預約，順位1為はこね6號，順位2為はこね10號。",
+          "Romancecar はこね10号 13:15–14:45 已預約。",
           "Romancecar 特急券另購。"
         ],
         "codex_notes": [
-          "新宿 → 池袋與池袋 → 澀谷用 Suica / PASMO 處理即可。"
+          "12:40 是回到箱根湯本站準備搭車的目標時間，不是列車發車時間。",
+          "新宿 → 池袋與池袋 → 澀谷用 Suica / PASMO 處理即可。",
+          "因 Romancecar 14:45 抵達新宿，澀谷購物時間較原規劃壓縮，依現場時間彈性調整停留長度。"
         ]
       },
       {
