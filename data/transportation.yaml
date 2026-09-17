@@ -65,10 +65,11 @@ transportation:
       purchase_site: "小田急 Romancecar"
       purchase_url: "https://www.web-odakyu.com/e-romancecar/"
       route: "箱根湯本站 → 新宿站"
-      train_type: "小田急ロマンスカー（Romancecar）"
-      reserved_seat: "待預約／全車指定席"
+      train_type: "小田急ロマンスカー はこね10号（Romancecar はこね10号／GSE）"
+      reserved_seat: "已預約／前展望席"
       notes:
-        - "建議先上網購票。"
+        - "已預約 13:15–14:45 班次。"
+        - "前展望席：7號車 14A、7號車 14B；成人2名；購買金額 2,300日圓。"
         - "10/15–10/17 使用箱根周遊券。"
         - "箱根周遊券通常涵蓋基本車資，但 Romancecar 特急券仍需另外購買。"
         - "到新宿後，再用 Suica / PASMO 搭 JR 山手線或其他市區交通前往池袋。"
@@ -793,36 +794,28 @@ transportation:
     - 
       date: "2026-10-17"
       title: "箱根 → 新宿 → 池袋 → 澀谷"
-      route_summary: "從箱根回東京，先到池袋寄放行李，再依固定順序前往澀谷購物。"
+      route_summary: "早餐退房後前往箱根湯本寄放行李、購物與午餐，搭乘已預約的 はこね10号 返回東京，再到池袋寄放行李並依固定順序前往澀谷購物。"
       journey_plans:
         - 
-          label: "順位1"
-          status: "待預約"
+          label: "已預約"
+          status: "已預約"
           legs:
             - 
-              service_name: "小田急ロマンスカー はこね6號（Romancecar はこね6號）"
-              from: "箱根湯本（Hakone-Yumoto）"
-              to: "新宿（Shinjuku）"
-              departure_time: "11:38"
-              arrival_time: "13:05"
-              status: "待預約"
-              purchase_site: "小田急 Romancecar"
-              purchase_url: "https://www.web-odakyu.com/e-romancecar/"
-          notes: "主要目標；Romancecar 特急券另購。"
-        - 
-          label: "順位2"
-          status: "待預約"
-          legs:
-            - 
-              service_name: "小田急ロマンスカー はこね10號（Romancecar はこね10號）"
+              service_name: "小田急ロマンスカー はこね10号（Romancecar はこね10号／GSE）"
               from: "箱根湯本（Hakone-Yumoto）"
               to: "新宿（Shinjuku）"
               departure_time: "13:15"
               arrival_time: "14:45"
-              status: "待預約"
+              status: "已預約"
               purchase_site: "小田急 Romancecar"
               purchase_url: "https://www.web-odakyu.com/e-romancecar/"
-          notes: "順位2；Romancecar 特急券另購。"
+              seat_type: "前展望席"
+              seats:
+                - "7號車 14A"
+                - "7號車 14B"
+              passengers: "成人2名"
+              purchase_amount: "2,300日圓"
+          notes: "已預約；GSE 前展望席；7號車 14A／14B；成人2名；購買金額 2,300日圓；Romancecar 特急券另購。"
       segments:
         - 
           from: "ホテルマロウド箱根"
@@ -830,30 +823,45 @@ transportation:
           method: "登山電車／巴士／必要時計程車"
           operator: "箱根交通系統"
           train_type: "區域交通"
-          estimated_time: "依住宿位置與當日接駁安排"
+          estimated_time: "09:30–10:30"
           ticket_type: "箱根周遊券"
           purchase_site: "EMot／箱根周遊券"
           purchase_url: "https://www.hakonenavi.jp/international/tw/discount_passes/free_pass"
           purchase_method: "使用箱根周遊券"
-          reservation_recommended: true
+          reservation_recommended: false
           payment_note: "箱根區域交通以周遊券處理。"
           ic_card_note: "不建議重複刷 IC 卡。"
-          notes: "依住宿位置安排下山方式。"
+          notes: "早餐與退房後前往箱根湯本；依住宿位置安排下山方式。"
+        - 
+          from: "箱根湯本站"
+          to: "小田急旅行中心／箱根湯本商店街／湯葉丼 直吉"
+          method: "徒步"
+          operator: "現場移動"
+          train_type: null
+          estimated_time: "10:30–12:35"
+          ticket_type: "不需交通票"
+          purchase_site: null
+          purchase_url: null
+          purchase_method: "不需購票"
+          reservation_recommended: false
+          payment_note: "寄放行李、購買伴手禮與午餐依現場方式付款。"
+          ic_card_note: "本段以徒步為主。"
+          notes: "先在小田急旅行中心（箱根湯本站）寄放行李，再逛商店街、於湯葉丼 直吉午餐，餐後取回行李；12:40 回到箱根湯本站準備搭車。"
         - 
           from: "箱根湯本"
           to: "新宿"
           method: "小田急 Romancecar"
           operator: "小田急"
-          train_type: "小田急ロマンスカー はこね6號"
-          estimated_time: "11:38–13:05"
+          train_type: "小田急ロマンスカー はこね10号（GSE）"
+          estimated_time: "13:15–14:45"
           ticket_type: "箱根周遊券＋Romancecar 特急券"
           purchase_site: "小田急 Romancecar"
           purchase_url: "https://www.web-odakyu.com/e-romancecar/"
-          purchase_method: "待預約；建議事先預買指定席"
-          reservation_recommended: true
+          purchase_method: "已完成預約"
+          reservation_recommended: false
           payment_note: "Romancecar 特急券／指定席需另外購買。"
           ic_card_note: "箱根周遊券處理基本車資，不以 Suica 作為主要付款建議。"
-          notes: "待預約／順位1；順位2為はこね10號 13:15–14:45。Romancecar 特急券另購。"
+          notes: "已預約；GSE 前展望席；7號車 14A／14B；成人2名；購買金額 2,300日圓。12:40 為回到車站準備搭車的目標時間，列車固定於 13:15 發車。"
         - 
           from: "新宿"
           to: "池袋"
@@ -909,13 +917,15 @@ transportation:
           name: "小田急 Romancecar"
           url: "https://www.web-odakyu.com/e-romancecar/"
           applies_to: "箱根湯本 → 新宿"
-          note: "全車指定席，特急券另購。"
+          note: "はこね10号已預約；全車指定席，特急券另購。"
       warnings:
         - "10/15–10/17 使用箱根周遊券。"
-        - "Romancecar 尚未預約，順位1為はこね6號，順位2為はこね10號。"
+        - "Romancecar はこね10号 13:15–14:45 已預約。"
         - "Romancecar 特急券另購。"
       codex_notes:
+        - "12:40 是回到箱根湯本站準備搭車的目標時間，不是列車發車時間。"
         - "新宿 → 池袋與池袋 → 澀谷用 Suica / PASMO 處理即可。"
+        - "因 Romancecar 14:45 抵達新宿，澀谷購物時間較原規劃壓縮，依現場時間彈性調整停留長度。"
     - 
       date: "2026-10-18"
       title: "池袋 → 日暮里 → 成田機場"

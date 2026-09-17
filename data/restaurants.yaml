@@ -282,3 +282,15 @@ restaurants:
     notes: "10/16 晚餐備案 2。"
     lat: null
     lng: null
+  - 
+    id: "restaurant_yubadon_naokichi"
+    date: "2026-10-17"
+    area: "箱根湯本"
+    meal_type: "午餐"
+    priority: 1
+    name: "湯葉丼 直吉"
+    japanese_name: "湯葉丼 直吉"
+    google_maps_url: "https://maps.app.goo.gl/iPcQ5dP2pagdNNTu5"
+    notes: "10/17 搭乘 Romancecar 前於箱根湯本午餐。"
+    lat: null
+    lng: null

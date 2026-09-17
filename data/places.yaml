@@ -663,3 +663,12 @@ places:
     lat: null
     lng: null
     notes: "熱海海上花火大會主要觀賞點，建議提早抵達並預留人潮移動時間。"
+  - 
+    id: "restaurant_yubadon_naokichi"
+    name: "湯葉丼 直吉"
+    area: "箱根湯本"
+    category: "餐廳"
+    google_maps_url: "https://maps.app.goo.gl/iPcQ5dP2pagdNNTu5"
+    lat: null
+    lng: null
+    notes: "10/17 午餐第一順位；搭乘 Romancecar 前用餐。"
